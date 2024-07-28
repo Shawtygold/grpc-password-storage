@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using FluentValidation;
+using PasswordBoxGrpcServer.Model.Validators;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PasswordBoxGrpcServer.Model.Entities
@@ -19,6 +21,9 @@ namespace PasswordBoxGrpcServer.Model.Entities
             Id = id;
             Login = login;
             Password = password;
+
+            IValidator<User> userVaidator = new UserValidator();
+            userVaidator.ValidateAndThrow(this);
         }
     }
 }
