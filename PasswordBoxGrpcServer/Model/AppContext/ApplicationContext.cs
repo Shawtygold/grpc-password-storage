@@ -14,9 +14,13 @@ namespace PasswordBoxGrpcServer.Model.AppContext
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var config = new ConfigurationBuilder().AddJsonFile("application.json").SetBasePath(Directory.GetCurrentDirectory()).Build();
+            var config = new ConfigurationBuilder()
+                        .AddJsonFile("appsettings.json")
+                        .SetBasePath(Directory.GetCurrentDirectory())
+                        .Build();
 
             optionsBuilder.UseSqlite(config.GetConnectionString("DefaultConnection"));
         }
+    }
     }
 }
