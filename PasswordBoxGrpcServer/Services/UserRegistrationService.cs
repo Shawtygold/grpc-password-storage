@@ -1,7 +1,6 @@
 ﻿using PasswordBoxGrpcServer.Interfaces;
 using PasswordBoxGrpcServer.Interfaces.Repositories;
 using PasswordBoxGrpcServer.Model.Entities;
-using PasswordBoxGrpcServer.Model.Repositories;
 
 namespace PasswordBoxGrpcServer.Services
 {

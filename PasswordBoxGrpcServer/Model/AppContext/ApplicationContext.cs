@@ -22,5 +22,4 @@ namespace PasswordBoxGrpcServer.Model.AppContext
             optionsBuilder.UseSqlite(config.GetConnectionString("DefaultConnection"));
         }
     }
-    }
 }

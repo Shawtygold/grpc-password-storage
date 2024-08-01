@@ -1,9 +1,11 @@
 ﻿using FluentValidation;
 using Grpc.Core;
+using Microsoft.EntityFrameworkCore;
 using PasswordBoxGrpcServer.Interfaces;
 using PasswordBoxGrpcServer.Interfaces.Repositories;
 using PasswordBoxGrpcServer.Model.AppContext;
 using PasswordBoxGrpcServer.Model.Entities;
+using PasswordBoxGrpcServer.Model.Exceptions;
 using PasswordBoxGrpcServer.Model.Repositories;
 
 namespace PasswordBoxGrpcServer.Services
@@ -30,18 +32,19 @@ namespace PasswordBoxGrpcServer.Services
                 User user = _userCreatorService.Create(request.Login, request.Password);
                 await _userRegistrationService.Register(user);
 
-                return new RegisterUserReply {Success = true};
+                return new RegisterUserReply { Success = true };
             }
             catch (ValidationException ex)
             {
-                _logger.LogError(0, ex, "Validation exception");
+                string msg = "User validation error";
+                _logger.LogError(AppLogEvents.Exception, ex, msg);
+                throw new RpcException(new Status(StatusCode.InvalidArgument, msg));
             }
             catch (Exception ex)
             {
-                _logger.LogError(1, ex, "Default exception");
+                _logger.LogError(AppLogEvents.Exception, ex, "Default exception");
+                throw new RpcException(new Status(StatusCode.Internal, ex.Message));
             }
-
-            return new RegisterUserReply() { Success = false };
         }
     }
 }
