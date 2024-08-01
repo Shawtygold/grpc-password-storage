@@ -2,7 +2,7 @@
 
 namespace PasswordBoxGrpcServer.Interfaces
 {
-    public interface IUserRegistrationService
+    public interface IUserRegistrationService : IDisposable
     {
         Task Register(User user);
     }
