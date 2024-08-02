@@ -1,6 +1,6 @@
 ﻿using PasswordBoxGrpcServer.Model.Entities;
 
-namespace PasswordBoxGrpcServer.Interfaces
+namespace PasswordBoxGrpcServer.Interfaces.Services
 {
     public interface IUserCreatorService
     {
