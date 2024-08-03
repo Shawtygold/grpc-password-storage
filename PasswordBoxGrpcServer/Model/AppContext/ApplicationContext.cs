@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
 using PasswordBoxGrpcServer.Model.Entities;
 
 namespace PasswordBoxGrpcServer.Model.AppContext
@@ -6,6 +7,7 @@ namespace PasswordBoxGrpcServer.Model.AppContext
     public class ApplicationContext : DbContext
     {
         public DbSet<User> Users => Set<User>();
+        public DbSet<Password> Passwords => Set<Password>();
 
         public ApplicationContext()
         {
