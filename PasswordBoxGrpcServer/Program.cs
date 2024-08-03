@@ -1,18 +1,35 @@
-using PasswordBoxGrpcServer.Interfaces;
 using PasswordBoxGrpcServer.Interfaces.Repositories;
+using PasswordBoxGrpcServer.Interfaces.Services.Passwords;
+using PasswordBoxGrpcServer.Interfaces.Services.Users;
 using PasswordBoxGrpcServer.Model.AppContext;
 using PasswordBoxGrpcServer.Model.Repositories;
 using PasswordBoxGrpcServer.Services;
+using PasswordBoxGrpcServer.Services.Passwords;
+using PasswordBoxGrpcServer.Services.Users;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddGrpc();
-builder.Services.AddTransient<ApplicationContext>();
-builder.Services.AddTransient<IUserRepository, UserRepository>();
-builder.Services.AddTransient<IUserRegistrationService, UserRegistrationService>();
-builder.Services.AddTransient<IUserAuthenticationService, UserAuthenticationService>();
-builder.Services.AddTransient<IUserCreatorService, UserCreatorService>();
+
+// Repositories
+builder.Services.AddSingleton<ApplicationContext>();
+builder.Services.AddSingleton<IUserRepository, UserRepository>();
+builder.Services.AddSingleton<IPasswordRepository, PasswordRepository>();
+
+// User Service
+builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<IUserRegistration, UserRegistration>();
+builder.Services.AddTransient<IUserAuthenticator, UserAuthenticator>();
+builder.Services.AddTransient<IUserCreator, UserCreator>();
+
+// Password Service
+builder.Services.AddTransient<IPasswordService, PasswordService>();
+builder.Services.AddTransient<IPasswordCreator, PasswordCreator>();
+builder.Services.AddTransient<IPasswordAdder, PasswordAdder>();
+builder.Services.AddTransient<IPasswordUpdater, PasswordUpdater>();
+builder.Services.AddTransient<IPasswordDeleter, PasswordDeleter>();
+builder.Services.AddTransient<IPasswordRetriever, PasswordRetriever>();
 
 var app = builder.Build();
 
