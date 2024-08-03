@@ -56,6 +56,10 @@ namespace PasswordBoxGrpcServer {
     static readonly grpc::Marshaller<global::PasswordBoxGrpcServer.AuthenticateUserRequest> __Marshaller_passwordbox_AuthenticateUserRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PasswordBoxGrpcServer.AuthenticateUserRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PasswordBoxGrpcServer.AuthenticateUserReply> __Marshaller_passwordbox_AuthenticateUserReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PasswordBoxGrpcServer.AuthenticateUserReply.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PasswordBoxGrpcServer.CreatePasswordRequest> __Marshaller_passwordbox_CreatePasswordRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PasswordBoxGrpcServer.CreatePasswordRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PasswordBoxGrpcServer.CreatePasswordReply> __Marshaller_passwordbox_CreatePasswordReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PasswordBoxGrpcServer.CreatePasswordReply.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PasswordBoxGrpcServer.RegisterUserRequest, global::PasswordBoxGrpcServer.RegisterUserReply> __Method_RegisterUser = new grpc::Method<global::PasswordBoxGrpcServer.RegisterUserRequest, global::PasswordBoxGrpcServer.RegisterUserReply>(
@@ -72,6 +76,14 @@ namespace PasswordBoxGrpcServer {
         "AuthenticateUser",
         __Marshaller_passwordbox_AuthenticateUserRequest,
         __Marshaller_passwordbox_AuthenticateUserReply);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PasswordBoxGrpcServer.CreatePasswordRequest, global::PasswordBoxGrpcServer.CreatePasswordReply> __Method_CreatePassword = new grpc::Method<global::PasswordBoxGrpcServer.CreatePasswordRequest, global::PasswordBoxGrpcServer.CreatePasswordReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreatePassword",
+        __Marshaller_passwordbox_CreatePasswordRequest,
+        __Marshaller_passwordbox_CreatePasswordReply);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -95,6 +107,12 @@ namespace PasswordBoxGrpcServer {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::PasswordBoxGrpcServer.CreatePasswordReply> CreatePassword(global::PasswordBoxGrpcServer.CreatePasswordRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -104,7 +122,8 @@ namespace PasswordBoxGrpcServer {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_RegisterUser, serviceImpl.RegisterUser)
-          .AddMethod(__Method_AuthenticateUser, serviceImpl.AuthenticateUser).Build();
+          .AddMethod(__Method_AuthenticateUser, serviceImpl.AuthenticateUser)
+          .AddMethod(__Method_CreatePassword, serviceImpl.CreatePassword).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -116,6 +135,7 @@ namespace PasswordBoxGrpcServer {
     {
       serviceBinder.AddMethod(__Method_RegisterUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PasswordBoxGrpcServer.RegisterUserRequest, global::PasswordBoxGrpcServer.RegisterUserReply>(serviceImpl.RegisterUser));
       serviceBinder.AddMethod(__Method_AuthenticateUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PasswordBoxGrpcServer.AuthenticateUserRequest, global::PasswordBoxGrpcServer.AuthenticateUserReply>(serviceImpl.AuthenticateUser));
+      serviceBinder.AddMethod(__Method_CreatePassword, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PasswordBoxGrpcServer.CreatePasswordRequest, global::PasswordBoxGrpcServer.CreatePasswordReply>(serviceImpl.CreatePassword));
     }
 
   }

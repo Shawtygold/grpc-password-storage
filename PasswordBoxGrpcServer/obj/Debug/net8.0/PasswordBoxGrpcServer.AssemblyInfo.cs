@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PasswordBoxGrpcServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b291ddceb084c360551569d6584c453c1d5715bd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b6154620fc0fb143fd521fb5705492698b56e09")]
 [assembly: System.Reflection.AssemblyProductAttribute("PasswordBoxGrpcServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PasswordBoxGrpcServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
