@@ -20,9 +20,9 @@ namespace PasswordBoxGrpcServer.Model.Repositories
             await _dbContext.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(Password entity)
+        public async Task DeleteAsync(int entityId)
         {
-            await _dbContext.Passwords.Where(p => p.Id == entity.Id).ExecuteDeleteAsync();           
+            await _dbContext.Passwords.Where(p => p.Id == entityId).ExecuteDeleteAsync();           
         }
 
         public IEnumerable<Password> GetAll()

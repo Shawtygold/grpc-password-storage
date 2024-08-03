@@ -1,7 +1,7 @@
 ﻿namespace PasswordBoxGrpcServer.Interfaces.Repositories.Base
 {
-    public interface IRepositoryDelete<TEntity> where TEntity : class
+    public interface IRepositoryDelete
     {
-        Task DeleteAsync(TEntity entity);
+        Task DeleteAsync(int entityId);
     }
 }
