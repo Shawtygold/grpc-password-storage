@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 using Grpc.Core;
-using PasswordBoxGrpcServer.Interfaces;
+using PasswordBoxGrpcServer.Interfaces.Services.Passwords;
+using PasswordBoxGrpcServer.Interfaces.Services.Users;
 using PasswordBoxGrpcServer.Model.Entities;
 using PasswordBoxGrpcServer.Model.Exceptions;
 
@@ -9,37 +10,31 @@ namespace PasswordBoxGrpcServer.Services
     public sealed class PasswordBoxService : PasswordBox.PasswordBoxBase
     {
         private readonly ILogger<PasswordBoxService> _logger;
-        private readonly IUserRegistrationService _userRegistrationService;
-        private readonly IUserCreatorService _userCreatorService;
-        private readonly IUserAuthenticationService _userAuthenticationService;
+        private readonly IUserService _userService;
+        private readonly IPasswordService _passwordService;
 
-        public PasswordBoxService(ILogger<PasswordBoxService> logger,
-            IUserRegistrationService registrationService, 
-            IUserCreatorService userCreatorService,
-            IUserAuthenticationService userAuthenticationService)
+        public PasswordBoxService(ILogger<PasswordBoxService> logger, IUserService userService, IPasswordService passwordService)
         {
             _logger = logger;
-            _userRegistrationService = registrationService;
-            _userCreatorService = userCreatorService;
-            _userAuthenticationService = userAuthenticationService;
+            _userService = userService;
+            _passwordService = passwordService;
         }
 
         public override async Task<RegisterUserReply> RegisterUser(RegisterUserRequest request, ServerCallContext context)
         {
             try
             {
-                User user = _userCreatorService.Create(request.Login, request.Password);
-                await _userRegistrationService.Register(user);
+                User user = _userService.Create(request.Login, request.Password);
+                await _userService.RegisterAsync(user);
             }
             catch (ValidationException ex)
             {
-                string msg = "User validation exception";
-                _logger.LogError(AppLogEvents.Exception, ex, msg);
-                throw new RpcException(new Status(StatusCode.InvalidArgument, msg));
+                _logger.LogError(AppLogEvents.Exception, ex, "User validation exception");
+                throw new RpcException(new Status(StatusCode.InvalidArgument, ex.Message));
             }
             catch (Exception ex)
             {
-                _logger.LogError(AppLogEvents.Exception, ex, "Default exception");
+                _logger.LogError(AppLogEvents.Exception, ex, ex.Message);
                 throw new RpcException(new Status(StatusCode.Internal, ex.Message));
             }
 
@@ -48,26 +43,46 @@ namespace PasswordBoxGrpcServer.Services
 
         public override async Task<AuthenticateUserReply> AuthenticateUser(AuthenticateUserRequest request, ServerCallContext context)
         {
-            bool result = false;
+            bool result;
 
             try
             {
-                User user = _userCreatorService.Create(request.Login, request.Password);
-                result = await _userAuthenticationService.Authenticate(user);
+                User user = _userService.Create(request.Login, request.Password);
+                result = await _userService.AuthenticateAsync(user);
             }
             catch (ValidationException ex)
             {
-                string msg = "User validation exception";
-                _logger.LogError(AppLogEvents.Exception, ex, msg);
-                throw new RpcException(new Status(StatusCode.InvalidArgument, msg));
+                _logger.LogError(AppLogEvents.Exception, ex, "User validation exception");
+                throw new RpcException(new Status(StatusCode.InvalidArgument, ex.Message));
             }
             catch (Exception ex)
             {
-                _logger.LogError(AppLogEvents.Exception, ex.Message, "Default exception");
+                _logger.LogError(AppLogEvents.Exception, ex.Message, ex.Message);
                 throw new RpcException(new Status(StatusCode.Internal, ex.Message));
             }
 
             return new AuthenticateUserReply { Success = result };
+        }
+
+        public override async Task<CreatePasswordReply> CreatePassword(CreatePasswordRequest request, ServerCallContext context)
+        {
+            try
+            {
+                Password password = _passwordService.CreatePassword(request.UserLogin, request.Title, request.Login, request.Password, request.Commentary, request.Image);
+                await _passwordService.AddPasswordAsync(password);
+            }
+            catch (ValidationException ex)
+            {
+                _logger.LogError(AppLogEvents.Exception, ex, "Password validation exception");
+                throw new RpcException(new Status(StatusCode.Internal, ex.Message));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(AppLogEvents.Exception, ex, ex.Message);
+                throw new RpcException(new Status(StatusCode.Internal, ex.Message)); 
+            }
+
+            return new CreatePasswordReply { Success = true };
         }
     }
 }
