@@ -5,7 +5,7 @@ using PasswordBoxGrpcServer.Interfaces.Services.Users;
 using PasswordBoxGrpcServer.Model.Entities;
 using PasswordBoxGrpcServer.Model.Exceptions;
 
-namespace PasswordBoxGrpcServer.Services
+namespace PasswordBoxGrpcServer.Services.Main
 {
     public sealed class PasswordBoxService : PasswordBox.PasswordBoxBase
     {
@@ -73,7 +73,7 @@ namespace PasswordBoxGrpcServer.Services
             try
             {
                 // Создание и валидация объекта
-                Password password = _passwordService.CreatePassword(request.UserLogin, request.Title, request.Login, request.Password, request.Commentary, request.Image);
+                Password password = _passwordService.Create(request.UserLogin, request.Title, request.Login, request.Password, request.Commentary, request.Image);
                 // Добавление в базу данных
                 await _passwordService.AddPasswordAsync(password);
             }
@@ -85,7 +85,7 @@ namespace PasswordBoxGrpcServer.Services
             catch (Exception ex)
             {
                 _logger.LogError(AppLogEvents.Exception, ex, ex.Message);
-                throw new RpcException(new Status(StatusCode.Internal, ex.Message)); 
+                throw new RpcException(new Status(StatusCode.Internal, ex.Message));
             }
 
             return new CreatePasswordReply { Success = true };
