@@ -4,12 +4,12 @@ namespace PasswordBoxGrpcServer.Model
 {
     internal class JSONReader
     {
-        internal static AESConfigStructure ReadAesConfig()
+        internal static AESConfig ReadAesConfig()
         {
             using (StreamReader streamReader = new("config.json"))
             {
                 string json = streamReader.ReadToEnd();
-                AESConfigStructure? data = JsonSerializer.Deserialize<AESConfigStructure>(json);
+                AESConfig? data = JsonSerializer.Deserialize<AESConfig>(json);
 
                 ArgumentNullException.ThrowIfNull(data);
 
@@ -18,7 +18,7 @@ namespace PasswordBoxGrpcServer.Model
         }
     }
 
-    internal class AESConfigStructure
+    internal class AESConfig
     {
         public string Key { get; set; } = null!;
         public string IV { get; set; } = null!;
