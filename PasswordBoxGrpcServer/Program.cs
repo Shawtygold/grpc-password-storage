@@ -1,4 +1,4 @@
-using PasswordBoxGrpcServer.Interfaces;
+using PasswordBoxGrpcServer.Interfaces.Cryptographers;
 using PasswordBoxGrpcServer.Interfaces.Repositories;
 using PasswordBoxGrpcServer.Interfaces.Services.Passwords;
 using PasswordBoxGrpcServer.Interfaces.Services.Users;
@@ -29,10 +29,6 @@ builder.Services.AddTransient<IUserCreator, UserCreator>();
 // Password Service
 builder.Services.AddTransient<IPasswordService, PasswordService>();
 builder.Services.AddTransient<IPasswordCreator, PasswordCreator>();
-builder.Services.AddTransient<IPasswordAdder, PasswordAdder>();
-builder.Services.AddTransient<IPasswordUpdater, PasswordUpdater>();
-builder.Services.AddTransient<IPasswordDeleter, PasswordDeleter>();
-builder.Services.AddTransient<IPasswordRetriever, PasswordRetriever>();
 
 // Encryptor
 builder.Services.AddSingleton<IEncryptor, AESEncryptor>();
