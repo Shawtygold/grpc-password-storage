@@ -1,4 +1,4 @@
-﻿namespace PasswordBoxGrpcServer.Interfaces
+﻿namespace PasswordBoxGrpcServer.Interfaces.Cryptographers
 {
     public interface IEncryptor
     {
