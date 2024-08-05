@@ -9,16 +9,16 @@ namespace PasswordBoxGrpcServer.Model.Entities
     {
         private readonly IValidator<Password> _validator;
 
-        public Password(string userLogin, string title, string login, string passwordHash, string commentary, string image) : this(0, userLogin, title, login, passwordHash, commentary, image)
+        public Password(string userLogin, string title, string login, string passwordValue, string commentary, string image) : this(0, userLogin, title, login, passwordValue, commentary, image)
         { }
 
-        public Password(int id, string userLogin, string title, string loginHash, string passwordHash, string commentary, string image)
+        public Password(int id, string userLogin, string title, string login, string passwordValue, string commentary, string image)
         {
             Id = id;
             UserLogin = userLogin;
             Title = title;
-            LoginHash = loginHash;
-            PasswordHash = passwordHash;
+            Login = login;
+            PasswordValue = passwordValue;
             Commentary = commentary;
             Image = image;
 
@@ -35,9 +35,9 @@ namespace PasswordBoxGrpcServer.Model.Entities
         [Required]
         public string Image { get; set; }
         [Required]
-        public string LoginHash { get; set; } = null!;
+        public string Login { get; set; } = null!;
         [Required]
-        public string PasswordHash { get; set; } = null!;
+        public string PasswordValue { get; set; } = null!;
         public string Commentary { get; set; } = null!;
     }
 }
