@@ -10,8 +10,8 @@ namespace PasswordBoxGrpcServer.Model.Validators
             RuleFor(p => p.Id).NotNull().GreaterThan(-1);
             RuleFor(p => p.UserLogin).NotNull();
             RuleFor(p => p.Title).NotNull();
-            RuleFor(p => p.LoginHash).NotNull();
-            RuleFor(p => p.PasswordHash).NotNull();
+            RuleFor(p => p.Login).NotNull();
+            RuleFor(p => p.PasswordValue).NotNull();
             RuleFor(p => p.Image).NotNull();
         }
     }
