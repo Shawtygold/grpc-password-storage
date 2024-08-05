@@ -24,7 +24,9 @@ namespace PasswordBoxGrpcServer.Services
         {
             try
             {
+                // Создание и валидация объекта
                 User user = _userService.Create(request.Login, request.Password);
+                // Регистрация 
                 await _userService.RegisterAsync(user);
             }
             catch (ValidationException ex)
@@ -47,7 +49,9 @@ namespace PasswordBoxGrpcServer.Services
 
             try
             {
+                // Создание и валидация объекта
                 User user = _userService.Create(request.Login, request.Password);
+                // Аутентификация
                 result = await _userService.AuthenticateAsync(user);
             }
             catch (ValidationException ex)
@@ -68,7 +72,9 @@ namespace PasswordBoxGrpcServer.Services
         {
             try
             {
+                // Создание и валидация объекта
                 Password password = _passwordService.CreatePassword(request.UserLogin, request.Title, request.Login, request.Password, request.Commentary, request.Image);
+                // Добавление в базу данных
                 await _passwordService.AddPasswordAsync(password);
             }
             catch (ValidationException ex)
