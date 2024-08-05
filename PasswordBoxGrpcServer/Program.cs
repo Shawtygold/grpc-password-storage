@@ -1,10 +1,13 @@
+using PasswordBoxGrpcServer.Interfaces;
 using PasswordBoxGrpcServer.Interfaces.Repositories;
 using PasswordBoxGrpcServer.Interfaces.Services.Passwords;
 using PasswordBoxGrpcServer.Interfaces.Services.Users;
 using PasswordBoxGrpcServer.Model.AppContext;
+using PasswordBoxGrpcServer.Model.Cryptographers;
 using PasswordBoxGrpcServer.Model.Repositories;
-using PasswordBoxGrpcServer.Services;
+using PasswordBoxGrpcServer.Services.Main;
 using PasswordBoxGrpcServer.Services.Passwords;
+using PasswordBoxGrpcServer.Services.TempUnnecessary;
 using PasswordBoxGrpcServer.Services.Users;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,6 +33,9 @@ builder.Services.AddTransient<IPasswordAdder, PasswordAdder>();
 builder.Services.AddTransient<IPasswordUpdater, PasswordUpdater>();
 builder.Services.AddTransient<IPasswordDeleter, PasswordDeleter>();
 builder.Services.AddTransient<IPasswordRetriever, PasswordRetriever>();
+
+// Encryptor
+builder.Services.AddSingleton<IEncryptor, AESEncryptor>();
 
 var app = builder.Build();
 
