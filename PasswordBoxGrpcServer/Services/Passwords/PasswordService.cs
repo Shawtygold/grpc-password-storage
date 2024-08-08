@@ -21,44 +21,63 @@ namespace PasswordBoxGrpcServer.Services.Passwords
             _encryptor = encryptor;
         }
 
-        // Создание и валидация пароля
         public Password CreatePassword(string userLogin, string title, string login, string passwordHash, string commentary, string image)
         {
             return _passwordCreator.Create(userLogin, title, login, passwordHash, commentary, image);
         }
 
-        // Добавление пароля в базу данных
         public async Task AddPasswordAsync(Password password)
         {
-            // Шифрование данных
-            // TODO: Add an encryptor
-            byte[] encryptedPassword = await _encryptor.EncryptAsync(password.PasswordValue);
-            byte[] encryptedLogin = await _encryptor.EncryptAsync(password.Login);
-
-            // Добавление в базу данных
+            await EncryptPasswordAsync(password);
             await _passwordRepository.AddAsync(password);
         }
 
-        // Обновление пароля
         public async Task UpdatePasswordAsync(Password password)
-        {
-            // TODO: Add an encryptor
-
+        {       
+            await EncryptPasswordAsync(password);
             await _passwordRepository.UpdateAsync(password);
         }
 
-        // Удаление пароля из базы данных
-        public async Task DeletePasswordAsync(int entityId)
+        public async Task DeletePasswordAsync(int passwordId)
         {
-            await _passwordRepository.DeleteAsync(entityId);
+            await _passwordRepository.DeleteAsync(passwordId);
         }
 
-        // Получение всех паролей
-        public IEnumerable<Password> GetPasswords()
-        {
-            // TODO: Add a decryptor
+        public IEnumerable<Password> GetAllPasswords()
+        {     
+            List<Password> passwords = new(_passwordRepository.GetAll());
+            Task[] tasks = new Task[passwords.Count];
 
-            return _passwordRepository.GetAll();
+            for (int i = 0; i < passwords.Count; i++)
+            {
+                tasks[i] = Task.Factory.StartNew(async () => await DecryptPasswordAsync(passwords[i]));
+            }
+
+            Task.WaitAll(tasks);
+            return passwords;
+        }
+
+        public async Task<IEnumerable<Password>> GetPasswordsByUserLoginAsync(string userLogin)
+        {
+            string encryptedUserLogin = await _encryptor.EncryptAsync(userLogin);
+            return await _passwordRepository.GetCollectionBy(p => p.UserLogin == encryptedUserLogin);
+        }
+
+        private async Task EncryptPasswordAsync(Password password)
+        {
+            password.Title = await _encryptor.EncryptAsync(password.Title);
+            password.Login = await _encryptor.EncryptAsync(password.Login);
+            password.PasswordValue = await _encryptor.EncryptAsync(password.PasswordValue);
+            password.Image = await _encryptor.EncryptAsync(password.Image);
+            password.Commentary = await _encryptor.EncryptAsync(password.Commentary);
+        }
+        private async Task DecryptPasswordAsync(Password password)
+        {
+            password.Title = await _encryptor.DecryptAsync(password.Title);
+            password.Login = await _encryptor.DecryptAsync(password.Login);
+            password.PasswordValue = await _encryptor.DecryptAsync(password.PasswordValue);
+            password.Image = await _encryptor.DecryptAsync(password.Image);
+            password.Commentary = await _encryptor.DecryptAsync(password.Commentary);
         }
     }
 }
