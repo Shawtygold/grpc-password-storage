@@ -2,7 +2,7 @@
 {
     public interface IEncryptor
     {
-        Task<byte[]> EncryptAsync(string text);
-        Task<string> DecryptAsync(byte[] bytes);
+        Task<string> EncryptAsync(string text);
+        Task<string> DecryptAsync(string encryptedText);
     }
 }

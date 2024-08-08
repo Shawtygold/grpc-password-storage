@@ -16,14 +16,15 @@ namespace PasswordBoxGrpcServer.Model.Cryptographers
             _iv = Encoding.Default.GetBytes(config.IV);
         }
 
-        public async Task<string> DecryptAsync(byte[] encryptedText)
+        public async Task<string> DecryptAsync(string encryptedText)
         {
-            return await DecryptStringFromBytesAsync_Aes(encryptedText, _key, _iv);
+            byte[] bytes = Convert.FromBase64String(encryptedText);
+            return await DecryptStringFromBytesAsync_Aes(bytes, _key, _iv);
         }
 
-        public async Task<byte[]> EncryptAsync(string text)
+        public async Task<string> EncryptAsync(string text)
         {
-            return await EncryptStringToBytesAsync_Aes(text, _key, _iv);
+            return Convert.ToBase64String(await EncryptStringToBytesAsync_Aes(text, _key, _iv));
         }
 
         private static async Task<byte[]> EncryptStringToBytesAsync_Aes(string plainText, byte[] Key, byte[] IV)
