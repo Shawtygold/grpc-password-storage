@@ -7,7 +7,6 @@ using PasswordBoxGrpcServer.Model.Cryptographers;
 using PasswordBoxGrpcServer.Model.Repositories;
 using PasswordBoxGrpcServer.Services.Main;
 using PasswordBoxGrpcServer.Services.Passwords;
-using PasswordBoxGrpcServer.Services.TempUnnecessary;
 using PasswordBoxGrpcServer.Services.Users;
 
 var builder = WebApplication.CreateBuilder(args);
