@@ -2,7 +2,7 @@
 
 namespace PasswordBoxGrpcServer.Interfaces.Services.Users
 {
-    public interface IUserAuthenticator : IDisposable
+    public interface IUserAuthenticator
     {
         Task<bool> AuthenticateAsync(User user);
     }
