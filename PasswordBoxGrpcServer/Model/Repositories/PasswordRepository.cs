@@ -2,6 +2,7 @@
 using PasswordBoxGrpcServer.Interfaces.Repositories;
 using PasswordBoxGrpcServer.Model.AppContext;
 using PasswordBoxGrpcServer.Model.Entities;
+using System.Linq.Expressions;
 
 namespace PasswordBoxGrpcServer.Model.Repositories
 {
@@ -34,6 +35,16 @@ namespace PasswordBoxGrpcServer.Model.Repositories
         {
             _dbContext.Passwords.Update(entity);
             await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task<Password?> GetByAsync(Expression<Func<Password, bool>> expression)
+        {
+            return await _dbContext.Passwords.Where(expression).FirstOrDefaultAsync();
+        }
+
+        public async Task<IEnumerable<Password>> GetCollectionBy(Expression<Func<Password, bool>> expression)
+        {
+            return await Task.Run(() => _dbContext.Passwords.Where(expression));
         }
 
         public void Dispose()

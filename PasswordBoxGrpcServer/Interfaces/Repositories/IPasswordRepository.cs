@@ -3,11 +3,14 @@ using PasswordBoxGrpcServer.Model.Entities;
 
 namespace PasswordBoxGrpcServer.Interfaces.Repositories
 {
-    public interface IPasswordRepository : 
-        IRepositoryGetAll<Password>,
+    public interface IPasswordRepository :
         IRepositoryAdd<Password>,
         IRepositoryUpdate<Password>,
-        IRepositoryDelete, IDisposable
+        IRepositoryDelete,
+        IRepositoryGetAll<Password>,
+        IRepositoryCollectionGetBy<Password>,
+        IRepositoryGetBy<Password>,
+        IDisposable
     {
     }
 }
