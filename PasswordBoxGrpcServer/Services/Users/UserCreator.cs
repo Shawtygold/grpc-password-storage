@@ -7,7 +7,7 @@ namespace PasswordBoxGrpcServer.Services.Users
     {
         public User Create(string login, string password)
         {
-            // Валидация и создание пользователя
+            // Validation and object creation 
             User user = new(login, password);
             return user;
         }
