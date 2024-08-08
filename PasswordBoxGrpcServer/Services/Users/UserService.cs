@@ -22,7 +22,7 @@ namespace PasswordBoxGrpcServer.Services.Users
             return await _userAuthenticator.AuthenticateAsync(user);
         }
 
-        public User Create(string login, string password)
+        public User CreateUser(string login, string password)
         {
             return _userCreator.Create(login, password);
         }
@@ -30,12 +30,6 @@ namespace PasswordBoxGrpcServer.Services.Users
         public async Task RegisterAsync(User user)
         {
             await _userRegistration.RegisterAsync(user);
-        }
-
-        public void Dispose()
-        {
-            _userRegistration?.Dispose();
-            _userAuthenticator?.Dispose();
         }
     }
 }
