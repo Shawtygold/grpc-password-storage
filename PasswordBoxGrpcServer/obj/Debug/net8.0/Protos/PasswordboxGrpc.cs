@@ -60,6 +60,18 @@ namespace PasswordBoxGrpcServer {
     static readonly grpc::Marshaller<global::PasswordBoxGrpcServer.CreatePasswordRequest> __Marshaller_passwordbox_CreatePasswordRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PasswordBoxGrpcServer.CreatePasswordRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::PasswordBoxGrpcServer.CreatePasswordReply> __Marshaller_passwordbox_CreatePasswordReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PasswordBoxGrpcServer.CreatePasswordReply.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PasswordBoxGrpcServer.UpdatePasswordRequest> __Marshaller_passwordbox_UpdatePasswordRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PasswordBoxGrpcServer.UpdatePasswordRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PasswordBoxGrpcServer.UpdatePasswordReply> __Marshaller_passwordbox_UpdatePasswordReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PasswordBoxGrpcServer.UpdatePasswordReply.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PasswordBoxGrpcServer.DeletePasswordRequest> __Marshaller_passwordbox_DeletePasswordRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PasswordBoxGrpcServer.DeletePasswordRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PasswordBoxGrpcServer.DeletePasswordReply> __Marshaller_passwordbox_DeletePasswordReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PasswordBoxGrpcServer.DeletePasswordReply.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PasswordBoxGrpcServer.GetPasswordsRequest> __Marshaller_passwordbox_GetPasswordsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PasswordBoxGrpcServer.GetPasswordsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::PasswordBoxGrpcServer.GetPasswordsReply> __Marshaller_passwordbox_GetPasswordsReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::PasswordBoxGrpcServer.GetPasswordsReply.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::PasswordBoxGrpcServer.RegisterUserRequest, global::PasswordBoxGrpcServer.RegisterUserReply> __Method_RegisterUser = new grpc::Method<global::PasswordBoxGrpcServer.RegisterUserRequest, global::PasswordBoxGrpcServer.RegisterUserReply>(
@@ -84,6 +96,30 @@ namespace PasswordBoxGrpcServer {
         "CreatePassword",
         __Marshaller_passwordbox_CreatePasswordRequest,
         __Marshaller_passwordbox_CreatePasswordReply);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PasswordBoxGrpcServer.UpdatePasswordRequest, global::PasswordBoxGrpcServer.UpdatePasswordReply> __Method_UpdatePassword = new grpc::Method<global::PasswordBoxGrpcServer.UpdatePasswordRequest, global::PasswordBoxGrpcServer.UpdatePasswordReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdatePassword",
+        __Marshaller_passwordbox_UpdatePasswordRequest,
+        __Marshaller_passwordbox_UpdatePasswordReply);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PasswordBoxGrpcServer.DeletePasswordRequest, global::PasswordBoxGrpcServer.DeletePasswordReply> __Method_DeletePassword = new grpc::Method<global::PasswordBoxGrpcServer.DeletePasswordRequest, global::PasswordBoxGrpcServer.DeletePasswordReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeletePassword",
+        __Marshaller_passwordbox_DeletePasswordRequest,
+        __Marshaller_passwordbox_DeletePasswordReply);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::PasswordBoxGrpcServer.GetPasswordsRequest, global::PasswordBoxGrpcServer.GetPasswordsReply> __Method_GetPasswords = new grpc::Method<global::PasswordBoxGrpcServer.GetPasswordsRequest, global::PasswordBoxGrpcServer.GetPasswordsReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetPasswords",
+        __Marshaller_passwordbox_GetPasswordsRequest,
+        __Marshaller_passwordbox_GetPasswordsReply);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -113,6 +149,24 @@ namespace PasswordBoxGrpcServer {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::PasswordBoxGrpcServer.UpdatePasswordReply> UpdatePassword(global::PasswordBoxGrpcServer.UpdatePasswordRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::PasswordBoxGrpcServer.DeletePasswordReply> DeletePassword(global::PasswordBoxGrpcServer.DeletePasswordRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::PasswordBoxGrpcServer.GetPasswordsReply> GetPasswords(global::PasswordBoxGrpcServer.GetPasswordsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -123,7 +177,10 @@ namespace PasswordBoxGrpcServer {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_RegisterUser, serviceImpl.RegisterUser)
           .AddMethod(__Method_AuthenticateUser, serviceImpl.AuthenticateUser)
-          .AddMethod(__Method_CreatePassword, serviceImpl.CreatePassword).Build();
+          .AddMethod(__Method_CreatePassword, serviceImpl.CreatePassword)
+          .AddMethod(__Method_UpdatePassword, serviceImpl.UpdatePassword)
+          .AddMethod(__Method_DeletePassword, serviceImpl.DeletePassword)
+          .AddMethod(__Method_GetPasswords, serviceImpl.GetPasswords).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -136,6 +193,9 @@ namespace PasswordBoxGrpcServer {
       serviceBinder.AddMethod(__Method_RegisterUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PasswordBoxGrpcServer.RegisterUserRequest, global::PasswordBoxGrpcServer.RegisterUserReply>(serviceImpl.RegisterUser));
       serviceBinder.AddMethod(__Method_AuthenticateUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PasswordBoxGrpcServer.AuthenticateUserRequest, global::PasswordBoxGrpcServer.AuthenticateUserReply>(serviceImpl.AuthenticateUser));
       serviceBinder.AddMethod(__Method_CreatePassword, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PasswordBoxGrpcServer.CreatePasswordRequest, global::PasswordBoxGrpcServer.CreatePasswordReply>(serviceImpl.CreatePassword));
+      serviceBinder.AddMethod(__Method_UpdatePassword, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PasswordBoxGrpcServer.UpdatePasswordRequest, global::PasswordBoxGrpcServer.UpdatePasswordReply>(serviceImpl.UpdatePassword));
+      serviceBinder.AddMethod(__Method_DeletePassword, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PasswordBoxGrpcServer.DeletePasswordRequest, global::PasswordBoxGrpcServer.DeletePasswordReply>(serviceImpl.DeletePassword));
+      serviceBinder.AddMethod(__Method_GetPasswords, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::PasswordBoxGrpcServer.GetPasswordsRequest, global::PasswordBoxGrpcServer.GetPasswordsReply>(serviceImpl.GetPasswords));
     }
 
   }
