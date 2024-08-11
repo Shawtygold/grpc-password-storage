@@ -20,14 +20,12 @@ builder.Services.AddSingleton<IUserRepository, UserRepository>();
 builder.Services.AddSingleton<IPasswordRepository, PasswordRepository>();
 
 // User Service
-builder.Services.AddTransient<IUserService, UserService>();
-builder.Services.AddTransient<IUserRegistration, UserRegistration>();
-builder.Services.AddTransient<IUserAuthenticator, UserAuthenticator>();
-builder.Services.AddTransient<IUserCreator, UserCreator>();
+builder.Services.AddSingleton<IUserService, UserService>();
+builder.Services.AddSingleton<IUserRegistration, UserRegistration>();
+builder.Services.AddSingleton<IUserAuthenticator, UserAuthenticator>();
 
 // Password Service
-builder.Services.AddTransient<IPasswordService, PasswordService>();
-builder.Services.AddTransient<IPasswordCreator, PasswordCreator>();
+builder.Services.AddSingleton<IPasswordService, PasswordService>();
 
 // Encryptor
 builder.Services.AddSingleton<IEncryptor, AESEncryptor>();
