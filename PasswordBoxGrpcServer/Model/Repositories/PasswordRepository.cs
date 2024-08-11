@@ -37,11 +37,6 @@ namespace PasswordBoxGrpcServer.Model.Repositories
             await _dbContext.SaveChangesAsync();
         }
 
-        public async Task<Password?> GetByAsync(Expression<Func<Password, bool>> expression)
-        {
-            return await _dbContext.Passwords.Where(expression).FirstOrDefaultAsync();
-        }
-
         public async Task<IEnumerable<Password>> GetCollectionBy(Expression<Func<Password, bool>> expression)
         {
             return await Task.Run(() => _dbContext.Passwords.Where(expression));
