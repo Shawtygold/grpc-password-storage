@@ -22,10 +22,13 @@ namespace PasswordBoxGrpcServer.Services.Main
 
         public override async Task<RegisterUserReply> RegisterUser(RegisterUserRequest request, ServerCallContext context)
         {
+            RegisterUserReply reply = new();
+
             try
             {
-                User user = _userService.CreateUser(request.Login, request.Password);
+                User user = new(request.Login, request.Password);
                 await _userService.RegisterAsync(user);
+                reply.Success = true;
             }
             catch (ValidationException ex)
             {
@@ -38,17 +41,17 @@ namespace PasswordBoxGrpcServer.Services.Main
                 throw new RpcException(new Status(StatusCode.Internal, ex.Message));
             }
 
-            return new RegisterUserReply { Success = true };
+            return reply;
         }
 
         public override async Task<AuthenticateUserReply> AuthenticateUser(AuthenticateUserRequest request, ServerCallContext context)
         {
-            bool result;
+            AuthenticateUserReply reply = new();
 
             try
             {
-                User user = _userService.CreateUser(request.Login, request.Password);
-                result = await _userService.AuthenticateAsync(user);
+                User user = new(request.Login, request.Password);
+                reply.Success = await _userService.AuthenticateAsync(user);
             }
             catch (ValidationException ex)
             {
@@ -57,26 +60,37 @@ namespace PasswordBoxGrpcServer.Services.Main
             }
             catch (Exception ex)
             {
-                _logger.LogError(AppLogEvents.Exception, ex.Message, ex.Message);
+                _logger.LogError(AppLogEvents.Exception, ex, ex.Message);
                 throw new RpcException(new Status(StatusCode.Internal, ex.Message));
             }
 
-            return new AuthenticateUserReply { Success = result };
+            return reply;
         }
 
         public override async Task<CreatePasswordReply> CreatePassword(CreatePasswordRequest request, ServerCallContext context)
         {
+            CreatePasswordReply reply = new();
+
             try
             {
-                // Создание и валидация объекта
-                Password password = _passwordService.CreatePassword(request.UserLogin, request.Title, request.Login, request.Password, request.Commentary, request.Image);
-                // Добавление в базу данных
-                await _passwordService.AddPasswordAsync(password);
+                Password password = new(request.UserLogin, request.Title, request.Login, request.PasswordValue, request.Commentary, request.Image);
+                var replyPassword = await _passwordService.AddPasswordAsync(password);
+
+                reply.Password = new PasswordReply()
+                {
+                    Id = replyPassword.Id,
+                    UserLogin = replyPassword.UserLogin,
+                    Title = replyPassword.Title,
+                    Login = replyPassword.Login,
+                    PasswordValue = replyPassword.PasswordValue,
+                    Commentary = replyPassword.Commentary,
+                    Image = replyPassword.Image
+                };
             }
             catch (ValidationException ex)
             {
                 _logger.LogError(AppLogEvents.Exception, ex, "Password validation exception");
-                throw new RpcException(new Status(StatusCode.Internal, ex.Message));
+                throw new RpcException(new Status(StatusCode.InvalidArgument, ex.Message));
             }
             catch (Exception ex)
             {
@@ -84,7 +98,89 @@ namespace PasswordBoxGrpcServer.Services.Main
                 throw new RpcException(new Status(StatusCode.Internal, ex.Message));
             }
 
-            return new CreatePasswordReply { Success = true };
+            return reply;
+        }
+
+        public override async Task<UpdatePasswordReply> UpdatePassword(UpdatePasswordRequest request, ServerCallContext context)
+        {
+            UpdatePasswordReply reply = new();
+
+            try
+            {
+                Password password = new(request.Id, request.UserLogin, request.Title, request.Login, request.PasswordValue, request.Commentary, request.Image);
+                var replyPassword = await _passwordService.UpdatePasswordAsync(password);
+
+                reply.Password = new PasswordReply()
+                {
+                    Id = replyPassword.Id,
+                    UserLogin = replyPassword.UserLogin,
+                    Title = replyPassword.Title,
+                    Login = replyPassword.Login,
+                    PasswordValue = replyPassword.PasswordValue,
+                    Commentary = replyPassword.Commentary,
+                    Image = replyPassword.Image
+                };
+            }
+            catch (ValidationException ex)
+            {
+                _logger.LogError(AppLogEvents.Exception, ex, "Password validation exception");
+                throw new RpcException(new Status(StatusCode.InvalidArgument, ex.Message));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(AppLogEvents.Exception, ex, ex.Message);
+                throw new RpcException(new Status(StatusCode.Internal, ex.Message));
+            }
+
+            return reply;
+        }
+
+        public override async Task<DeletePasswordReply> DeletePassword(DeletePasswordRequest request, ServerCallContext context)
+        {
+            DeletePasswordReply reply = new();
+
+            try
+            {
+                await _passwordService.DeletePasswordAsync(request.Id);
+                reply.Success = true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(AppLogEvents.Exception, ex, ex.Message);
+                throw new RpcException(new Status(StatusCode.Internal, ex.Message));
+            }
+
+            return reply;
+        }
+
+        public override async Task<GetPasswordsReply> GetPasswords(GetPasswordsRequest request, ServerCallContext context)
+        {
+            List<Password> passwords;
+            GetPasswordsReply reply = new();
+
+            try
+            {                         
+                passwords = new(await _passwordService.GetPasswordsByUserLoginAsync(request.UserLogin));
+                var passwordList = passwords.Select(item => new PasswordReply()
+                {
+                    Id = item.Id,
+                    UserLogin = item.UserLogin,
+                    Title = item.Title,
+                    Login = item.Login,
+                    PasswordValue = item.PasswordValue,
+                    Commentary = item.Commentary,
+                    Image = item.Image
+                }).ToList();
+
+                reply.Passwords.AddRange(passwordList);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(AppLogEvents.Exception, ex, ex.Message);
+                throw new RpcException(new Status(StatusCode.Internal, ex.Message));
+            }
+
+            return reply;
         }
     }
 }
