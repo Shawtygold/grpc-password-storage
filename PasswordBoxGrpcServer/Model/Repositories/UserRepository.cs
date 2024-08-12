@@ -23,7 +23,7 @@ namespace PasswordBoxGrpcServer.Model.Repositories
 
         public async Task<User?> GetByAsync(Expression<Func<User, bool>> expression)
         {
-            return await _dbContext.Users.FirstOrDefaultAsync(expression);
+            return await _dbContext.Users.AsNoTracking().FirstOrDefaultAsync(expression);
         }
 
         public void Dispose()
