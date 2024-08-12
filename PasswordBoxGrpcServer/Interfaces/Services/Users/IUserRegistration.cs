@@ -4,6 +4,6 @@ namespace PasswordBoxGrpcServer.Interfaces.Services.Users
 {
     public interface IUserRegistration
     {
-        Task RegisterAsync(User user);
+        Task<bool> RegisterAsync(User user);
     }
 }
