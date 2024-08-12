@@ -1,47 +1,48 @@
 ﻿using PasswordBoxGrpcServer.Interfaces.Cryptographers;
+using PasswordBoxGrpcServer.Interfaces.Cryptographers.Configs;
 using System.Security.Cryptography;
-using System.Text;
 
 namespace PasswordBoxGrpcServer.Model.Cryptographers
 {
-    internal class AESEncryptor : IEncryptor
+    public class AESEncryptor : IEncryptor
     {
-        private readonly byte[] _key;
-        private readonly byte[] _iv;
+        private readonly IAesConfig _aesConfig;
 
-        internal AESEncryptor()
+        public AESEncryptor(IAesConfig config)
         {
-            var config = JSONReader.ReadAesConfig();
-            _key = Encoding.Default.GetBytes(config.Key);
-            _iv = Encoding.Default.GetBytes(config.IV);
+            _aesConfig = config;
         }
 
         public async Task<string> DecryptAsync(string encryptedText)
         {
             byte[] bytes = Convert.FromBase64String(encryptedText);
-            return await DecryptStringFromBytesAsync_Aes(bytes, _key, _iv);
+            return await DecryptStringFromBytesAsync_Aes(bytes, _aesConfig);
         }
 
         public async Task<string> EncryptAsync(string text)
         {
-            return Convert.ToBase64String(await EncryptStringToBytesAsync_Aes(text, _key, _iv));
+            return Convert.ToBase64String(await EncryptStringToBytesAsync_Aes(text, _aesConfig));
         }
 
-        private static async Task<byte[]> EncryptStringToBytesAsync_Aes(string plainText, byte[] Key, byte[] IV)
+        private static async Task<byte[]> EncryptStringToBytesAsync_Aes(string plainText, IAesConfig aesConfig)
         {
             if (plainText == null || plainText.Length <= 0)
                 throw new ArgumentNullException(nameof(plainText));
-            if (Key == null || Key.Length <= 0)
-                throw new ArgumentNullException(nameof(Key));
-            if (IV == null || IV.Length <= 0)
-                throw new ArgumentNullException(nameof(IV));
+            if (aesConfig.Key == null || aesConfig.Key.Length <= 0)
+                throw new ArgumentNullException(nameof(aesConfig.Key));
+            if (aesConfig.IV == null || aesConfig.IV.Length <= 0)
+                throw new ArgumentNullException(nameof(aesConfig.IV));
 
             byte[] encrypted;
 
             using (Aes aesAlg = Aes.Create())
             {
-                aesAlg.Key = Key;
-                aesAlg.IV = IV;
+                aesAlg.Key = aesConfig.Key;
+                aesAlg.IV = aesConfig.IV;
+                aesAlg.Mode = aesConfig.Mode;
+                aesAlg.Padding = aesConfig.Padding;
+                aesAlg.KeySize = aesConfig.KeySize;
+                aesAlg.BlockSize = aesConfig.BlockSize; 
 
                 ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
 
@@ -62,21 +63,25 @@ namespace PasswordBoxGrpcServer.Model.Cryptographers
             return encrypted;
         }
 
-        private static async Task<string> DecryptStringFromBytesAsync_Aes(byte[] cipherText, byte[] Key, byte[] IV)
+        private static async Task<string> DecryptStringFromBytesAsync_Aes(byte[] cipherText, IAesConfig aesConfig)
         {
             if (cipherText == null || cipherText.Length <= 0)
-                throw new ArgumentNullException("cipherText");
-            if (Key == null || Key.Length <= 0)
-                throw new ArgumentNullException("Key");
-            if (IV == null || IV.Length <= 0)
-                throw new ArgumentNullException("IV");
+                throw new ArgumentNullException(nameof(cipherText));
+            if (aesConfig.Key == null || aesConfig.Key.Length <= 0)
+                throw new ArgumentNullException(nameof(aesConfig.Key));
+            if (aesConfig.IV == null || aesConfig.IV.Length <= 0)
+                throw new ArgumentNullException(nameof(aesConfig.IV));
 
             string plaintext;
 
             using (Aes aesAlg = Aes.Create())
             {
-                aesAlg.Key = Key;
-                aesAlg.IV = IV;
+                aesAlg.Key = aesConfig.Key;
+                aesAlg.IV = aesConfig.IV;
+                aesAlg.Mode = aesConfig.Mode;
+                aesAlg.Padding = aesConfig.Padding;
+                aesAlg.KeySize = aesConfig.KeySize;
+                aesAlg.BlockSize = aesConfig.BlockSize;
 
                 ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
 
