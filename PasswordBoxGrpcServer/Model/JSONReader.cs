@@ -1,26 +1,30 @@
-﻿using System.Text.Json;
+﻿using System.Security.Cryptography;
+using System.Text.Json;
 
 namespace PasswordBoxGrpcServer.Model
 {
     internal class JSONReader
     {
-        internal static AESConfig ReadAesConfig()
+        internal static AESConfigStructure ReadAesConfig()
         {
             using (StreamReader streamReader = new("config.json"))
             {
                 string json = streamReader.ReadToEnd();
-                AESConfig? data = JsonSerializer.Deserialize<AESConfig>(json);
+                AESConfigStructure? data = JsonSerializer.Deserialize<AESConfigStructure>(json);
 
                 ArgumentNullException.ThrowIfNull(data);
-
                 return data;
             }
         }
     }
 
-    internal class AESConfig
+    internal class AESConfigStructure
     {
-        public string Key { get; set; } = null!;
-        public string IV { get; set; } = null!;
+        internal string Key { get; set; } = null!;
+        internal string IV { get; set; } = null!;
+        internal string Padding { get; set; } = null!;
+        internal string Mode { get; set; } = null!;
+        internal string BlockSize { get; set; } = null!;
+        internal string KeySize { get; set; } = null!;
     }
 }
