@@ -7,7 +7,6 @@ namespace PasswordBoxGrpcServer.Interfaces.Repositories
         IRepositoryAdd<Password>,
         IRepositoryUpdate<Password>,
         IRepositoryDelete,
-        IRepositoryGetAll<Password>,
         IRepositoryCollectionGetBy<Password>,
         IDisposable
     {

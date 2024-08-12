@@ -26,11 +26,6 @@ namespace PasswordBoxGrpcServer.Model.Repositories
             await _dbContext.Passwords.Where(p => p.Id == entityId).ExecuteDeleteAsync();           
         }
 
-        public IEnumerable<Password> GetAll()
-        {
-            return _dbContext.Passwords;
-        }
-
         public async Task UpdateAsync(Password entity)
         {
             _dbContext.Passwords.Update(entity);
@@ -39,7 +34,7 @@ namespace PasswordBoxGrpcServer.Model.Repositories
 
         public async Task<IEnumerable<Password>> GetCollectionBy(Expression<Func<Password, bool>> expression)
         {
-            return await Task.Run(() => _dbContext.Passwords.Where(expression));
+            return await Task.Run(() => _dbContext.Passwords.AsNoTracking().Where(expression));
         }
 
         public void Dispose()
