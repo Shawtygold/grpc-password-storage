@@ -1,9 +1,11 @@
 using PasswordBoxGrpcServer.Interfaces.Cryptographers;
+using PasswordBoxGrpcServer.Interfaces.Cryptographers.Configs;
 using PasswordBoxGrpcServer.Interfaces.Repositories;
 using PasswordBoxGrpcServer.Interfaces.Services.Passwords;
 using PasswordBoxGrpcServer.Interfaces.Services.Users;
 using PasswordBoxGrpcServer.Model.AppContext;
 using PasswordBoxGrpcServer.Model.Cryptographers;
+using PasswordBoxGrpcServer.Model.Cryptographers.Configs;
 using PasswordBoxGrpcServer.Model.Repositories;
 using PasswordBoxGrpcServer.Services.Main;
 using PasswordBoxGrpcServer.Services.Passwords;
@@ -28,6 +30,7 @@ builder.Services.AddSingleton<IUserAuthenticator, UserAuthenticator>();
 builder.Services.AddSingleton<IPasswordService, PasswordService>();
 
 // Encryptor
+builder.Services.AddSingleton<IAesConfig, AesConfig>();
 builder.Services.AddSingleton<IEncryptor, AESEncryptor>();
 
 var app = builder.Build();
