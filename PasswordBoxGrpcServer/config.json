@@ -1,8 +1,8 @@
 ﻿{
-  "BlockSize": "128",
-  "IV": "LjoJBneDYwyMdtJK",
-  "Key": "LzEbMQByfefVaJMX",
-  "KeySize": "128",
-  "Mode": "1",
-  "Padding": "2"
+  "iv": "LjoJBneDYwyMdtJK",
+  "key": "LzEbMQByfefVaJMX",
+  "mode": "1",
+  "padding": "2"
 }
+
+
