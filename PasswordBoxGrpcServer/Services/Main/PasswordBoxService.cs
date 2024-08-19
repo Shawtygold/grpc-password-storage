@@ -32,13 +32,13 @@ namespace PasswordBoxGrpcServer.Services.Main
             }
             catch (ValidationException ex)
             {
-                _logger.LogError(AppLogEvents.Exception, ex, "User validation exception");
-                throw new RpcException(new Status(StatusCode.InvalidArgument, ex.Message));
+                _logger.LogError((int)StatusCode.InvalidArgument, ex, "Invalid user argumets");
+                RpcExceptionThrower.ThrowInvalidArgumentException(ex);
             }
             catch (Exception ex)
             {
-                _logger.LogError(AppLogEvents.Exception, ex, ex.Message);
-                throw new RpcException(new Status(StatusCode.Internal, ex.Message));
+                _logger.LogError((int)StatusCode.Internal, ex, "Internal Error");
+                RpcExceptionThrower.ThrowInternalException(ex);
             }
 
             return reply;
@@ -55,13 +55,13 @@ namespace PasswordBoxGrpcServer.Services.Main
             }
             catch (ValidationException ex)
             {
-                _logger.LogError(AppLogEvents.Exception, ex, "User validation exception");
-                throw new RpcException(new Status(StatusCode.InvalidArgument, ex.Message));
+                _logger.LogError((int)StatusCode.InvalidArgument, ex, "Invalid user argumets");
+                RpcExceptionThrower.ThrowInvalidArgumentException(ex);
             }
             catch (Exception ex)
             {
-                _logger.LogError(AppLogEvents.Exception, ex, ex.Message);
-                throw new RpcException(new Status(StatusCode.Internal, ex.Message));
+                _logger.LogError((int)StatusCode.Internal, ex, "Internal Error");
+                RpcExceptionThrower.ThrowInternalException(ex);
             }
 
             return reply;
@@ -89,13 +89,13 @@ namespace PasswordBoxGrpcServer.Services.Main
             }
             catch (ValidationException ex)
             {
-                _logger.LogError(AppLogEvents.Exception, ex, "Password validation exception");
-                throw new RpcException(new Status(StatusCode.InvalidArgument, ex.Message));
+                _logger.LogError((int)StatusCode.InvalidArgument, ex, "Invalid password arguments");
+                RpcExceptionThrower.ThrowInvalidArgumentException(ex);
             }
             catch (Exception ex)
             {
-                _logger.LogError(AppLogEvents.Exception, ex, ex.Message);
-                throw new RpcException(new Status(StatusCode.Internal, ex.Message));
+                _logger.LogError((int)StatusCode.Internal, ex, "Internal Error");
+                RpcExceptionThrower.ThrowInternalException(ex);
             }
 
             return reply;
@@ -123,13 +123,13 @@ namespace PasswordBoxGrpcServer.Services.Main
             }
             catch (ValidationException ex)
             {
-                _logger.LogError(AppLogEvents.Exception, ex, "Password validation exception");
-                throw new RpcException(new Status(StatusCode.InvalidArgument, ex.Message));
+                _logger.LogError((int)StatusCode.InvalidArgument, ex, "Invalid password arguments");
+                RpcExceptionThrower.ThrowInvalidArgumentException(ex);
             }
             catch (Exception ex)
             {
-                _logger.LogError(AppLogEvents.Exception, ex, ex.Message);
-                throw new RpcException(new Status(StatusCode.Internal, ex.Message));
+                _logger.LogError((int)StatusCode.Internal, ex, "Internal Error");
+                RpcExceptionThrower.ThrowInternalException(ex);
             }
 
             return reply;
@@ -146,8 +146,8 @@ namespace PasswordBoxGrpcServer.Services.Main
             }
             catch (Exception ex)
             {
-                _logger.LogError(AppLogEvents.Exception, ex, ex.Message);
-                throw new RpcException(new Status(StatusCode.Internal, ex.Message));
+                _logger.LogError((int)StatusCode.Internal, ex, "Internal Error");
+                RpcExceptionThrower.ThrowInternalException(ex);
             }
 
             return reply;
@@ -176,8 +176,8 @@ namespace PasswordBoxGrpcServer.Services.Main
             }
             catch (Exception ex)
             {
-                _logger.LogError(AppLogEvents.Exception, ex, ex.Message);
-                throw new RpcException(new Status(StatusCode.Internal, ex.Message));
+                _logger.LogError((int)StatusCode.Internal, ex, "Internal Error");
+                RpcExceptionThrower.ThrowInternalException(ex);
             }
 
             return reply;
