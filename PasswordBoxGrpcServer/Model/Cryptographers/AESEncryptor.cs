@@ -41,8 +41,6 @@ namespace PasswordBoxGrpcServer.Model.Cryptographers
                 aesAlg.IV = aesConfig.IV;
                 aesAlg.Mode = aesConfig.Mode;
                 aesAlg.Padding = aesConfig.Padding;
-                aesAlg.KeySize = aesConfig.KeySize;
-                aesAlg.BlockSize = aesConfig.BlockSize; 
 
                 ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
 
@@ -80,8 +78,6 @@ namespace PasswordBoxGrpcServer.Model.Cryptographers
                 aesAlg.IV = aesConfig.IV;
                 aesAlg.Mode = aesConfig.Mode;
                 aesAlg.Padding = aesConfig.Padding;
-                aesAlg.KeySize = aesConfig.KeySize;
-                aesAlg.BlockSize = aesConfig.BlockSize;
 
                 ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
 

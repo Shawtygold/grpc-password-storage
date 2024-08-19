@@ -10,8 +10,6 @@ namespace PasswordBoxGrpcServer.Model.Cryptographers.Configs
         public byte[] IV { get; set; }
         public PaddingMode Padding { get; set; }
         public CipherMode Mode { get; set; }
-        public int BlockSize { get; set; }
-        public int KeySize { get; set; }
 
         public AesConfig()
         {
@@ -21,8 +19,6 @@ namespace PasswordBoxGrpcServer.Model.Cryptographers.Configs
             IV = Encoding.Default.GetBytes(config.IV);
             Padding = (PaddingMode)Convert.ToInt32(config.Padding);
             Mode = (CipherMode)Convert.ToInt32(config.Mode);
-            BlockSize = Convert.ToInt32(config.BlockSize);
-            KeySize = Convert.ToInt32(config.KeySize);
         }
     }
 }

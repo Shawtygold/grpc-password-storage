@@ -8,7 +8,5 @@ namespace PasswordBoxGrpcServer.Interfaces.Cryptographers.Configs
         public byte[] IV { get; set; }
         public PaddingMode Padding { get; set; }
         public CipherMode Mode { get; set; }
-        public int BlockSize { get; set; }
-        public int KeySize { get; set; }
     }
 }
