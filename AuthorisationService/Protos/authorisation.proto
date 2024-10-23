@@ -1,0 +1,29 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "AuthorisationService";
+
+package passwordbox;
+
+service AuthorisationProtoService {
+
+    rpc RegisterUser (RegisterUserRequest) returns (RegisterUserReply);
+    rpc AuthenticateUser (AuthenticateUserRequest) returns (AuthenticateUserReply);
+}
+
+message RegisterUserRequest {
+    string login = 1;
+    string passsword = 2;
+}
+
+message RegisterUserReply {
+	bool success = 1;
+}
+
+message AuthenticateUserRequest {
+	string login = 1;
+	string password = 2;
+}
+
+message AuthenticateUserReply {
+	bool success = 1;
+}
