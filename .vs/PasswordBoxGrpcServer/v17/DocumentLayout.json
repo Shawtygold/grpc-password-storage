@@ -3,36 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D37E92A-29CA-4405-816C-4D3DB9D1F05F}|PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordboxgrpcserver.tests\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D37E92A-29CA-4405-816C-4D3DB9D1F05F}|PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj|solutionrelative:passwordboxgrpcserver.tests\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|solutionrelative:passwordservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D37E92A-29CA-4405-816C-4D3DB9D1F05F}|PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordboxgrpcserver.tests\\passwordboxgrpcserver.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6D37E92A-29CA-4405-816C-4D3DB9D1F05F}|PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj|solutionrelative:passwordboxgrpcserver.tests\\passwordboxgrpcserver.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|solutionrelative:passwordservice\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\model\\entities\\password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|solutionrelative:passwordservice\\model\\entities\\password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\aesencryptionlib\\model\\aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|solutionrelative:aesencryptionlib\\model\\aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\model\\cryptographers\\aesencryptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|solutionrelative:passwordservice\\model\\cryptographers\\aesencryptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D37E92A-29CA-4405-816C-4D3DB9D1F05F}|PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordboxgrpcserver.tests\\protos\\passwords.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{6D37E92A-29CA-4405-816C-4D3DB9D1F05F}|PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj|solutionrelative:passwordboxgrpcserver.tests\\protos\\passwords.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\model\\appcontext\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\model\\appcontext\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\protos\\passwords.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -41,6 +17,102 @@
     {
       "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\protos\\authorisation.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\protos\\authorisation.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\authorisationservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\authorisationservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|solutionrelative:passwordservice\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\model\\repositories\\passwordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|solutionrelative:passwordservice\\model\\repositories\\passwordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\services\\authorisationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\services\\authorisationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\interfaces\\repositories\\ipasswordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|solutionrelative:passwordservice\\interfaces\\repositories\\ipasswordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\Cryptographer\\Interfaces\\IAesConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cryptographer\\Interfaces\\IAesConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D37E92A-29CA-4405-816C-4D3DB9D1F05F}|PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordboxgrpcserver.tests\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D37E92A-29CA-4405-816C-4D3DB9D1F05F}|PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj|solutionrelative:passwordboxgrpcserver.tests\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\aesencryptionlib\\interfaces\\iaes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|solutionrelative:aesencryptionlib\\interfaces\\iaes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|solutionrelative:passwordservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D4A1D4-3A0D-4A4B-B5C7-73270E5E0282}|RpcExceptionHandlersLib\\RpcExceptionHandlersLib.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\rpcexceptionhandlerslib\\rpcexceptionthrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2D4A1D4-3A0D-4A4B-B5C7-73270E5E0282}|RpcExceptionHandlersLib\\RpcExceptionHandlersLib.csproj|solutionrelative:rpcexceptionhandlerslib\\rpcexceptionthrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\model\\validators\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\model\\validators\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\model\\cryptographers\\aesencryptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\model\\cryptographers\\aesencryptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\model\\cryptographers\\configs\\aesconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\model\\cryptographers\\configs\\aesconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\model\\jsonreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\model\\jsonreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\aesencryptionlib\\model\\defaultaesconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|solutionrelative:aesencryptionlib\\model\\defaultaesconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\aesencryptionlib\\model\\aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|solutionrelative:aesencryptionlib\\model\\aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\aesencryptionlib\\interfaces\\iaesconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|solutionrelative:aesencryptionlib\\interfaces\\iaesconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D37E92A-29CA-4405-816C-4D3DB9D1F05F}|PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordboxgrpcserver.tests\\passwordboxgrpcserver.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6D37E92A-29CA-4405-816C-4D3DB9D1F05F}|PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj|solutionrelative:passwordboxgrpcserver.tests\\passwordboxgrpcserver.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\model\\entities\\password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|solutionrelative:passwordservice\\model\\entities\\password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\model\\cryptographers\\aesencryptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|solutionrelative:passwordservice\\model\\cryptographers\\aesencryptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D37E92A-29CA-4405-816C-4D3DB9D1F05F}|PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordboxgrpcserver.tests\\protos\\passwords.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{6D37E92A-29CA-4405-816C-4D3DB9D1F05F}|PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj|solutionrelative:passwordboxgrpcserver.tests\\protos\\passwords.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -53,10 +125,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\passwordservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|solutionrelative:passwordservice\\passwordservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2D4A1D4-3A0D-4A4B-B5C7-73270E5E0282}|RpcExceptionHandlersLib\\RpcExceptionHandlersLib.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\rpcexceptionhandlerslib\\rpcexceptionthrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2D4A1D4-3A0D-4A4B-B5C7-73270E5E0282}|RpcExceptionHandlersLib\\RpcExceptionHandlersLib.csproj|solutionrelative:rpcexceptionhandlerslib\\rpcexceptionthrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\model\\jsonreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,40 +143,12 @@
       "RelativeMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|solutionrelative:passwordservice\\interfaces\\cryptographers\\iencryptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\model\\cryptographers\\aesencryptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\model\\cryptographers\\aesencryptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\interfaces\\cryptographers\\iencryptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\interfaces\\cryptographers\\iencryptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\aesencryptionlib\\interfaces\\iaes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|solutionrelative:aesencryptionlib\\interfaces\\iaes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\model\\cryptographers\\configs\\aesconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\model\\cryptographers\\configs\\aesconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\services\\userauthenticator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\services\\userauthenticator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\services\\authorisationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\services\\authorisationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\model\\validators\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\model\\validators\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\model\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -119,28 +159,8 @@
       "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\model\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\model\\jsonreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\model\\jsonreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\model\\appcontext\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\model\\appcontext\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\services\\userregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\services\\userregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\aesencryptionlib\\interfaces\\iaesconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|solutionrelative:aesencryptionlib\\interfaces\\iaesconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\interfaces\\repositories\\ipasswordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|solutionrelative:passwordservice\\interfaces\\repositories\\ipasswordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B4D1460-0378-4F2C-8456-00D4E5210BEB}|RepositoryLib\\RepositoryLib.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\repositorylib\\interfaces\\base\\irepositoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -167,10 +187,6 @@
       "RelativeMoniker": "D:0:0:{7B4D1460-0378-4F2C-8456-00D4E5210BEB}|RepositoryLib\\RepositoryLib.csproj|solutionrelative:repositorylib\\interfaces\\base\\irepositorycollectiongetby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\model\\repositories\\passwordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|solutionrelative:passwordservice\\model\\repositories\\passwordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7B4D1460-0378-4F2C-8456-00D4E5210BEB}|RepositoryLib\\RepositoryLib.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\repositorylib\\repositorylib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{7B4D1460-0378-4F2C-8456-00D4E5210BEB}|RepositoryLib\\RepositoryLib.csproj|solutionrelative:repositorylib\\repositorylib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -193,24 +209,12 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\.nuget\\packages\\microsoft.net.test.sdk\\17.10.0\\build\\netcoreapp3.1\\Microsoft.NET.Test.Sdk.Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\authorisationservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\authorisationservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\passwordservice\\model\\validators\\passwordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78E245B7-B6D2-498C-A74F-8C6518AC82E7}|PasswordService\\PasswordService.csproj|solutionrelative:passwordservice\\model\\validators\\passwordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\authorisationservice\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC6D7269-B0BB-4E3A-A35B-9EB34D4B549D}|AuthorisationService\\AuthorisationService.csproj|solutionrelative:authorisationservice\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\aesencryptionlib\\model\\defaultaesconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97EAB921-19B1-46A7-A606-2946C6DBEDB5}|AESEncryptionLib\\AESEncryptionLib.csproj|solutionrelative:aesencryptionlib\\model\\defaultaesconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordBoxGrpcServer\\bin\\Debug\\net8.0\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -224,308 +228,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "passwords.proto",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Protos\\passwords.proto",
-              "RelativeDocumentMoniker": "PasswordService\\Protos\\passwords.proto",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Protos\\passwords.proto",
-              "RelativeToolTip": "PasswordService\\Protos\\passwords.proto",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
-              "WhenOpened": "2024-08-21T08:44:34.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "PasswordService.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Services\\PasswordService.cs",
               "RelativeDocumentMoniker": "PasswordService\\Services\\PasswordService.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Services\\PasswordService.cs",
               "RelativeToolTip": "PasswordService\\Services\\PasswordService.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAwwJ4AAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAwwHQAAAB6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T09:09:17.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-21T09:09:17.999Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Program.cs",
-              "RelativeDocumentMoniker": "PasswordService\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Program.cs",
-              "RelativeToolTip": "PasswordService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "PasswordRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Repositories\\PasswordRepository.cs",
+              "RelativeDocumentMoniker": "PasswordService\\Model\\Repositories\\PasswordRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Repositories\\PasswordRepository.cs",
+              "RelativeToolTip": "PasswordService\\Model\\Repositories\\PasswordRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowAwAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T09:11:07.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RpcExceptionThrower.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RpcExceptionHandlersLib\\RpcExceptionThrower.cs",
-              "RelativeDocumentMoniker": "RpcExceptionHandlersLib\\RpcExceptionThrower.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RpcExceptionHandlersLib\\RpcExceptionThrower.cs",
-              "RelativeToolTip": "RpcExceptionHandlersLib\\RpcExceptionThrower.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T08:22:18.747Z"
+              "WhenOpened": "2024-08-21T09:14:39.297Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PasswordBoxGrpcServer.Tests.csproj",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj",
-              "RelativeDocumentMoniker": "PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj",
-              "RelativeToolTip": "PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Title": "passwords.proto",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Protos\\passwords.proto",
+              "RelativeDocumentMoniker": "PasswordService\\Protos\\passwords.proto",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Protos\\passwords.proto",
+              "RelativeToolTip": "PasswordService\\Protos\\passwords.proto",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2024-08-21T08:44:34.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthorisationService.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\AuthorisationService.csproj",
+              "RelativeDocumentMoniker": "AuthorisationService\\AuthorisationService.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\AuthorisationService.csproj",
+              "RelativeToolTip": "AuthorisationService\\AuthorisationService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-11T13:28:10.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-19T15:17:51.996Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Testing.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordBoxGrpcServer.Tests\\Testing.cs",
-              "RelativeDocumentMoniker": "PasswordBoxGrpcServer.Tests\\Testing.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordBoxGrpcServer.Tests\\Testing.cs",
-              "RelativeToolTip": "PasswordBoxGrpcServer.Tests\\Testing.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwC8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T13:45:30.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AES.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AESEncryptionLib\\Model\\AES.cs",
-              "RelativeDocumentMoniker": "AESEncryptionLib\\Model\\AES.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AESEncryptionLib\\Model\\AES.cs",
-              "RelativeToolTip": "AESEncryptionLib\\Model\\AES.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T17:01:35.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Password.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Entities\\Password.cs",
-              "RelativeDocumentMoniker": "PasswordService\\Model\\Entities\\Password.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Entities\\Password.cs",
-              "RelativeToolTip": "PasswordService\\Model\\Entities\\Password.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T08:58:39.535Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\appsettings.json",
+              "RelativeDocumentMoniker": "AuthorisationService\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\appsettings.json",
+              "RelativeToolTip": "AuthorisationService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-19T16:29:08.875Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AesEncryptor.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Cryptographers\\AesEncryptor.cs",
-              "RelativeDocumentMoniker": "PasswordService\\Model\\Cryptographers\\AesEncryptor.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Cryptographers\\AesEncryptor.cs",
-              "RelativeToolTip": "PasswordService\\Model\\Cryptographers\\AesEncryptor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T09:05:24.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "passwords.proto",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordBoxGrpcServer.Tests\\Protos\\passwords.proto",
-              "RelativeDocumentMoniker": "PasswordBoxGrpcServer.Tests\\Protos\\passwords.proto",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordBoxGrpcServer.Tests\\Protos\\passwords.proto",
-              "RelativeToolTip": "PasswordBoxGrpcServer.Tests\\Protos\\passwords.proto",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
-              "WhenOpened": "2024-10-06T11:22:40.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "authorisation.proto",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Protos\\authorisation.proto",
-              "RelativeDocumentMoniker": "AuthorisationService\\Protos\\authorisation.proto",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Protos\\authorisation.proto",
-              "RelativeToolTip": "AuthorisationService\\Protos\\authorisation.proto",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
-              "WhenOpened": "2024-08-19T12:49:40.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "JSONReader.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\JSONReader.cs",
-              "RelativeDocumentMoniker": "PasswordService\\Model\\JSONReader.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\JSONReader.cs",
-              "RelativeToolTip": "PasswordService\\Model\\JSONReader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T09:08:05.656Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PasswordService.csproj",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\PasswordService.csproj",
-              "RelativeDocumentMoniker": "PasswordService\\PasswordService.csproj",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\PasswordService.csproj",
-              "RelativeToolTip": "PasswordService\\PasswordService.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-23T05:59:17.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\appsettings.json",
-              "RelativeDocumentMoniker": "PasswordService\\appsettings.json",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\appsettings.json",
-              "RelativeToolTip": "PasswordService\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-21T16:07:50.12Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "PasswordService\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Properties\\launchSettings.json",
-              "RelativeToolTip": "PasswordService\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-21T16:09:43.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IUserRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Services\\IUserRegistration.cs",
-              "RelativeDocumentMoniker": "AuthorisationService\\Interfaces\\Services\\IUserRegistration.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Services\\IUserRegistration.cs",
-              "RelativeToolTip": "AuthorisationService\\Interfaces\\Services\\IUserRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T06:29:18.034Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IUserAuthenticator.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Services\\IUserAuthenticator.cs",
-              "RelativeDocumentMoniker": "AuthorisationService\\Interfaces\\Services\\IUserAuthenticator.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Services\\IUserAuthenticator.cs",
-              "RelativeToolTip": "AuthorisationService\\Interfaces\\Services\\IUserAuthenticator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T06:29:51.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IEncryptor.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Interfaces\\Cryptographers\\IEncryptor.cs",
-              "RelativeDocumentMoniker": "PasswordService\\Interfaces\\Cryptographers\\IEncryptor.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Interfaces\\Cryptographers\\IEncryptor.cs",
-              "RelativeToolTip": "PasswordService\\Interfaces\\Cryptographers\\IEncryptor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T08:47:34.692Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IEncryptor.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Cryptographers\\IEncryptor.cs",
-              "RelativeDocumentMoniker": "AuthorisationService\\Interfaces\\Cryptographers\\IEncryptor.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Cryptographers\\IEncryptor.cs",
-              "RelativeToolTip": "AuthorisationService\\Interfaces\\Cryptographers\\IEncryptor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T04:36:41.31Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IAes.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AESEncryptionLib\\Interfaces\\IAes.cs",
-              "RelativeDocumentMoniker": "AESEncryptionLib\\Interfaces\\IAes.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AESEncryptionLib\\Interfaces\\IAes.cs",
-              "RelativeToolTip": "AESEncryptionLib\\Interfaces\\IAes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T16:55:41.693Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AesEncryptor.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Cryptographers\\AesEncryptor.cs",
-              "RelativeDocumentMoniker": "AuthorisationService\\Model\\Cryptographers\\AesEncryptor.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Cryptographers\\AesEncryptor.cs",
-              "RelativeToolTip": "AuthorisationService\\Model\\Cryptographers\\AesEncryptor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T08:36:02.044Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Program.cs",
-              "RelativeDocumentMoniker": "AuthorisationService\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Program.cs",
-              "RelativeToolTip": "AuthorisationService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:14:49.281Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AesConfig.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
-              "RelativeDocumentMoniker": "AuthorisationService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
-              "RelativeToolTip": "AuthorisationService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T05:13:52.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "UserAuthenticator.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Services\\UserAuthenticator.cs",
-              "RelativeDocumentMoniker": "AuthorisationService\\Services\\UserAuthenticator.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Services\\UserAuthenticator.cs",
-              "RelativeToolTip": "AuthorisationService\\Services\\UserAuthenticator.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T06:25:40.523Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
               "Title": "config.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\config.json",
               "RelativeDocumentMoniker": "AuthorisationService\\config.json",
@@ -537,67 +305,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "AuthorisationService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Services\\AuthorisationService.cs",
-              "RelativeDocumentMoniker": "AuthorisationService\\Services\\AuthorisationService.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Services\\AuthorisationService.cs",
-              "RelativeToolTip": "AuthorisationService\\Services\\AuthorisationService.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAowD4AAAANAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Program.cs",
+              "RelativeDocumentMoniker": "AuthorisationService\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Program.cs",
+              "RelativeToolTip": "AuthorisationService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:13:40.277Z"
+              "WhenOpened": "2024-08-19T15:14:49.281Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UserValidator.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Validators\\UserValidator.cs",
-              "RelativeDocumentMoniker": "AuthorisationService\\Model\\Validators\\UserValidator.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Validators\\UserValidator.cs",
-              "RelativeToolTip": "AuthorisationService\\Model\\Validators\\UserValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:38:39.604Z"
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "AuthorisationService\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Properties\\launchSettings.json",
+              "RelativeToolTip": "AuthorisationService\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-21T16:09:25.309Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "AuthorisationService\\Model\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Entities\\User.cs",
-              "RelativeToolTip": "AuthorisationService\\Model\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:37:14.962Z"
+              "DocumentIndex": 3,
+              "Title": "authorisation.proto",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Protos\\authorisation.proto",
+              "RelativeDocumentMoniker": "AuthorisationService\\Protos\\authorisation.proto",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Protos\\authorisation.proto",
+              "RelativeToolTip": "AuthorisationService\\Protos\\authorisation.proto",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2024-08-19T12:49:40.636Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "AuthorisationService\\Model\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "AuthorisationService\\Model\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:39:40.393Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "JSONReader.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\JSONReader.cs",
-              "RelativeDocumentMoniker": "AuthorisationService\\Model\\JSONReader.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\JSONReader.cs",
-              "RelativeToolTip": "AuthorisationService\\Model\\JSONReader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T06:24:35.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 1,
               "Title": "ApplicationContext.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\AppContext\\ApplicationContext.cs",
               "RelativeDocumentMoniker": "AuthorisationService\\Model\\AppContext\\ApplicationContext.cs",
@@ -609,43 +353,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\appsettings.json",
-              "RelativeDocumentMoniker": "AuthorisationService\\appsettings.json",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\appsettings.json",
-              "RelativeToolTip": "AuthorisationService\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-19T16:29:08.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "UserRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Services\\UserRegistration.cs",
-              "RelativeDocumentMoniker": "AuthorisationService\\Services\\UserRegistration.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Services\\UserRegistration.cs",
-              "RelativeToolTip": "AuthorisationService\\Services\\UserRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "AuthorisationService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Services\\AuthorisationService.cs",
+              "RelativeDocumentMoniker": "AuthorisationService\\Services\\AuthorisationService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Services\\AuthorisationService.cs",
+              "RelativeToolTip": "AuthorisationService\\Services\\AuthorisationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T06:26:07.519Z"
+              "WhenOpened": "2024-08-19T15:13:40.277Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "IAesConfig.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AESEncryptionLib\\Interfaces\\IAesConfig.cs",
-              "RelativeDocumentMoniker": "AESEncryptionLib\\Interfaces\\IAesConfig.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AESEncryptionLib\\Interfaces\\IAesConfig.cs",
-              "RelativeToolTip": "AESEncryptionLib\\Interfaces\\IAesConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T16:43:52.876Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 11,
               "Title": "IPasswordRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Interfaces\\Repositories\\IPasswordRepository.cs",
               "RelativeDocumentMoniker": "PasswordService\\Interfaces\\Repositories\\IPasswordRepository.cs",
@@ -657,213 +377,115 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "IRepositoryUpdate.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryUpdate.cs",
-              "RelativeDocumentMoniker": "RepositoryLib\\Interfaces\\Base\\IRepositoryUpdate.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryUpdate.cs",
-              "RelativeToolTip": "RepositoryLib\\Interfaces\\Base\\IRepositoryUpdate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T08:52:14.255Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "IRepositoryGetBy.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryGetBy.cs",
-              "RelativeDocumentMoniker": "RepositoryLib\\Interfaces\\Base\\IRepositoryGetBy.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryGetBy.cs",
-              "RelativeToolTip": "RepositoryLib\\Interfaces\\Base\\IRepositoryGetBy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T08:52:00.091Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "IRepositoryGetAll.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryGetAll.cs",
-              "RelativeDocumentMoniker": "RepositoryLib\\Interfaces\\Base\\IRepositoryGetAll.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryGetAll.cs",
-              "RelativeToolTip": "RepositoryLib\\Interfaces\\Base\\IRepositoryGetAll.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T08:51:57.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "IRepositoryAdd.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryAdd.cs",
-              "RelativeDocumentMoniker": "RepositoryLib\\Interfaces\\Base\\IRepositoryAdd.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryAdd.cs",
-              "RelativeToolTip": "RepositoryLib\\Interfaces\\Base\\IRepositoryAdd.cs",
+              "DocumentIndex": 12,
+              "Title": "IAesConfig.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\Cryptographer\\Interfaces\\IAesConfig.cs",
+              "RelativeDocumentMoniker": "Cryptographer\\Interfaces\\IAesConfig.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\Cryptographer\\Interfaces\\IAesConfig.cs",
+              "RelativeToolTip": "Cryptographer\\Interfaces\\IAesConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T08:51:14.023Z"
+              "WhenOpened": "2024-10-23T15:52:37.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "IRepositoryDelete.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryDelete.cs",
-              "RelativeDocumentMoniker": "RepositoryLib\\Interfaces\\Base\\IRepositoryDelete.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryDelete.cs",
-              "RelativeToolTip": "RepositoryLib\\Interfaces\\Base\\IRepositoryDelete.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "IAes.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AESEncryptionLib\\Interfaces\\IAes.cs",
+              "RelativeDocumentMoniker": "AESEncryptionLib\\Interfaces\\IAes.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AESEncryptionLib\\Interfaces\\IAes.cs",
+              "RelativeToolTip": "AESEncryptionLib\\Interfaces\\IAes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T08:51:54.652Z"
+              "WhenOpened": "2024-08-19T16:55:41.693Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "IRepositoryCollectionGetBy.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryCollectionGetBy.cs",
-              "RelativeDocumentMoniker": "RepositoryLib\\Interfaces\\Base\\IRepositoryCollectionGetBy.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryCollectionGetBy.cs",
-              "RelativeToolTip": "RepositoryLib\\Interfaces\\Base\\IRepositoryCollectionGetBy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Program.cs",
+              "RelativeDocumentMoniker": "PasswordService\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Program.cs",
+              "RelativeToolTip": "PasswordService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T08:51:47.197Z"
+              "WhenOpened": "2024-08-21T09:11:07.657Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "PasswordRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Repositories\\PasswordRepository.cs",
-              "RelativeDocumentMoniker": "PasswordService\\Model\\Repositories\\PasswordRepository.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Repositories\\PasswordRepository.cs",
-              "RelativeToolTip": "PasswordService\\Model\\Repositories\\PasswordRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAwAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "RpcExceptionThrower.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RpcExceptionHandlersLib\\RpcExceptionThrower.cs",
+              "RelativeDocumentMoniker": "RpcExceptionHandlersLib\\RpcExceptionThrower.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RpcExceptionHandlersLib\\RpcExceptionThrower.cs",
+              "RelativeToolTip": "RpcExceptionHandlersLib\\RpcExceptionThrower.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T09:14:39.297Z"
+              "WhenOpened": "2024-08-23T08:22:18.747Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "RepositoryLib.csproj",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\RepositoryLib.csproj",
-              "RelativeDocumentMoniker": "RepositoryLib\\RepositoryLib.csproj",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\RepositoryLib.csproj",
-              "RelativeToolTip": "RepositoryLib\\RepositoryLib.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-23T07:15:32.003Z",
-              "EditorCaption": ""
+              "DocumentIndex": 17,
+              "Title": "UserValidator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Validators\\UserValidator.cs",
+              "RelativeDocumentMoniker": "AuthorisationService\\Model\\Validators\\UserValidator.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Validators\\UserValidator.cs",
+              "RelativeToolTip": "AuthorisationService\\Model\\Validators\\UserValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T15:38:39.604Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 13,
+              "Title": "Testing.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordBoxGrpcServer.Tests\\Testing.cs",
+              "RelativeDocumentMoniker": "PasswordBoxGrpcServer.Tests\\Testing.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordBoxGrpcServer.Tests\\Testing.cs",
+              "RelativeToolTip": "PasswordBoxGrpcServer.Tests\\Testing.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T13:45:30.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AesEncryptor.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Cryptographers\\AesEncryptor.cs",
+              "RelativeDocumentMoniker": "AuthorisationService\\Model\\Cryptographers\\AesEncryptor.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Cryptographers\\AesEncryptor.cs",
+              "RelativeToolTip": "AuthorisationService\\Model\\Cryptographers\\AesEncryptor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T08:36:02.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "AesConfig.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
-              "RelativeDocumentMoniker": "PasswordService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
-              "RelativeToolTip": "PasswordService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
+              "RelativeDocumentMoniker": "AuthorisationService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
+              "RelativeToolTip": "AuthorisationService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T09:07:01.027Z"
+              "WhenOpened": "2024-08-20T05:13:52.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "Microsoft.NET.Test.Sdk.Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\.nuget\\packages\\microsoft.net.test.sdk\\17.10.0\\build\\netcoreapp3.1\\Microsoft.NET.Test.Sdk.Program.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.net.test.sdk\\17.10.0\\build\\netcoreapp3.1\\Microsoft.NET.Test.Sdk.Program.cs",
-              "ToolTip": "C:\\Users\\user\\.nuget\\packages\\microsoft.net.test.sdk\\17.10.0\\build\\netcoreapp3.1\\Microsoft.NET.Test.Sdk.Program.cs",
-              "RelativeToolTip": "..\\..\\..\\.nuget\\packages\\microsoft.net.test.sdk\\17.10.0\\build\\netcoreapp3.1\\Microsoft.NET.Test.Sdk.Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA+AAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "JSONReader.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\JSONReader.cs",
+              "RelativeDocumentMoniker": "AuthorisationService\\Model\\JSONReader.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\JSONReader.cs",
+              "RelativeToolTip": "AuthorisationService\\Model\\JSONReader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T16:14:45.754Z"
+              "WhenOpened": "2024-08-21T06:24:35.079Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "config.json",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\config.json",
-              "RelativeDocumentMoniker": "PasswordService\\config.json",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\config.json",
-              "RelativeToolTip": "PasswordService\\config.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-21T16:18:24.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Notes\\PasswordBoxGrpcServer\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\Notes\\PasswordBoxGrpcServer\\appsettings.json",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Notes\\PasswordBoxGrpcServer\\appsettings.json",
-              "RelativeToolTip": "..\\..\\..\\Desktop\\Notes\\PasswordBoxGrpcServer\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-21T16:20:01.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "AuthorisationService\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Properties\\launchSettings.json",
-              "RelativeToolTip": "AuthorisationService\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-21T16:09:25.309Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "ApplicationContext.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\AppContext\\ApplicationContext.cs",
-              "RelativeDocumentMoniker": "PasswordService\\Model\\AppContext\\ApplicationContext.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\AppContext\\ApplicationContext.cs",
-              "RelativeToolTip": "PasswordService\\Model\\AppContext\\ApplicationContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T09:03:22.97Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "AuthorisationService.csproj",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\AuthorisationService.csproj",
-              "RelativeDocumentMoniker": "AuthorisationService\\AuthorisationService.csproj",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\AuthorisationService.csproj",
-              "RelativeToolTip": "AuthorisationService\\AuthorisationService.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-19T15:17:51.996Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "PasswordValidator.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Validators\\PasswordValidator.cs",
-              "RelativeDocumentMoniker": "PasswordService\\Model\\Validators\\PasswordValidator.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Validators\\PasswordValidator.cs",
-              "RelativeToolTip": "PasswordService\\Model\\Validators\\PasswordValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T09:02:19.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Repositories\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "AuthorisationService\\Interfaces\\Repositories\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Repositories\\IUserRepository.cs",
-              "RelativeToolTip": "AuthorisationService\\Interfaces\\Repositories\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:44:24.004Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 21,
               "Title": "DefaultAesConfig.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AESEncryptionLib\\Model\\DefaultAesConfig.cs",
               "RelativeDocumentMoniker": "AESEncryptionLib\\Model\\DefaultAesConfig.cs",
@@ -875,7 +497,391 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AES.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AESEncryptionLib\\Model\\AES.cs",
+              "RelativeDocumentMoniker": "AESEncryptionLib\\Model\\AES.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AESEncryptionLib\\Model\\AES.cs",
+              "RelativeToolTip": "AESEncryptionLib\\Model\\AES.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T17:01:35.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IAesConfig.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AESEncryptionLib\\Interfaces\\IAesConfig.cs",
+              "RelativeDocumentMoniker": "AESEncryptionLib\\Interfaces\\IAesConfig.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AESEncryptionLib\\Interfaces\\IAesConfig.cs",
+              "RelativeToolTip": "AESEncryptionLib\\Interfaces\\IAesConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T16:43:52.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "passwords.proto",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordBoxGrpcServer.Tests\\Protos\\passwords.proto",
+              "RelativeDocumentMoniker": "PasswordBoxGrpcServer.Tests\\Protos\\passwords.proto",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordBoxGrpcServer.Tests\\Protos\\passwords.proto",
+              "RelativeToolTip": "PasswordBoxGrpcServer.Tests\\Protos\\passwords.proto",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2024-10-06T11:22:40.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AesEncryptor.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Cryptographers\\AesEncryptor.cs",
+              "RelativeDocumentMoniker": "PasswordService\\Model\\Cryptographers\\AesEncryptor.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Cryptographers\\AesEncryptor.cs",
+              "RelativeToolTip": "PasswordService\\Model\\Cryptographers\\AesEncryptor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T09:05:24.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Password.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Entities\\Password.cs",
+              "RelativeDocumentMoniker": "PasswordService\\Model\\Entities\\Password.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Entities\\Password.cs",
+              "RelativeToolTip": "PasswordService\\Model\\Entities\\Password.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T08:58:39.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PasswordBoxGrpcServer.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj",
+              "RelativeDocumentMoniker": "PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj",
+              "RelativeToolTip": "PasswordBoxGrpcServer.Tests\\PasswordBoxGrpcServer.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-11T13:28:10.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "JSONReader.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\JSONReader.cs",
+              "RelativeDocumentMoniker": "PasswordService\\Model\\JSONReader.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\JSONReader.cs",
+              "RelativeToolTip": "PasswordService\\Model\\JSONReader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T09:08:05.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PasswordService.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\PasswordService.csproj",
+              "RelativeDocumentMoniker": "PasswordService\\PasswordService.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\PasswordService.csproj",
+              "RelativeToolTip": "PasswordService\\PasswordService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-23T05:59:17.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\appsettings.json",
+              "RelativeDocumentMoniker": "PasswordService\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\appsettings.json",
+              "RelativeToolTip": "PasswordService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-21T16:07:50.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PasswordService\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PasswordService\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-21T16:09:43.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IUserRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Services\\IUserRegistration.cs",
+              "RelativeDocumentMoniker": "AuthorisationService\\Interfaces\\Services\\IUserRegistration.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Services\\IUserRegistration.cs",
+              "RelativeToolTip": "AuthorisationService\\Interfaces\\Services\\IUserRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T06:29:18.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IUserAuthenticator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Services\\IUserAuthenticator.cs",
+              "RelativeDocumentMoniker": "AuthorisationService\\Interfaces\\Services\\IUserAuthenticator.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Services\\IUserAuthenticator.cs",
+              "RelativeToolTip": "AuthorisationService\\Interfaces\\Services\\IUserAuthenticator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T06:29:51.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IEncryptor.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Interfaces\\Cryptographers\\IEncryptor.cs",
+              "RelativeDocumentMoniker": "PasswordService\\Interfaces\\Cryptographers\\IEncryptor.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Interfaces\\Cryptographers\\IEncryptor.cs",
+              "RelativeToolTip": "PasswordService\\Interfaces\\Cryptographers\\IEncryptor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T08:47:34.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IEncryptor.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Cryptographers\\IEncryptor.cs",
+              "RelativeDocumentMoniker": "AuthorisationService\\Interfaces\\Cryptographers\\IEncryptor.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Cryptographers\\IEncryptor.cs",
+              "RelativeToolTip": "AuthorisationService\\Interfaces\\Cryptographers\\IEncryptor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T04:36:41.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UserAuthenticator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Services\\UserAuthenticator.cs",
+              "RelativeDocumentMoniker": "AuthorisationService\\Services\\UserAuthenticator.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Services\\UserAuthenticator.cs",
+              "RelativeToolTip": "AuthorisationService\\Services\\UserAuthenticator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T06:25:40.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "AuthorisationService\\Model\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Entities\\User.cs",
+              "RelativeToolTip": "AuthorisationService\\Model\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T15:37:14.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "AuthorisationService\\Model\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Model\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "AuthorisationService\\Model\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T15:39:40.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UserRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Services\\UserRegistration.cs",
+              "RelativeDocumentMoniker": "AuthorisationService\\Services\\UserRegistration.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Services\\UserRegistration.cs",
+              "RelativeToolTip": "AuthorisationService\\Services\\UserRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T06:26:07.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IRepositoryUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryUpdate.cs",
+              "RelativeDocumentMoniker": "RepositoryLib\\Interfaces\\Base\\IRepositoryUpdate.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryUpdate.cs",
+              "RelativeToolTip": "RepositoryLib\\Interfaces\\Base\\IRepositoryUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T08:52:14.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IRepositoryGetBy.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryGetBy.cs",
+              "RelativeDocumentMoniker": "RepositoryLib\\Interfaces\\Base\\IRepositoryGetBy.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryGetBy.cs",
+              "RelativeToolTip": "RepositoryLib\\Interfaces\\Base\\IRepositoryGetBy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T08:52:00.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IRepositoryGetAll.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryGetAll.cs",
+              "RelativeDocumentMoniker": "RepositoryLib\\Interfaces\\Base\\IRepositoryGetAll.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryGetAll.cs",
+              "RelativeToolTip": "RepositoryLib\\Interfaces\\Base\\IRepositoryGetAll.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T08:51:57.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IRepositoryAdd.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryAdd.cs",
+              "RelativeDocumentMoniker": "RepositoryLib\\Interfaces\\Base\\IRepositoryAdd.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryAdd.cs",
+              "RelativeToolTip": "RepositoryLib\\Interfaces\\Base\\IRepositoryAdd.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T08:51:14.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IRepositoryDelete.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryDelete.cs",
+              "RelativeDocumentMoniker": "RepositoryLib\\Interfaces\\Base\\IRepositoryDelete.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryDelete.cs",
+              "RelativeToolTip": "RepositoryLib\\Interfaces\\Base\\IRepositoryDelete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T08:51:54.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IRepositoryCollectionGetBy.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryCollectionGetBy.cs",
+              "RelativeDocumentMoniker": "RepositoryLib\\Interfaces\\Base\\IRepositoryCollectionGetBy.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\Interfaces\\Base\\IRepositoryCollectionGetBy.cs",
+              "RelativeToolTip": "RepositoryLib\\Interfaces\\Base\\IRepositoryCollectionGetBy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T08:51:47.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "RepositoryLib.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\RepositoryLib.csproj",
+              "RelativeDocumentMoniker": "RepositoryLib\\RepositoryLib.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\RepositoryLib\\RepositoryLib.csproj",
+              "RelativeToolTip": "RepositoryLib\\RepositoryLib.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-23T07:15:32.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AesConfig.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
+              "RelativeDocumentMoniker": "PasswordService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
+              "RelativeToolTip": "PasswordService\\Model\\Cryptographers\\Configs\\AesConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T09:07:01.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Microsoft.NET.Test.Sdk.Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\.nuget\\packages\\microsoft.net.test.sdk\\17.10.0\\build\\netcoreapp3.1\\Microsoft.NET.Test.Sdk.Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.net.test.sdk\\17.10.0\\build\\netcoreapp3.1\\Microsoft.NET.Test.Sdk.Program.cs",
+              "ToolTip": "C:\\Users\\user\\.nuget\\packages\\microsoft.net.test.sdk\\17.10.0\\build\\netcoreapp3.1\\Microsoft.NET.Test.Sdk.Program.cs",
+              "RelativeToolTip": "..\\..\\..\\.nuget\\packages\\microsoft.net.test.sdk\\17.10.0\\build\\netcoreapp3.1\\Microsoft.NET.Test.Sdk.Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T16:14:45.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "config.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\config.json",
+              "RelativeDocumentMoniker": "PasswordService\\config.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\config.json",
+              "RelativeToolTip": "PasswordService\\config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-21T16:18:24.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Notes\\PasswordBoxGrpcServer\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\Notes\\PasswordBoxGrpcServer\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Notes\\PasswordBoxGrpcServer\\appsettings.json",
+              "RelativeToolTip": "..\\..\\..\\Desktop\\Notes\\PasswordBoxGrpcServer\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-21T16:20:01.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\AppContext\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "PasswordService\\Model\\AppContext\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\AppContext\\ApplicationContext.cs",
+              "RelativeToolTip": "PasswordService\\Model\\AppContext\\ApplicationContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T09:03:22.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "PasswordValidator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Validators\\PasswordValidator.cs",
+              "RelativeDocumentMoniker": "PasswordService\\Model\\Validators\\PasswordValidator.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService\\Model\\Validators\\PasswordValidator.cs",
+              "RelativeToolTip": "PasswordService\\Model\\Validators\\PasswordValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T09:02:19.638Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 53,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "AuthorisationService\\Interfaces\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Interfaces\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "AuthorisationService\\Interfaces\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T15:44:24.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
               "Title": "config.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordBoxGrpcServer\\bin\\Debug\\net8.0\\config.json",
               "RelativeDocumentMoniker": "PasswordBoxGrpcServer\\bin\\Debug\\net8.0\\config.json",
