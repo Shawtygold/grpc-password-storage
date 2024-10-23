@@ -1,4 +1,4 @@
-﻿using PasswordBoxGrpcServer.Interfaces.Cryptographers.Configs;
+﻿using AESEncryptionLib.Interfaces;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -13,7 +13,7 @@ namespace PasswordBoxGrpcServer.Model.Cryptographers.Configs
 
         public AesConfig()
         {
-            var config = JSONReader.ReadAesConfig();
+            var config = JSONReader.ReadAesConfig("config.json");
 
             Key = Encoding.Default.GetBytes(config.Key);
             IV = Encoding.Default.GetBytes(config.IV);

@@ -1,5 +1,5 @@
-﻿using PasswordBoxGrpcServer.Interfaces.Repositories.Base;
-using PasswordBoxGrpcServer.Model.Entities;
+﻿using PasswordBoxGrpcServer.Model.Entities;
+using RepositoryLib.Interfaces.Base;
 
 namespace PasswordBoxGrpcServer.Interfaces.Repositories
 {

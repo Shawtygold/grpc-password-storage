@@ -1,15 +1,15 @@
+using AESEncryptionLib.Interfaces;
+using AESEncryptionLib.Model;
 using PasswordBoxGrpcServer.Interfaces.Cryptographers;
-using PasswordBoxGrpcServer.Interfaces.Cryptographers.Configs;
 using PasswordBoxGrpcServer.Interfaces.Repositories;
 using PasswordBoxGrpcServer.Interfaces.Services.Passwords;
-using PasswordBoxGrpcServer.Interfaces.Services.Users;
 using PasswordBoxGrpcServer.Model.AppContext;
 using PasswordBoxGrpcServer.Model.Cryptographers;
 using PasswordBoxGrpcServer.Model.Cryptographers.Configs;
 using PasswordBoxGrpcServer.Model.Repositories;
 using PasswordBoxGrpcServer.Services.Main;
 using PasswordBoxGrpcServer.Services.Passwords;
-using PasswordBoxGrpcServer.Services.Users;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,20 +18,15 @@ builder.Services.AddGrpc();
 
 // Repositories
 builder.Services.AddSingleton<ApplicationContext>();
-builder.Services.AddSingleton<IUserRepository, UserRepository>();
 builder.Services.AddSingleton<IPasswordRepository, PasswordRepository>();
-
-// User Service
-builder.Services.AddSingleton<IUserService, UserService>();
-builder.Services.AddSingleton<IUserRegistration, UserRegistration>();
-builder.Services.AddSingleton<IUserAuthenticator, UserAuthenticator>();
 
 // Password Service
 builder.Services.AddSingleton<IPasswordService, PasswordService>();
 
-// Encryptor
-builder.Services.AddSingleton<IAesConfig, AesConfig>();
-builder.Services.AddSingleton<IEncryptor, AESEncryptor>();
+// Encryption
+builder.Services.AddSingleton<IAesConfig, AesConfig>(); // Aes algorithm config
+builder.Services.AddSingleton<IAes, AES>(); // Base aes algorithm
+builder.Services.AddSingleton<IEncryptor, AesEncryptor>(); // A class of encryptor using the Aes algorithm and configuration
 
 var app = builder.Build();
 

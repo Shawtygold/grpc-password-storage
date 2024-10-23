@@ -1,4 +1,4 @@
-﻿using PasswordBoxGrpcServer.Interfaces.Cryptographers;
+﻿using AESEncryptionLib.Interfaces;
 using PasswordBoxGrpcServer.Interfaces.Repositories;
 using PasswordBoxGrpcServer.Interfaces.Services.Passwords;
 using PasswordBoxGrpcServer.Model.Entities;

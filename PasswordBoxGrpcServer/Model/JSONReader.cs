@@ -4,9 +4,9 @@ namespace PasswordBoxGrpcServer.Model
 {
     public class JSONReader
     {
-        public static AESConfigStructure ReadAesConfig()
+        public static AESConfigStructure ReadAesConfig(string configPath)
         {
-            using (StreamReader streamReader = new("config.json"))
+            using (StreamReader streamReader = new(configPath))
             {
                 string json = streamReader.ReadToEnd();
                 AESConfigStructure? data = JsonConvert.DeserializeObject<AESConfigStructure>(json);

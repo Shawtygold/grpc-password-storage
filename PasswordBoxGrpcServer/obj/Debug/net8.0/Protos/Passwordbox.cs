@@ -33,35 +33,24 @@ namespace PasswordBoxGrpcServer {
             "ChVDcmVhdGVQYXNzd29yZFJlcXVlc3QSEQoJdXNlckxvZ2luGAEgASgJEg0K",
             "BXRpdGxlGAIgASgJEg0KBWxvZ2luGAMgASgJEhUKDXBhc3N3b3JkVmFsdWUY",
             "BCABKAkSDQoFaW1hZ2UYBSABKAkSMAoKY29tbWVudGFyeRgGIAEoCzIcLmdv",
-            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSJDChNDcmVhdGVQYXNzd29yZFJl",
-            "cGx5EiwKCHBhc3N3b3JkGAEgASgLMhoucGFzc3dvcmRib3guUGFzc3dvcmRS",
-            "ZXBseSKsAQoVVXBkYXRlUGFzc3dvcmRSZXF1ZXN0EgoKAmlkGAEgASgFEhEK",
-            "CXVzZXJMb2dpbhgCIAEoCRINCgV0aXRsZRgDIAEoCRINCgVsb2dpbhgEIAEo",
-            "CRIVCg1wYXNzd29yZFZhbHVlGAUgASgJEg0KBWltYWdlGAYgASgJEjAKCmNv",
-            "bW1lbnRhcnkYByABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUi",
-            "QwoTVXBkYXRlUGFzc3dvcmRSZXBseRIsCghwYXNzd29yZBgBIAEoCzIaLnBh",
-            "c3N3b3JkYm94LlBhc3N3b3JkUmVwbHkiIwoVRGVsZXRlUGFzc3dvcmRSZXF1",
-            "ZXN0EgoKAmlkGAEgASgFIiYKE0RlbGV0ZVBhc3N3b3JkUmVwbHkSDwoHc3Vj",
-            "Y2VzcxgBIAEoCCIoChNHZXRQYXNzd29yZHNSZXF1ZXN0EhEKCXVzZXJMb2dp",
-            "bhgBIAEoCSJCChFHZXRQYXNzd29yZHNSZXBseRItCglwYXNzd29yZHMYASAD",
-            "KAsyGi5wYXNzd29yZGJveC5QYXNzd29yZFJlcGx5IqQBCg1QYXNzd29yZFJl",
-            "cGx5EgoKAmlkGAEgASgFEhEKCXVzZXJMb2dpbhgCIAEoCRINCgV0aXRsZRgD",
-            "IAEoCRINCgVsb2dpbhgEIAEoCRIVCg1wYXNzd29yZFZhbHVlGAUgASgJEg0K",
-            "BWltYWdlGAYgASgJEjAKCmNvbW1lbnRhcnkYByABKAsyHC5nb29nbGUucHJv",
-            "dG9idWYuU3RyaW5nVmFsdWUylwQKC1Bhc3N3b3JkQm94ElAKDFJlZ2lzdGVy",
-            "VXNlchIgLnBhc3N3b3JkYm94LlJlZ2lzdGVyVXNlclJlcXVlc3QaHi5wYXNz",
-            "d29yZGJveC5SZWdpc3RlclVzZXJSZXBseRJcChBBdXRoZW50aWNhdGVVc2Vy",
-            "EiQucGFzc3dvcmRib3guQXV0aGVudGljYXRlVXNlclJlcXVlc3QaIi5wYXNz",
-            "d29yZGJveC5BdXRoZW50aWNhdGVVc2VyUmVwbHkSVgoOQ3JlYXRlUGFzc3dv",
-            "cmQSIi5wYXNzd29yZGJveC5DcmVhdGVQYXNzd29yZFJlcXVlc3QaIC5wYXNz",
-            "d29yZGJveC5DcmVhdGVQYXNzd29yZFJlcGx5ElYKDlVwZGF0ZVBhc3N3b3Jk",
-            "EiIucGFzc3dvcmRib3guVXBkYXRlUGFzc3dvcmRSZXF1ZXN0GiAucGFzc3dv",
-            "cmRib3guVXBkYXRlUGFzc3dvcmRSZXBseRJWCg5EZWxldGVQYXNzd29yZBIi",
-            "LnBhc3N3b3JkYm94LkRlbGV0ZVBhc3N3b3JkUmVxdWVzdBogLnBhc3N3b3Jk",
-            "Ym94LkRlbGV0ZVBhc3N3b3JkUmVwbHkSUAoMR2V0UGFzc3dvcmRzEiAucGFz",
-            "c3dvcmRib3guR2V0UGFzc3dvcmRzUmVxdWVzdBoeLnBhc3N3b3JkYm94Lkdl",
-            "dFBhc3N3b3Jkc1JlcGx5QhiqAhVQYXNzd29yZEJveEdycGNTZXJ2ZXJiBnBy",
-            "b3RvMw=="));
+            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSJFChVVcGRhdGVQYXNzd29yZFJl",
+            "cXVlc3QSLAoIcGFzc3dvcmQYASABKAsyGi5wYXNzd29yZGJveC5QYXNzd29y",
+            "ZE1vZGVsIiMKFURlbGV0ZVBhc3N3b3JkUmVxdWVzdBIKCgJpZBgBIAEoBSIo",
+            "ChNHZXRQYXNzd29yZHNSZXF1ZXN0EhEKCXVzZXJMb2dpbhgBIAEoCSJCChFH",
+            "ZXRQYXNzd29yZHNSZXBseRItCglwYXNzd29yZHMYASADKAsyGi5wYXNzd29y",
+            "ZGJveC5QYXNzd29yZE1vZGVsIqQBCg1QYXNzd29yZE1vZGVsEgoKAmlkGAEg",
+            "ASgFEhEKCXVzZXJMb2dpbhgCIAEoCRINCgV0aXRsZRgDIAEoCRINCgVsb2dp",
+            "bhgEIAEoCRIVCg1wYXNzd29yZFZhbHVlGAUgASgJEg0KBWltYWdlGAYgASgJ",
+            "EjAKCmNvbW1lbnRhcnkYByABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
+            "VmFsdWUy1QIKC1Bhc3N3b3JkQm94ElAKDkNyZWF0ZVBhc3N3b3JkEiIucGFz",
+            "c3dvcmRib3guQ3JlYXRlUGFzc3dvcmRSZXF1ZXN0GhoucGFzc3dvcmRib3gu",
+            "UGFzc3dvcmRNb2RlbBJQCg5VcGRhdGVQYXNzd29yZBIiLnBhc3N3b3JkYm94",
+            "LlVwZGF0ZVBhc3N3b3JkUmVxdWVzdBoaLnBhc3N3b3JkYm94LlBhc3N3b3Jk",
+            "TW9kZWwSUAoORGVsZXRlUGFzc3dvcmQSIi5wYXNzd29yZGJveC5EZWxldGVQ",
+            "YXNzd29yZFJlcXVlc3QaGi5wYXNzd29yZGJveC5QYXNzd29yZE1vZGVsElAK",
+            "DEdldFBhc3N3b3JkcxIgLnBhc3N3b3JkYm94LkdldFBhc3N3b3Jkc1JlcXVl",
+            "c3QaHi5wYXNzd29yZGJveC5HZXRQYXNzd29yZHNSZXBseUIYqgIVUGFzc3dv",
+            "cmRCb3hHcnBjU2VydmVyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -70,14 +59,11 @@ namespace PasswordBoxGrpcServer {
             new pbr::GeneratedClrTypeInfo(typeof(global::PasswordBoxGrpcServer.AuthenticateUserRequest), global::PasswordBoxGrpcServer.AuthenticateUserRequest.Parser, new[]{ "Login", "Password" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PasswordBoxGrpcServer.AuthenticateUserReply), global::PasswordBoxGrpcServer.AuthenticateUserReply.Parser, new[]{ "Success" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PasswordBoxGrpcServer.CreatePasswordRequest), global::PasswordBoxGrpcServer.CreatePasswordRequest.Parser, new[]{ "UserLogin", "Title", "Login", "PasswordValue", "Image", "Commentary" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PasswordBoxGrpcServer.CreatePasswordReply), global::PasswordBoxGrpcServer.CreatePasswordReply.Parser, new[]{ "Password" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PasswordBoxGrpcServer.UpdatePasswordRequest), global::PasswordBoxGrpcServer.UpdatePasswordRequest.Parser, new[]{ "Id", "UserLogin", "Title", "Login", "PasswordValue", "Image", "Commentary" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PasswordBoxGrpcServer.UpdatePasswordReply), global::PasswordBoxGrpcServer.UpdatePasswordReply.Parser, new[]{ "Password" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PasswordBoxGrpcServer.UpdatePasswordRequest), global::PasswordBoxGrpcServer.UpdatePasswordRequest.Parser, new[]{ "Password" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PasswordBoxGrpcServer.DeletePasswordRequest), global::PasswordBoxGrpcServer.DeletePasswordRequest.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PasswordBoxGrpcServer.DeletePasswordReply), global::PasswordBoxGrpcServer.DeletePasswordReply.Parser, new[]{ "Success" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PasswordBoxGrpcServer.GetPasswordsRequest), global::PasswordBoxGrpcServer.GetPasswordsRequest.Parser, new[]{ "UserLogin" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PasswordBoxGrpcServer.GetPasswordsReply), global::PasswordBoxGrpcServer.GetPasswordsReply.Parser, new[]{ "Passwords" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PasswordBoxGrpcServer.PasswordReply), global::PasswordBoxGrpcServer.PasswordReply.Parser, new[]{ "Id", "UserLogin", "Title", "Login", "PasswordValue", "Image", "Commentary" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::PasswordBoxGrpcServer.PasswordModel), global::PasswordBoxGrpcServer.PasswordModel.Parser, new[]{ "Id", "UserLogin", "Title", "Login", "PasswordValue", "Image", "Commentary" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1302,205 +1288,6 @@ namespace PasswordBoxGrpcServer {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class CreatePasswordReply : pb::IMessage<CreatePasswordReply>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<CreatePasswordReply> _parser = new pb::MessageParser<CreatePasswordReply>(() => new CreatePasswordReply());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<CreatePasswordReply> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::PasswordBoxGrpcServer.PasswordboxReflection.Descriptor.MessageTypes[5]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CreatePasswordReply() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CreatePasswordReply(CreatePasswordReply other) : this() {
-      password_ = other.password_ != null ? other.password_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CreatePasswordReply Clone() {
-      return new CreatePasswordReply(this);
-    }
-
-    /// <summary>Field number for the "password" field.</summary>
-    public const int PasswordFieldNumber = 1;
-    private global::PasswordBoxGrpcServer.PasswordReply password_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PasswordBoxGrpcServer.PasswordReply Password {
-      get { return password_; }
-      set {
-        password_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as CreatePasswordReply);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(CreatePasswordReply other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(Password, other.Password)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (password_ != null) hash ^= Password.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (password_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Password);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (password_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Password);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (password_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Password);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(CreatePasswordReply other) {
-      if (other == null) {
-        return;
-      }
-      if (other.password_ != null) {
-        if (password_ == null) {
-          Password = new global::PasswordBoxGrpcServer.PasswordReply();
-        }
-        Password.MergeFrom(other.Password);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (password_ == null) {
-              Password = new global::PasswordBoxGrpcServer.PasswordReply();
-            }
-            input.ReadMessage(Password);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (password_ == null) {
-              Password = new global::PasswordBoxGrpcServer.PasswordReply();
-            }
-            input.ReadMessage(Password);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UpdatePasswordRequest : pb::IMessage<UpdatePasswordRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1515,7 +1302,7 @@ namespace PasswordBoxGrpcServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PasswordBoxGrpcServer.PasswordboxReflection.Descriptor.MessageTypes[6]; }
+      get { return global::PasswordBoxGrpcServer.PasswordboxReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1535,13 +1322,7 @@ namespace PasswordBoxGrpcServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UpdatePasswordRequest(UpdatePasswordRequest other) : this() {
-      id_ = other.id_;
-      userLogin_ = other.userLogin_;
-      title_ = other.title_;
-      login_ = other.login_;
-      passwordValue_ = other.passwordValue_;
-      image_ = other.image_;
-      Commentary = other.Commentary;
+      password_ = other.password_ != null ? other.password_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1551,91 +1332,17 @@ namespace PasswordBoxGrpcServer {
       return new UpdatePasswordRequest(this);
     }
 
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
+    /// <summary>Field number for the "password" field.</summary>
+    public const int PasswordFieldNumber = 1;
+    private global::PasswordBoxGrpcServer.PasswordModel password_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Id {
-      get { return id_; }
+    public global::PasswordBoxGrpcServer.PasswordModel Password {
+      get { return password_; }
       set {
-        id_ = value;
+        password_ = value;
       }
     }
-
-    /// <summary>Field number for the "userLogin" field.</summary>
-    public const int UserLoginFieldNumber = 2;
-    private string userLogin_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string UserLogin {
-      get { return userLogin_; }
-      set {
-        userLogin_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "title" field.</summary>
-    public const int TitleFieldNumber = 3;
-    private string title_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Title {
-      get { return title_; }
-      set {
-        title_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "login" field.</summary>
-    public const int LoginFieldNumber = 4;
-    private string login_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Login {
-      get { return login_; }
-      set {
-        login_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "passwordValue" field.</summary>
-    public const int PasswordValueFieldNumber = 5;
-    private string passwordValue_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string PasswordValue {
-      get { return passwordValue_; }
-      set {
-        passwordValue_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "image" field.</summary>
-    public const int ImageFieldNumber = 6;
-    private string image_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Image {
-      get { return image_; }
-      set {
-        image_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "commentary" field.</summary>
-    public const int CommentaryFieldNumber = 7;
-    private static readonly pb::FieldCodec<string> _single_commentary_codec = pb::FieldCodec.ForClassWrapper<string>(58);
-    private string commentary_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Commentary {
-      get { return commentary_; }
-      set {
-        commentary_ = value;
-      }
-    }
-
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1646,346 +1353,6 @@ namespace PasswordBoxGrpcServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(UpdatePasswordRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Id != other.Id) return false;
-      if (UserLogin != other.UserLogin) return false;
-      if (Title != other.Title) return false;
-      if (Login != other.Login) return false;
-      if (PasswordValue != other.PasswordValue) return false;
-      if (Image != other.Image) return false;
-      if (Commentary != other.Commentary) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (UserLogin.Length != 0) hash ^= UserLogin.GetHashCode();
-      if (Title.Length != 0) hash ^= Title.GetHashCode();
-      if (Login.Length != 0) hash ^= Login.GetHashCode();
-      if (PasswordValue.Length != 0) hash ^= PasswordValue.GetHashCode();
-      if (Image.Length != 0) hash ^= Image.GetHashCode();
-      if (commentary_ != null) hash ^= Commentary.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (UserLogin.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(UserLogin);
-      }
-      if (Title.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Title);
-      }
-      if (Login.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(Login);
-      }
-      if (PasswordValue.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(PasswordValue);
-      }
-      if (Image.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(Image);
-      }
-      if (commentary_ != null) {
-        _single_commentary_codec.WriteTagAndValue(output, Commentary);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (UserLogin.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(UserLogin);
-      }
-      if (Title.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Title);
-      }
-      if (Login.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(Login);
-      }
-      if (PasswordValue.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(PasswordValue);
-      }
-      if (Image.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(Image);
-      }
-      if (commentary_ != null) {
-        _single_commentary_codec.WriteTagAndValue(ref output, Commentary);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
-      }
-      if (UserLogin.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserLogin);
-      }
-      if (Title.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Title);
-      }
-      if (Login.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Login);
-      }
-      if (PasswordValue.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PasswordValue);
-      }
-      if (Image.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Image);
-      }
-      if (commentary_ != null) {
-        size += _single_commentary_codec.CalculateSizeWithTag(Commentary);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(UpdatePasswordRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
-      if (other.UserLogin.Length != 0) {
-        UserLogin = other.UserLogin;
-      }
-      if (other.Title.Length != 0) {
-        Title = other.Title;
-      }
-      if (other.Login.Length != 0) {
-        Login = other.Login;
-      }
-      if (other.PasswordValue.Length != 0) {
-        PasswordValue = other.PasswordValue;
-      }
-      if (other.Image.Length != 0) {
-        Image = other.Image;
-      }
-      if (other.commentary_ != null) {
-        if (commentary_ == null || other.Commentary != "") {
-          Commentary = other.Commentary;
-        }
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            UserLogin = input.ReadString();
-            break;
-          }
-          case 26: {
-            Title = input.ReadString();
-            break;
-          }
-          case 34: {
-            Login = input.ReadString();
-            break;
-          }
-          case 42: {
-            PasswordValue = input.ReadString();
-            break;
-          }
-          case 50: {
-            Image = input.ReadString();
-            break;
-          }
-          case 58: {
-            string value = _single_commentary_codec.Read(input);
-            if (commentary_ == null || value != "") {
-              Commentary = value;
-            }
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            UserLogin = input.ReadString();
-            break;
-          }
-          case 26: {
-            Title = input.ReadString();
-            break;
-          }
-          case 34: {
-            Login = input.ReadString();
-            break;
-          }
-          case 42: {
-            PasswordValue = input.ReadString();
-            break;
-          }
-          case 50: {
-            Image = input.ReadString();
-            break;
-          }
-          case 58: {
-            string value = _single_commentary_codec.Read(ref input);
-            if (commentary_ == null || value != "") {
-              Commentary = value;
-            }
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class UpdatePasswordReply : pb::IMessage<UpdatePasswordReply>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<UpdatePasswordReply> _parser = new pb::MessageParser<UpdatePasswordReply>(() => new UpdatePasswordReply());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<UpdatePasswordReply> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::PasswordBoxGrpcServer.PasswordboxReflection.Descriptor.MessageTypes[7]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public UpdatePasswordReply() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public UpdatePasswordReply(UpdatePasswordReply other) : this() {
-      password_ = other.password_ != null ? other.password_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public UpdatePasswordReply Clone() {
-      return new UpdatePasswordReply(this);
-    }
-
-    /// <summary>Field number for the "password" field.</summary>
-    public const int PasswordFieldNumber = 1;
-    private global::PasswordBoxGrpcServer.PasswordReply password_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::PasswordBoxGrpcServer.PasswordReply Password {
-      get { return password_; }
-      set {
-        password_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as UpdatePasswordReply);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(UpdatePasswordReply other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -2058,13 +1425,13 @@ namespace PasswordBoxGrpcServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(UpdatePasswordReply other) {
+    public void MergeFrom(UpdatePasswordRequest other) {
       if (other == null) {
         return;
       }
       if (other.password_ != null) {
         if (password_ == null) {
-          Password = new global::PasswordBoxGrpcServer.PasswordReply();
+          Password = new global::PasswordBoxGrpcServer.PasswordModel();
         }
         Password.MergeFrom(other.Password);
       }
@@ -2085,7 +1452,7 @@ namespace PasswordBoxGrpcServer {
             break;
           case 10: {
             if (password_ == null) {
-              Password = new global::PasswordBoxGrpcServer.PasswordReply();
+              Password = new global::PasswordBoxGrpcServer.PasswordModel();
             }
             input.ReadMessage(Password);
             break;
@@ -2107,7 +1474,7 @@ namespace PasswordBoxGrpcServer {
             break;
           case 10: {
             if (password_ == null) {
-              Password = new global::PasswordBoxGrpcServer.PasswordReply();
+              Password = new global::PasswordBoxGrpcServer.PasswordModel();
             }
             input.ReadMessage(Password);
             break;
@@ -2134,7 +1501,7 @@ namespace PasswordBoxGrpcServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PasswordBoxGrpcServer.PasswordboxReflection.Descriptor.MessageTypes[8]; }
+      get { return global::PasswordBoxGrpcServer.PasswordboxReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2310,196 +1677,6 @@ namespace PasswordBoxGrpcServer {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class DeletePasswordReply : pb::IMessage<DeletePasswordReply>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<DeletePasswordReply> _parser = new pb::MessageParser<DeletePasswordReply>(() => new DeletePasswordReply());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<DeletePasswordReply> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::PasswordBoxGrpcServer.PasswordboxReflection.Descriptor.MessageTypes[9]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public DeletePasswordReply() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public DeletePasswordReply(DeletePasswordReply other) : this() {
-      success_ = other.success_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public DeletePasswordReply Clone() {
-      return new DeletePasswordReply(this);
-    }
-
-    /// <summary>Field number for the "success" field.</summary>
-    public const int SuccessFieldNumber = 1;
-    private bool success_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Success {
-      get { return success_; }
-      set {
-        success_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as DeletePasswordReply);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(DeletePasswordReply other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Success != other.Success) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Success != false) hash ^= Success.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Success != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(Success);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Success != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(Success);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (Success != false) {
-        size += 1 + 1;
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(DeletePasswordReply other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Success != false) {
-        Success = other.Success;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Success = input.ReadBool();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Success = input.ReadBool();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetPasswordsRequest : pb::IMessage<GetPasswordsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2514,7 +1691,7 @@ namespace PasswordBoxGrpcServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PasswordBoxGrpcServer.PasswordboxReflection.Descriptor.MessageTypes[10]; }
+      get { return global::PasswordBoxGrpcServer.PasswordboxReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2704,7 +1881,7 @@ namespace PasswordBoxGrpcServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PasswordBoxGrpcServer.PasswordboxReflection.Descriptor.MessageTypes[11]; }
+      get { return global::PasswordBoxGrpcServer.PasswordboxReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2736,12 +1913,12 @@ namespace PasswordBoxGrpcServer {
 
     /// <summary>Field number for the "passwords" field.</summary>
     public const int PasswordsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::PasswordBoxGrpcServer.PasswordReply> _repeated_passwords_codec
-        = pb::FieldCodec.ForMessage(10, global::PasswordBoxGrpcServer.PasswordReply.Parser);
-    private readonly pbc::RepeatedField<global::PasswordBoxGrpcServer.PasswordReply> passwords_ = new pbc::RepeatedField<global::PasswordBoxGrpcServer.PasswordReply>();
+    private static readonly pb::FieldCodec<global::PasswordBoxGrpcServer.PasswordModel> _repeated_passwords_codec
+        = pb::FieldCodec.ForMessage(10, global::PasswordBoxGrpcServer.PasswordModel.Parser);
+    private readonly pbc::RepeatedField<global::PasswordBoxGrpcServer.PasswordModel> passwords_ = new pbc::RepeatedField<global::PasswordBoxGrpcServer.PasswordModel>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::PasswordBoxGrpcServer.PasswordReply> Passwords {
+    public pbc::RepeatedField<global::PasswordBoxGrpcServer.PasswordModel> Passwords {
       get { return passwords_; }
     }
 
@@ -2869,21 +2046,21 @@ namespace PasswordBoxGrpcServer {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class PasswordReply : pb::IMessage<PasswordReply>
+  public sealed partial class PasswordModel : pb::IMessage<PasswordModel>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<PasswordReply> _parser = new pb::MessageParser<PasswordReply>(() => new PasswordReply());
+    private static readonly pb::MessageParser<PasswordModel> _parser = new pb::MessageParser<PasswordModel>(() => new PasswordModel());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<PasswordReply> Parser { get { return _parser; } }
+    public static pb::MessageParser<PasswordModel> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::PasswordBoxGrpcServer.PasswordboxReflection.Descriptor.MessageTypes[12]; }
+      get { return global::PasswordBoxGrpcServer.PasswordboxReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2894,7 +2071,7 @@ namespace PasswordBoxGrpcServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PasswordReply() {
+    public PasswordModel() {
       OnConstruction();
     }
 
@@ -2902,7 +2079,7 @@ namespace PasswordBoxGrpcServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PasswordReply(PasswordReply other) : this() {
+    public PasswordModel(PasswordModel other) : this() {
       id_ = other.id_;
       userLogin_ = other.userLogin_;
       title_ = other.title_;
@@ -2915,8 +2092,8 @@ namespace PasswordBoxGrpcServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PasswordReply Clone() {
-      return new PasswordReply(this);
+    public PasswordModel Clone() {
+      return new PasswordModel(this);
     }
 
     /// <summary>Field number for the "id" field.</summary>
@@ -3008,12 +2185,12 @@ namespace PasswordBoxGrpcServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as PasswordReply);
+      return Equals(other as PasswordModel);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(PasswordReply other) {
+    public bool Equals(PasswordModel other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -3162,7 +2339,7 @@ namespace PasswordBoxGrpcServer {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(PasswordReply other) {
+    public void MergeFrom(PasswordModel other) {
       if (other == null) {
         return;
       }

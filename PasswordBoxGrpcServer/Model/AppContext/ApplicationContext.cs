@@ -6,7 +6,6 @@ namespace PasswordBoxGrpcServer.Model.AppContext
 {
     public class ApplicationContext : DbContext
     {
-        public DbSet<User> Users => Set<User>();
         public DbSet<Password> Passwords => Set<Password>();
 
         public ApplicationContext()
