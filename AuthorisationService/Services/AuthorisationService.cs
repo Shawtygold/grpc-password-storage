@@ -4,6 +4,7 @@ using FluentValidation;
 using Google.Protobuf.WellKnownTypes;
 using Google.Rpc;
 using Grpc.Core;
+using RpcExceptionHandlersLib;
 
 namespace AuthorisationService.Services
 {
@@ -32,34 +33,12 @@ namespace AuthorisationService.Services
             catch (ValidationException ex)
             {
                 _logger.LogInformation("Invalid user arguments: " + ex.Message);
-                throw new Google.Rpc.Status()
-                {
-                    Code = (int)StatusCode.InvalidArgument,
-                    Message = "Bad Request",
-                    Details =
-                    {
-                        Any.Pack(new BadRequest
-                        {
-                            FieldViolations =
-                            {
-                                ex.Errors.Select(item => new BadRequest.Types.FieldViolation(){Field = item.PropertyName, Description = item.ErrorMessage})
-                            }
-                        })
-                    }
-                }.ToRpcException();
+                RpcExceptionThrower.Handle(ex);            
             }
             catch (Exception ex)
             {
                 _logger.LogError((int)StatusCode.Internal, ex, "Internal Error");
-                throw new Google.Rpc.Status()
-                {
-                    Code = (int)StatusCode.Internal,
-                    Message = "Debug Info",
-                    Details =
-                    {
-                        Any.Pack(ex.ToRpcDebugInfo())
-                    }
-                }.ToRpcException();
+                RpcExceptionThrower.Handle(ex);
             }
 
             return reply;
