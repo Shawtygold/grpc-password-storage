@@ -33,6 +33,10 @@ namespace AuthorisationService.Services
                 _logger.LogInformation("Invalid user arguments: " + ex.Message);
                 RpcExceptionThrower.Handle(ex);            
             }
+            catch (RpcException ex) when (ex.Status.StatusCode == StatusCode.NotFound)
+            {
+                throw;
+            }
             catch (Exception ex)
             {
                 _logger.LogError((int)StatusCode.Internal, ex, "Internal Error");
@@ -42,14 +46,15 @@ namespace AuthorisationService.Services
             return reply;
         }
 
-        public override async Task<RegisterUserReply> RegisterUser(RegisterUserRequest request, ServerCallContext context)
+        public override async Task<UserReply> RegisterUser(RegisterUserRequest request, ServerCallContext context)
         {
-            RegisterUserReply reply = new();
+            UserReply reply = new();
 
             try
             {
                 User user = new(request.Login, request.Passsword);
-                reply.Success = await _userRegistration.RegisterAsync(user);
+                User registeredUser = await _userRegistration.RegisterAsync(user);
+                reply = new UserReply() { Id = registeredUser.Id, Login = registeredUser.Login, Password = registeredUser.Password };
             }
             catch (ValidationException ex)
             {
