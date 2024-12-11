@@ -13,13 +13,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddGrpc();
 
 // Repositories
-builder.Services.AddSingleton<ApplicationContext>();
-builder.Services.AddSingleton<IPasswordRepository, PasswordRepository>();
+builder.Services.AddDbContext<ApplicationContext>();
+builder.Services.AddScoped<IPasswordRepository, PasswordRepository>();
 
 // Encryption
 builder.Services.AddSingleton<IAesConfig, AesConfig>(); // Aes algorithm config
-builder.Services.AddSingleton<IAes, AES>(); // Base aes algorithm
-builder.Services.AddSingleton<IEncryptor, AesEncryptor>(); // A class of encryptor using the Aes algorithm and configuration
+builder.Services.AddScoped<IAes, AES>(); // Base aes algorithm
+builder.Services.AddScoped<IEncryptor, AesEncryptor>(); // A class of encryptor using the Aes algorithm and configuration
+builder.Services.AddScoped<IEncryptionHelper, EncryptionHelper>();
 
 var app = builder.Build();
 
