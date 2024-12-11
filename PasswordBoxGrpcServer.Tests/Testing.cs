@@ -1,14 +1,12 @@
 ﻿using AESEncryptionLib.Model;
+using AuthorisationServiceTest;
 using Grpc.Net.Client;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore;
 using PasswordService.Interfaces.Cryptographers;
 using PasswordService.Model;
 using PasswordService.Model.Cryptographers;
 using PasswordService.Model.Cryptographers.Configs;
 using PasswordServiceTest;
 using Xunit;
-using Microsoft.AspNetCore.Builder;
 
 
 namespace PasswordBoxGrpcServer.Tests
@@ -63,6 +61,25 @@ namespace PasswordBoxGrpcServer.Tests
 
             //Assert
             Assert.Equal(createPasswordRequest.Title, respone.Title);
+        }
+
+        [Fact]
+        public async Task ReegisterUser()
+        {
+            //Arrange
+            var channel = GrpcChannel.ForAddress("http://localhost:5161");
+            var client = new AuthorisationProtoService.AuthorisationProtoServiceClient(channel);
+            RegisterUserRequest registerUserRequest = new()
+            {
+                Login = "Adminka",
+                Passsword = "Adminka123"
+            };
+
+            //Act
+            var reply = client.RegisterUserAsync(registerUserRequest);
+
+            //Assert
+            //Assert.Equal(,)
         }
     }
 }
