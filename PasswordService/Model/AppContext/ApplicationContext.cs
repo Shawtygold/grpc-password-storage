@@ -20,6 +20,6 @@ namespace PasswordService.Model.AppContext
                         .Build();
 
             optionsBuilder.UseSqlite(config.GetConnectionString("DefaultConnection"));
-        }
+        }  
     }
 }

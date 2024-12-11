@@ -32,14 +32,19 @@ namespace PasswordService.Model.Repositories
             await _dbContext.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Password>> GetCollectionBy(Expression<Func<Password, bool>> expression)
+        public async Task<IEnumerable<Password>> GetCollectionByAsync(Expression<Func<Password, bool>> expression)
         {
             return await Task.Run(() => _dbContext.Passwords.AsNoTracking().Where(expression));
         }
 
+        public async Task<Password?> GetByIDAsync(int entityId)
+        {
+            return await _dbContext.Passwords.FindAsync(entityId);
+        }
+
         public async Task<Password?> GetByAsync(Expression<Func<Password, bool>> expression)
         {
-           return await _dbContext.Passwords.FindAsync(expression);
+            return await _dbContext.Passwords.FirstOrDefaultAsync(expression);         
         }
         public void Dispose()
         {
