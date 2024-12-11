@@ -7,6 +7,7 @@ namespace PasswordService.Interfaces.Repositories
         IRepositoryAdd<Password>,
         IRepositoryUpdate<Password>,
         IRepositoryGetBy<Password>,
+        IRepositoryGetByID<Password>,
         IRepositoryDelete,
         IRepositoryCollectionGetBy<Password>,
         IDisposable
