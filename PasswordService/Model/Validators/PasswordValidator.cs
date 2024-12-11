@@ -8,7 +8,7 @@ namespace PasswordService.Model.Validators
         public PasswordValidator()
         {
             RuleFor(p => p.Id).NotNull().GreaterThan(-1);
-            RuleFor(p => p.UserLogin).NotNull();
+            RuleFor(p => p.UserId).NotNull();
             RuleFor(p => p.Title).NotNull();
             RuleFor(p => p.Login).NotNull();
             RuleFor(p => p.PasswordValue).NotNull();

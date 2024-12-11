@@ -9,13 +9,13 @@ namespace PasswordService.Model.Entities
     {
         private readonly IValidator<Password> _validator;
 
-        public Password(string userLogin, string title, string login, string passwordValue, string commentary, string image) : this(0, userLogin, title, login, passwordValue, commentary, image)
+        public Password(int userId, string title, string login, string passwordValue, string commentary, string image) : this(0, userId, title, login, passwordValue, commentary, image)
         { }
 
-        public Password(int id, string userLogin, string title, string login, string passwordValue, string commentary, string image)
+        public Password(int id, int userId, string title, string login, string passwordValue, string commentary, string image)
         {
             Id = id;
-            UserLogin = userLogin;
+            UserId = userId;
             Title = title;
             Login = login;
             PasswordValue = passwordValue;
@@ -29,7 +29,7 @@ namespace PasswordService.Model.Entities
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
-        public string UserLogin { get; set; } // содержит информацию о пользователе, который создал пароль
+        public int UserId { get; set; } // содержит информацию о пользователе, который создал пароль
         [Required]
         public string Title { get; set; }
         [Required]
