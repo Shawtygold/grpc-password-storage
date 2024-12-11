@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using Grpc.Core;
+using PasswordService.Enums.EventId;
 using PasswordService.Interfaces.Cryptographers;
 using PasswordService.Interfaces.Repositories;
 using PasswordService.Model.Entities;
@@ -12,12 +13,14 @@ namespace PasswordService.Services
         private readonly ILogger<PasswordService> _logger;
         private readonly IPasswordRepository _passwordRepository;
         private readonly IEncryptor _encryptor;
+        private readonly IEncryptionHelper _encryptionHelper;
         
-        public PasswordService(ILogger<PasswordService> logger, IPasswordRepository passwordRepository, IEncryptor encryptor)
+        public PasswordService(ILogger<PasswordService> logger, IPasswordRepository passwordRepository, IEncryptor encryptor, IEncryptionHelper encryptionHelper)
         {
             _logger = logger;
             _passwordRepository = passwordRepository;
             _encryptor = encryptor;
+            _encryptionHelper = encryptionHelper;
         }
 
         public override async Task<PasswordModel> CreatePassword(CreatePasswordRequest request, ServerCallContext context)
@@ -26,13 +29,13 @@ namespace PasswordService.Services
 
             try
             {
-                Password password = new(request.UserLogin, request.Title, request.Login, request.PasswordValue, request.Commentary, request.Image);
-                await EncryptPasswordAsync(password);
+                Password password = new(request.UserId, request.Title, request.Login, request.PasswordValue, request.Commentary, request.Image);
+                await _encryptionHelper.EncryptAsync(_encryptor, password);
                 await _passwordRepository.AddAsync(password);
-                await DecryptPasswordAsync(password);
+                await _encryptionHelper.DecryptAsync(_encryptor, password);
 
                 reply.Id = password.Id;
-                reply.UserLogin = password.UserLogin;
+                reply.UserId = password.UserId;
                 reply.Title = password.Title;
                 reply.Login = password.Login;
                 reply.PasswordValue = password.PasswordValue;
@@ -50,6 +53,7 @@ namespace PasswordService.Services
                 RpcExceptionThrower.Handle(ex);
             }
 
+            _logger.LogInformation(new EventId((int)PasswordEvent.CreatePassword, nameof(CreatePassword)), $"Password for userId {reply.UserId} has been created | Password Id:{reply.Id}");
             return reply;
         }
 
@@ -59,13 +63,13 @@ namespace PasswordService.Services
 
             try
             {
-                Password password = new(request.Password.Id, request.Password.UserLogin, request.Password.Title, request.Password.Login, request.Password.PasswordValue, request.Password.Commentary, request.Password.Image);
-                await EncryptPasswordAsync(password);
+                Password password = new(request.Password.Id, request.Password.UserId, request.Password.Title, request.Password.Login, request.Password.PasswordValue, request.Password.Commentary, request.Password.Image);
+                await _encryptionHelper.EncryptAsync(_encryptor, password);
                 await _passwordRepository.UpdateAsync(password);
-                await DecryptPasswordAsync(password);
+                await _encryptionHelper.DecryptAsync(_encryptor, password);
 
                 reply.Id = password.Id;
-                reply.UserLogin = password.UserLogin;
+                reply.UserId = password.UserId;
                 reply.Title = password.Title;
                 reply.Login = password.Login;
                 reply.PasswordValue = password.PasswordValue;
@@ -83,6 +87,7 @@ namespace PasswordService.Services
                 RpcExceptionThrower.Handle(ex);
             }
 
+            _logger.LogInformation(new EventId((int)PasswordEvent.UpdatePassword, nameof(UpdatePassword)), $"Password for userId {reply.UserId} has been updated | Password Id:{reply.Id}");
             return reply;
         }
 
@@ -92,13 +97,14 @@ namespace PasswordService.Services
 
             try
             {
-                Password? password = await _passwordRepository.GetByAsync(p => p.Id == request.Id)
-                    ?? throw new RpcException(new Grpc.Core.Status(StatusCode.NotFound, "Password with this ID does not exist"));
+                Password? password = await _passwordRepository.GetByIDAsync(request.Id)
+                    ?? throw new RpcException(new Status(StatusCode.NotFound, "Password with this ID does not exist"));
                 
                 await _passwordRepository.DeleteAsync(password.Id);
+                await _encryptionHelper.DecryptAsync(_encryptor, password);
 
                 reply.Id = password.Id;
-                reply.UserLogin = password.UserLogin;
+                reply.UserId = password.UserId;
                 reply.Title = password.Title;
                 reply.Login = password.Login;
                 reply.PasswordValue = password.PasswordValue;
@@ -111,30 +117,30 @@ namespace PasswordService.Services
                 RpcExceptionThrower.Handle(ex);
             }
 
+            _logger.LogInformation(new EventId((int)PasswordEvent.DeletePassword, nameof(DeletePassword)), $"Password for id:{reply.Id} has been deleted");
             return reply;
         }
-
-        public override async Task<GetPasswordsReply> GetPasswords(GetPasswordsRequest request, ServerCallContext context)
+        
+        public override async Task<PasswordModels> GetPasswordsBy(GetPasswordsByRequest request, ServerCallContext context)
         {
             List<Password> passwords;
-            GetPasswordsReply reply = new();
+            PasswordModels reply = new();
 
             try
             {
-                string encryptedUserLogin = await _encryptor.EncryptAsync(request.UserLogin);
-                passwords = new(await _passwordRepository.GetCollectionBy(p => p.UserLogin == encryptedUserLogin));
+                passwords = new(await _passwordRepository.GetCollectionByAsync(p => p.UserId == request.UserId));
 
                 var passwordList = passwords.Select(item => new PasswordModel()
                 {
                     Id = item.Id,
-                    UserLogin = item.UserLogin,
+                    UserId = item.UserId,
                     Title = item.Title,
                     Login = item.Login,
                     PasswordValue = item.PasswordValue,
                     Commentary = item.Commentary,
                     Image = item.Image
                 }).ToList();
-
+                
                 reply.Passwords.AddRange(passwordList);
             }
             catch (Exception ex)
@@ -143,28 +149,8 @@ namespace PasswordService.Services
                 RpcExceptionThrower.Handle(ex);
             }
 
+            _logger.LogInformation(new EventId((int)PasswordEvent.GetPasswordsBy, nameof(GetPasswordsBy)), $"Passwords for user {request.UserId} were successfully received");
             return reply;
-        }
-
-        private async Task EncryptPasswordAsync(Password password)
-        {
-            foreach (var property in typeof(Password).GetProperties())
-            {
-                if (property.PropertyType != typeof(string) || string.IsNullOrEmpty((string?)property.GetValue(password)))
-                    continue;
-
-                property.SetValue(password, await _encryptor.EncryptAsync((string)property.GetValue(password)));
-            }
-        }
-        private async Task DecryptPasswordAsync(Password password)
-        {
-            foreach (var property in typeof(Password).GetProperties())
-            {
-                if (property.PropertyType != typeof(string) || string.IsNullOrEmpty((string?)property.GetValue(password)))
-                    continue;
-
-                property.SetValue(password, await _encryptor.DecryptAsync((string)property.GetValue(password)));
-            }
         }
     }
 }
