@@ -19,7 +19,7 @@ namespace AuthorisationService.Services
             _userRegistration = userRegistration;
         }
 
-        public override async Task<AuthenticateUserReply> AuthenticateUser(AuthenticateUserRequest request, ServerCallContext context)
+        public override async Task<AuthenticateUserReply> AuthenticateUser(UserRequest request, ServerCallContext context)
         {
             AuthenticateUserReply reply = new();
 
@@ -43,16 +43,18 @@ namespace AuthorisationService.Services
                 RpcExceptionThrower.Handle(ex);
             }
 
+            _logger.LogInformation(new EventId(1011, nameof(AuthenticateUser)), $"User {request.Login} authenticated");
+
             return reply;
         }
 
-        public override async Task<UserReply> RegisterUser(RegisterUserRequest request, ServerCallContext context)
+        public override async Task<UserReply> RegisterUser(UserRequest request, ServerCallContext context)
         {
             UserReply reply = new();
 
             try
             {
-                User user = new(request.Login, request.Passsword);
+                User user = new(request.Login, request.Password);
                 User registeredUser = await _userRegistration.RegisterAsync(user);
                 reply = new UserReply() { Id = registeredUser.Id, Login = registeredUser.Login, Password = registeredUser.Password };
             }

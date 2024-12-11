@@ -6,18 +6,8 @@ package passwordbox;
 
 service AuthorisationProtoService {
 
-    rpc RegisterUser (RegisterUserRequest) returns (UserReply);
-    rpc AuthenticateUser (AuthenticateUserRequest) returns (AuthenticateUserReply);
-}
-
-message RegisterUserRequest {
-    string login = 1;
-    string passsword = 2;
-}
-
-message AuthenticateUserRequest {
-	string login = 1;
-	string password = 2;
+    rpc RegisterUser (UserRequest) returns (UserReply);
+    rpc AuthenticateUser (UserRequest) returns (AuthenticateUserReply);
 }
 
 message AuthenticateUserReply {
@@ -28,4 +18,9 @@ message UserReply{
 	int32 id = 1;
 	string login = 2;
 	string password = 3;
+}
+
+message UserRequest{
+	string login = 1;
+	string password = 2;
 }

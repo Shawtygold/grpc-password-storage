@@ -2,6 +2,7 @@
 using AuthorisationService.Interfaces.Repositories;
 using AuthorisationService.Interfaces.Services;
 using AuthorisationService.Model.Entities;
+using Grpc.Core;
 
 namespace AuthorisationService.Services
 {
@@ -9,11 +10,13 @@ namespace AuthorisationService.Services
     {
         private readonly IUserRepository _userRepository;
         private readonly IEncryptor _encryptor;
+        private readonly IEncryptionHelper _encryptionHelper;
 
-        public UserAuthenticator(IUserRepository userRepository, IEncryptor encryptor)
+        public UserAuthenticator(IUserRepository userRepository, IEncryptor encryptor, IEncryptionHelper encryptionHelper)
         {
             _userRepository = userRepository;
             _encryptor = encryptor;
+            _encryptionHelper = encryptionHelper;
         }
 
         public async Task<bool> AuthenticateAsync(User user)
@@ -21,15 +24,12 @@ namespace AuthorisationService.Services
             ArgumentNullException.ThrowIfNull(user);
 
             // Encryption
-            user.Login = await _encryptor.EncryptAsync(user.Login);
-            user.Password = await _encryptor.EncryptAsync(user.Password);
+            await _encryptionHelper.EncryptAsync(_encryptor, user);
 
-            User? dbUser = await _userRepository.GetByAsync(u => u.Login == user.Login && u.Password == user.Password);
+            User? dbUser = await _userRepository.GetByAsync(u => u.Login == user.Login)
+                ?? throw new RpcException(new Status(StatusCode.NotFound, "User with this login was not found."));
 
-            if (dbUser == null)
-                return false;
-
-            return true;
+            return user.Password == dbUser.Password;
         }
     }
 }
