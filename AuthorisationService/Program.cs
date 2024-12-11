@@ -14,18 +14,19 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddGrpc();
 
-// Repositories
-builder.Services.AddSingleton<ApplicationContext>();
-builder.Services.AddSingleton<IUserRepository, UserRepository>();
+// Database and Repositories
+builder.Services.AddDbContext<ApplicationContext>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 // Authorisation services
-builder.Services.AddSingleton<IUserRegistration, UserRegistration>();
-builder.Services.AddSingleton<IUserAuthenticator, UserAuthenticator>();
+builder.Services.AddScoped<IUserRegistration, UserRegistration>();
+builder.Services.AddScoped<IUserAuthenticator, UserAuthenticator>();
 
 // Encryption
 builder.Services.AddSingleton<IAesConfig, AesConfig>(); // Aes algorithm config
-builder.Services.AddSingleton<IAes, AES>(); // Base aes algorithm
-builder.Services.AddSingleton<IEncryptor, AesEncryptor>(); // Class of encryptor using the Aes algorithm and configuration
+builder.Services.AddScoped<IAes, AES>(); // Base aes algorithm
+builder.Services.AddScoped<IEncryptor, AesEncryptor>(); // Class of encryptor using the Aes algorithm and configuration
+builder.Services.AddScoped<IEncryptionHelper, EncryptionHelper>();
 
 var app = builder.Build();
 
