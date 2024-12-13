@@ -1,11 +1,11 @@
 ﻿using AuthorisationService.Model.Entities;
-using RepositoryLib.Interfaces.Base;
+using RepositoryLib.Interfaces.Async;
 
 namespace AuthorisationService.Interfaces.Repositories
 {
     public interface IUserRepository :
-     IRepositoryAdd<User>,
-     IRepositoryGetBy<User>,
+     IRepositoryAddAsync<User>,
+     IRepositoryGetByAsync<User>,
      IDisposable
     {
     }
