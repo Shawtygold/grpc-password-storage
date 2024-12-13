@@ -19,7 +19,7 @@ namespace AuthorisationService.Services
             _encryptionHelper = encryptionHelper;
         }
 
-        public async Task<bool> AuthenticateAsync(User user)
+        public async Task<User?> AuthenticateAsync(User user)
         {
             ArgumentNullException.ThrowIfNull(user);
 
@@ -29,7 +29,14 @@ namespace AuthorisationService.Services
             User? dbUser = await _userRepository.GetByAsync(u => u.Login == user.Login)
                 ?? throw new RpcException(new Status(StatusCode.NotFound, "User with this login was not found."));
 
-            return user.Password == dbUser.Password;
+            User? result = null;
+            if(dbUser.Password == user.Password)
+            {
+                await _encryptionHelper.DecryptAsync(_encryptor, dbUser);
+                result = dbUser;
+            }
+
+            return result;
         }
     }
 }
