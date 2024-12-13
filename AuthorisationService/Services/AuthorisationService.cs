@@ -1,4 +1,5 @@
-﻿using AuthorisationService.Interfaces.Services;
+﻿using AuthorisationService.Enums.EventId;
+using AuthorisationService.Interfaces.Services;
 using AuthorisationService.Model.Entities;
 using FluentValidation;
 using Grpc.Core;
@@ -22,15 +23,22 @@ namespace AuthorisationService.Services
         public override async Task<AuthenticateUserReply> AuthenticateUser(UserRequest request, ServerCallContext context)
         {
             AuthenticateUserReply reply = new();
+            reply.Success = false;
 
             try
             {
                 User user = new(request.Login, request.Password);
-                reply.Success = await _userAuthenticator.AuthenticateAsync(user);
+                var dbUser = await _userAuthenticator.AuthenticateAsync(user);
+
+                if(dbUser != null)
+                {
+                    reply.User = new() { Id = dbUser.Id, Login = dbUser.Login, Password = dbUser.Password};
+                    reply.Success = true;
+                }
             }
             catch (ValidationException ex)
             {
-                _logger.LogInformation("Invalid user arguments: " + ex.Message);
+                _logger.LogWarning("Invalid user arguments: " + ex.Message);
                 RpcExceptionThrower.Handle(ex);            
             }
             catch (RpcException ex) when (ex.Status.StatusCode == StatusCode.NotFound)
@@ -43,7 +51,7 @@ namespace AuthorisationService.Services
                 RpcExceptionThrower.Handle(ex);
             }
 
-            _logger.LogInformation(new EventId(1011, nameof(AuthenticateUser)), $"User {request.Login} authenticated");
+            _logger.LogInformation(new EventId((int)AuthorisationEvent.AuthenticateUser, nameof(AuthenticateUser)), $"User {request.Login} authenticated: {reply.Success.ToString()}");
 
             return reply;
         }
@@ -60,7 +68,7 @@ namespace AuthorisationService.Services
             }
             catch (ValidationException ex)
             {
-                _logger.LogInformation("Invalid user arguments: " + ex.Message);
+                _logger.LogWarning("Invalid user arguments: " + ex.Message);
                 RpcExceptionThrower.Handle(ex);
             }
             catch (Exception ex)
@@ -68,6 +76,8 @@ namespace AuthorisationService.Services
                 _logger.LogError((int)StatusCode.Internal, ex, "Internal Error");
                 RpcExceptionThrower.Handle(ex);
             }
+
+            _logger.LogInformation(new EventId((int)AuthorisationEvent.RegisterUser, nameof(RegisterUser)), $"User {request}");
 
             return reply;
         }
