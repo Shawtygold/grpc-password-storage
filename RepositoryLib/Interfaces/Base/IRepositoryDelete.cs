@@ -2,6 +2,6 @@
 {
     public interface IRepositoryDelete
     {
-        Task DeleteAsync(int entityId);
+        void Delete(int entityId);
     }
 }

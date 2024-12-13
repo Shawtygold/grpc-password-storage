@@ -4,6 +4,6 @@ namespace RepositoryLib.Interfaces.Base
 {
     public interface IRepositoryGetBy<TEntity> where TEntity : class
     {
-        Task<TEntity?> GetByAsync(Expression<Func<TEntity, bool>> expression);
+        TEntity? GetBy(Expression<Func<TEntity, bool>> expression);
     }
 }

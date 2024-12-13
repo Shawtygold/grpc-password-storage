@@ -2,6 +2,6 @@
 {
     public interface IRepositoryUpdate<TEntity> where TEntity : class
     {
-        Task UpdateAsync(TEntity entity);
+        void Update(TEntity entity);
     }
 }

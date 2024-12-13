@@ -2,6 +2,6 @@
 {
     public interface IRepositoryGetByID<TEntity> where TEntity : class
     {
-        Task<TEntity?> GetByIDAsync(int entityId);
+        TEntity? GetByID(int entityId);
     }
 }
