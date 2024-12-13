@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq.Expressions;
 
 namespace RepositoryLib.Interfaces.Async
 {
-    internal interface IRepositoryGetCollectionByAsync
+    public interface IRepositoryGetCollectionByAsync<TEntity> where TEntity : class
     {
+        Task<IEnumerable<TEntity>> GetCollectionByAsync(Expression<Func<TEntity, bool>> expression);
     }
 }

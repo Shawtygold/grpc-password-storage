@@ -1,6 +1,6 @@
 ﻿namespace RepositoryLib.Interfaces.Async
 {
-    internal interface IRepositoryDeleteAsync
+    public interface IRepositoryDeleteAsync
     {
         Task DeleteAsync(int entityId);
     }

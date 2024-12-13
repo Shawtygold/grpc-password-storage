@@ -1,6 +1,5 @@
 ﻿using PasswordService.Model.Entities;
 using RepositoryLib.Interfaces.Async;
-using RepositoryLib.Interfaces.Base;
 
 namespace PasswordService.Interfaces.Repositories
 {
