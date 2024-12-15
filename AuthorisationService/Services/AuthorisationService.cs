@@ -38,17 +38,25 @@ namespace AuthorisationService.Services
             }
             catch (ValidationException ex)
             {
-                _logger.LogWarning("Invalid user arguments: " + ex.Message);
-                RpcExceptionThrower.Handle(ex);            
+                var rpcEx = RpcExceptionHandler.HandleException(ex);
+                _logger.LogError(new EventId((int)rpcEx.StatusCode, nameof(rpcEx.StatusCode)), "Invalid user arguments: " + ex.Message);
+                throw rpcEx;
             }
             catch (RpcException ex) when (ex.Status.StatusCode == StatusCode.NotFound)
             {
+                _logger.LogWarning(new EventId((int)ex.StatusCode, nameof(ex.StatusCode)), ex.Message);
+                throw;
+            }
+            catch (RpcException ex)
+            {
+                _logger.LogError(new EventId((int)ex.StatusCode, nameof(ex.StatusCode)), ex, ex.Message);
                 throw;
             }
             catch (Exception ex)
             {
-                _logger.LogError((int)StatusCode.Internal, ex, "Internal Error");
-                RpcExceptionThrower.Handle(ex);
+                var rpcEx = RpcExceptionHandler.HandleException(ex);
+                _logger.LogError(new EventId((int)rpcEx.StatusCode, nameof(rpcEx.StatusCode)), ex, rpcEx.Message);
+                throw rpcEx;
             }
 
             _logger.LogInformation(new EventId((int)AuthorisationEvent.AuthenticateUser, nameof(AuthenticateUser)), $"User {request.Login} authenticated: {reply.Success.ToString()}");
@@ -68,13 +76,20 @@ namespace AuthorisationService.Services
             }
             catch (ValidationException ex)
             {
-                _logger.LogWarning("Invalid user arguments: " + ex.Message);
-                RpcExceptionThrower.Handle(ex);
+                var rpcEx = RpcExceptionHandler.HandleException(ex);
+                _logger.LogError(new EventId((int)rpcEx.StatusCode, nameof(rpcEx.StatusCode)), "Invalid user arguments: " + ex.Message);
+                throw rpcEx;
+            }
+            catch (RpcException ex)
+            {
+                _logger.LogError(new EventId((int)ex.StatusCode, nameof(ex.StatusCode)), ex, ex.Message);
+                throw;
             }
             catch (Exception ex)
             {
-                _logger.LogError((int)StatusCode.Internal, ex, "Internal Error");
-                RpcExceptionThrower.Handle(ex);
+                var rpcEx = RpcExceptionHandler.HandleException(ex);
+                _logger.LogError(new EventId((int)rpcEx.StatusCode, nameof(rpcEx.StatusCode)), ex, rpcEx.Message);
+                throw rpcEx;
             }
 
             _logger.LogInformation(new EventId((int)AuthorisationEvent.RegisterUser, nameof(RegisterUser)), $"User {request}");
