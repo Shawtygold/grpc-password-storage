@@ -44,13 +44,15 @@ namespace PasswordService.Services
             }
             catch (ValidationException ex)
             {
-                _logger.LogError((int)StatusCode.InvalidArgument, ex, "Invalid password arguments");
-                RpcExceptionThrower.Handle(ex);
+                var rpcEx = RpcExceptionHandler.HandleException(ex);
+                _logger.LogError(new EventId((int)rpcEx.StatusCode, nameof(rpcEx.StatusCode)), ex, "Invalid password arguments");
+                throw rpcEx;        
             }
             catch (Exception ex)
             {
-                _logger.LogError((int)StatusCode.Internal, ex, "Internal Error");
-                RpcExceptionThrower.Handle(ex);
+                var rpcEx = RpcExceptionHandler.HandleException(ex);
+                _logger.LogError(new EventId((int)rpcEx.StatusCode, nameof(rpcEx.StatusCode)), ex, rpcEx.Message);
+                throw rpcEx;
             }
 
             _logger.LogInformation(new EventId((int)PasswordEvent.CreatePassword, nameof(CreatePassword)), $"Password for userId {reply.UserId} has been created | Password Id:{reply.Id}");
@@ -78,13 +80,15 @@ namespace PasswordService.Services
             }
             catch (ValidationException ex)
             {
-                _logger.LogError((int)StatusCode.InvalidArgument, ex, "Invalid password arguments");
-                RpcExceptionThrower.Handle(ex);
+                var rpcEx = RpcExceptionHandler.HandleException(ex);
+                _logger.LogError(new EventId((int)rpcEx.StatusCode, nameof(rpcEx.StatusCode)), ex, "Invalid password arguments");
+                throw rpcEx;
             }
             catch (Exception ex)
             {
-                _logger.LogError((int)StatusCode.Internal, ex, "Internal Error");
-                RpcExceptionThrower.Handle(ex);
+                var rpcEx = RpcExceptionHandler.HandleException(ex);
+                _logger.LogError(new EventId((int)rpcEx.StatusCode, nameof(rpcEx.StatusCode)), ex, rpcEx.Message);
+                throw rpcEx;
             }
 
             _logger.LogInformation(new EventId((int)PasswordEvent.UpdatePassword, nameof(UpdatePassword)), $"Password for userId {reply.UserId} has been updated | Password Id:{reply.Id}");
@@ -99,7 +103,7 @@ namespace PasswordService.Services
             {
                 Password? password = await _passwordRepository.GetByIDAsync(request.Id)
                     ?? throw new RpcException(new Status(StatusCode.NotFound, "Password with this ID does not exist"));
-                
+
                 await _passwordRepository.DeleteAsync(password.Id);
                 await _encryptionHelper.DecryptAsync(_encryptor, password);
 
@@ -111,10 +115,16 @@ namespace PasswordService.Services
                 reply.Commentary = password.Commentary;
                 reply.Image = password.Image;
             }
+            catch (RpcException ex)
+            {
+                _logger.LogError(new EventId((int)ex.StatusCode, nameof(ex.StatusCode)), ex, ex.Message);
+                throw;
+            }
             catch (Exception ex)
             {
-                _logger.LogError((int)StatusCode.Internal, ex, "Internal Error");
-                RpcExceptionThrower.Handle(ex);
+                var rpcEx = RpcExceptionHandler.HandleException(ex);
+                _logger.LogError(new EventId((int)rpcEx.StatusCode, nameof(rpcEx.StatusCode)), ex, rpcEx.Message);
+                throw rpcEx;
             }
 
             _logger.LogInformation(new EventId((int)PasswordEvent.DeletePassword, nameof(DeletePassword)), $"Password for id:{reply.Id} has been deleted");
@@ -145,8 +155,9 @@ namespace PasswordService.Services
             }
             catch (Exception ex)
             {
-                _logger.LogError((int)StatusCode.Internal, ex, "Internal Error");
-                RpcExceptionThrower.Handle(ex);
+                var rpcEx = RpcExceptionHandler.HandleException(ex);
+                _logger.LogError(new EventId((int)rpcEx.StatusCode, nameof(rpcEx.StatusCode)), ex, rpcEx.Message);
+                throw rpcEx;
             }
 
             _logger.LogInformation(new EventId((int)PasswordEvent.GetPasswordsBy, nameof(GetPasswordsBy)), $"Passwords for user {request.UserId} were successfully received");
