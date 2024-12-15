@@ -5,13 +5,13 @@ using Grpc.Core;
 
 namespace RpcExceptionHandlersLib
 {
-    public class RpcExceptionThrower
+    public class RpcExceptionHandler
     {
-        public static void Handle(ValidationException ex)
+        public static RpcException HandleException(ValidationException ex)
         {
             var errors = ex.Errors;
 
-            throw new Google.Rpc.Status
+            return new Google.Rpc.Status
             {
                 Code = (int)Code.InvalidArgument,
                 Message = "Bad request",
@@ -27,12 +27,12 @@ namespace RpcExceptionHandlersLib
             }.ToRpcException();
         }
 
-        public static void Handle(Exception ex)
+        public static RpcException HandleException(Exception ex)
         {
-            throw new Google.Rpc.Status
+            return new Google.Rpc.Status
             {
                 Code = (int)Code.Internal,
-                Message = "Debug Info",
+                Message = "Internal Error",
                 Details =
                 {
                     Any.Pack(ex.ToRpcDebugInfo())
