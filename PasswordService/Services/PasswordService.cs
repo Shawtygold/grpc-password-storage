@@ -1,7 +1,6 @@
 ﻿using FluentValidation;
 using Grpc.Core;
 using PasswordService.Enums.EventId;
-using PasswordService.Interfaces.Cryptographers;
 using PasswordService.Interfaces.Repositories;
 using PasswordService.Model.Entities;
 using RpcExceptionHandlersLib;
@@ -12,15 +11,11 @@ namespace PasswordService.Services
     {
         private readonly ILogger<PasswordService> _logger;
         private readonly IPasswordRepository _passwordRepository;
-        private readonly IEncryptor _encryptor;
-        private readonly IEncryptionHelper _encryptionHelper;
         
-        public PasswordService(ILogger<PasswordService> logger, IPasswordRepository passwordRepository, IEncryptor encryptor, IEncryptionHelper encryptionHelper)
+        public PasswordService(ILogger<PasswordService> logger, IPasswordRepository passwordRepository)
         {
             _logger = logger;
             _passwordRepository = passwordRepository;
-            _encryptor = encryptor;
-            _encryptionHelper = encryptionHelper;
         }
 
         public override async Task<PasswordModel> CreatePassword(CreatePasswordRequest request, ServerCallContext context)
@@ -30,9 +25,7 @@ namespace PasswordService.Services
             try
             {
                 Password password = new(request.UserId, request.Title, request.Login, request.PasswordValue, request.Commentary, request.Image);
-                await _encryptionHelper.EncryptAsync(_encryptor, password);
                 await _passwordRepository.AddAsync(password);
-                await _encryptionHelper.DecryptAsync(_encryptor, password);
 
                 reply.Id = password.Id;
                 reply.UserId = password.UserId;
@@ -66,9 +59,7 @@ namespace PasswordService.Services
             try
             {
                 Password password = new(request.Password.Id, request.Password.UserId, request.Password.Title, request.Password.Login, request.Password.PasswordValue, request.Password.Commentary, request.Password.Image);
-                await _encryptionHelper.EncryptAsync(_encryptor, password);
                 await _passwordRepository.UpdateAsync(password);
-                await _encryptionHelper.DecryptAsync(_encryptor, password);
 
                 reply.Id = password.Id;
                 reply.UserId = password.UserId;
@@ -76,7 +67,7 @@ namespace PasswordService.Services
                 reply.Login = password.Login;
                 reply.PasswordValue = password.PasswordValue;
                 reply.Commentary = password.Commentary;
-                reply.Image = password.Image;
+                reply.Image = password.Image;              
             }
             catch (ValidationException ex)
             {
@@ -103,9 +94,10 @@ namespace PasswordService.Services
             {
                 Password? password = await _passwordRepository.GetByIDAsync(request.Id)
                     ?? throw new RpcException(new Status(StatusCode.NotFound, "Password with this ID does not exist"));
-
+                _logger.LogInformation($"{password.Login}");
+                _logger.LogInformation($"{password.PasswordValue}");
+                _logger.LogInformation($"{password.Commentary}");
                 await _passwordRepository.DeleteAsync(password.Id);
-                await _encryptionHelper.DecryptAsync(_encryptor, password);
 
                 reply.Id = password.Id;
                 reply.UserId = password.UserId;
@@ -131,7 +123,7 @@ namespace PasswordService.Services
             return reply;
         }
         
-        public override async Task<PasswordModels> GetPasswordsBy(GetPasswordsByRequest request, ServerCallContext context)
+        public override async Task<PasswordModels> GetPasswordsByUserId(GetPasswordsByUserIdRequest request, ServerCallContext context)
         {
             List<Password> passwords;
             PasswordModels reply = new();
@@ -160,7 +152,7 @@ namespace PasswordService.Services
                 throw rpcEx;
             }
 
-            _logger.LogInformation(new EventId((int)PasswordEvent.GetPasswordsBy, nameof(GetPasswordsBy)), $"Passwords for user {request.UserId} were successfully received");
+            _logger.LogInformation(new EventId((int)PasswordEvent.GetPasswordsBy, nameof(GetPasswordsByUserId)), $"Passwords for user {request.UserId} were successfully received");
             return reply;
         }
     }
