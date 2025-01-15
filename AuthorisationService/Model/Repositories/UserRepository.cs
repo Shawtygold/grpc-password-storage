@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 
 namespace AuthorisationService.Model.Repositories
 {
-    public sealed class UserRepository : IUserRepository
+    internal sealed class UserRepository : IUserRepository
     {
         private readonly ApplicationContext _dbContext;
 
