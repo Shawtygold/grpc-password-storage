@@ -94,9 +94,7 @@ namespace PasswordService.Services
             {
                 Password? password = await _passwordRepository.GetByIDAsync(request.Id)
                     ?? throw new RpcException(new Status(StatusCode.NotFound, "Password with this ID does not exist"));
-                _logger.LogInformation($"{password.Login}");
-                _logger.LogInformation($"{password.PasswordValue}");
-                _logger.LogInformation($"{password.Commentary}");
+
                 await _passwordRepository.DeleteAsync(password.Id);
 
                 reply.Id = password.Id;
