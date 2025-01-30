@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PasswordService.Interfaces.Cryptographers;
+using PasswordService.Model.Cryptographers;
 using PasswordService.Interfaces.Repositories;
 using PasswordService.Model.AppContext;
 using PasswordService.Model.Entities;
 using System.Linq.Expressions;
 
-namespace PasswordService.Model.Repositories
+namespace PasswordService.Model.Repositories.Implementation
 {
     public sealed class PasswordRepository : IPasswordRepository
     {
@@ -49,7 +49,7 @@ namespace PasswordService.Model.Repositories
         public async Task<Password?> GetByIDAsync(int entityId)
         {
             Password? entity = await _dbContext.Passwords.FindAsync(entityId);
-            if(entity != null)
+            if (entity != null)
             {
                 _dbContext.Entry(entity).State = EntityState.Detached;
                 await _encryptionHelper.DecryptAsync(_encryptor, entity);
@@ -59,8 +59,8 @@ namespace PasswordService.Model.Repositories
 
         public async Task<Password?> GetByAsync(Expression<Func<Password, bool>> expression)
         {
-            Password? entity = await _dbContext.Passwords.AsNoTracking().FirstOrDefaultAsync(expression);    
-            if(entity != null)
+            Password? entity = await _dbContext.Passwords.AsNoTracking().FirstOrDefaultAsync(expression);
+            if (entity != null)
                 await _encryptionHelper.DecryptAsync(_encryptor, entity);
 
             return entity;

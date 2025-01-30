@@ -1,8 +1,8 @@
-﻿using AESEncryptionLib.Interfaces;
+﻿using AESEncryptionLib;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace AuthorisationService.Model.Cryptographers.Configs
+namespace PasswordService.Model.Configs
 {
     public class AesConfig : IAesConfig
     {

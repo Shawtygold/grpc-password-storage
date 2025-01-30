@@ -1,13 +1,12 @@
-using AESEncryptionLib.Interfaces;
-using AESEncryptionLib.Model;
-using AuthorisationService.Interfaces.Cryptographers;
-using AuthorisationService.Interfaces.Repositories;
-using AuthorisationService.Interfaces.Services;
+using AESEncryptionLib;
 using AuthorisationService.Model.AppContext;
+using AuthorisationService.Model.Configs;
 using AuthorisationService.Model.Cryptographers;
-using AuthorisationService.Model.Cryptographers.Configs;
+using AuthorisationService.Model.Cryptographers.Implementation;
 using AuthorisationService.Model.Repositories;
+using AuthorisationService.Model.Repositories.Implementation;
 using AuthorisationService.Services;
+using AuthorisationService.Services.Implementation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,7 +30,7 @@ builder.Services.AddScoped<IEncryptionHelper, EncryptionHelper>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-app.MapGrpcService<AuthorisationService.Services.AuthorisationService>();
+app.MapGrpcService<AuthorisationService.Services.Implementation.AuthorisationService>();
 app.MapGet("/", () => "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
 
 app.Run();

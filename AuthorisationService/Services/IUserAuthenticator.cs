@@ -1,6 +1,6 @@
 ﻿using AuthorisationService.Model.Entities;
 
-namespace AuthorisationService.Interfaces.Services
+namespace AuthorisationService.Services
 {
     public interface IUserAuthenticator
     {

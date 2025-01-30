@@ -1,4 +1,4 @@
-﻿namespace PasswordService.Interfaces.Cryptographers
+﻿namespace AuthorisationService.Model.Cryptographers
 {
     public interface IEncryptor
     {

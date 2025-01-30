@@ -1,7 +1,6 @@
-﻿using AESEncryptionLib.Interfaces;
-using AuthorisationService.Interfaces.Cryptographers;
+﻿using AESEncryptionLib;
 
-namespace AuthorisationService.Model.Cryptographers
+namespace AuthorisationService.Model.Cryptographers.Implementation
 {
     public class AesEncryptor : IEncryptor
     {

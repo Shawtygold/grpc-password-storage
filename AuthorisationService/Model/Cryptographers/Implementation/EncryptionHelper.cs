@@ -1,6 +1,4 @@
-﻿using PasswordService.Interfaces.Cryptographers;
-
-namespace PasswordService.Model.Cryptographers
+﻿namespace AuthorisationService.Model.Cryptographers.Implementation
 {
     public class EncryptionHelper : IEncryptionHelper
     {

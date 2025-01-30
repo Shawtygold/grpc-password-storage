@@ -1,10 +1,9 @@
-﻿using Grpc.Core;
-using AuthorisationService.Interfaces.Repositories;
+﻿using AuthorisationService.Model.Cryptographers;
 using AuthorisationService.Model.Entities;
-using AuthorisationService.Interfaces.Cryptographers;
-using AuthorisationService.Interfaces.Services;
+using AuthorisationService.Model.Repositories;
+using Grpc.Core;
 
-namespace AuthorisationService.Services
+namespace AuthorisationService.Services.Implementation
 {
     public class UserRegistration : IUserRegistration
     {
@@ -30,7 +29,7 @@ namespace AuthorisationService.Services
 
             await _userRepository.AddAsync(user);
             await _encryptionHelper.DecryptAsync(_encryptor, user);
-            return user; 
+            return user;
         }
     }
 }

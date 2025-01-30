@@ -12,6 +12,7 @@ service AuthorisationProtoService {
 
 message AuthenticateUserReply {
 	bool success = 1;
+	optional UserReply user = 2;
 }
 
 message UserReply{

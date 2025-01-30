@@ -1,7 +1,7 @@
 ﻿using AuthorisationService.Model.Entities;
 using RepositoryLib.Interfaces.Async;
 
-namespace AuthorisationService.Interfaces.Repositories
+namespace AuthorisationService.Model.Repositories
 {
     public interface IUserRepository :
      IRepositoryAddAsync<User>,

@@ -1,11 +1,10 @@
-using AESEncryptionLib.Interfaces;
-using AESEncryptionLib.Model;
-using PasswordService.Interfaces.Cryptographers;
+using AESEncryptionLib;
 using PasswordService.Interfaces.Repositories;
 using PasswordService.Model.AppContext;
+using PasswordService.Model.Configs;
 using PasswordService.Model.Cryptographers;
-using PasswordService.Model.Cryptographers.Configs;
-using PasswordService.Model.Repositories;
+using PasswordService.Model.Cryptographers.Implementation;
+using PasswordService.Model.Repositories.Implementation;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,11 +1,10 @@
 ﻿using AuthorisationService.Enums.EventId;
-using AuthorisationService.Interfaces.Services;
 using AuthorisationService.Model.Entities;
 using FluentValidation;
 using Grpc.Core;
 using RpcExceptionHandlersLib;
 
-namespace AuthorisationService.Services
+namespace AuthorisationService.Services.Implementation
 {
     public class AuthorisationService : AuthorisationProtoService.AuthorisationProtoServiceBase
     {
@@ -30,9 +29,9 @@ namespace AuthorisationService.Services
                 User user = new(request.Login, request.Password);
                 var dbUser = await _userAuthenticator.AuthenticateAsync(user);
 
-                if(dbUser != null)
+                if (dbUser != null)
                 {
-                    reply.User = new() { Id = dbUser.Id, Login = dbUser.Login, Password = dbUser.Password};
+                    reply.User = new() { Id = dbUser.Id, Login = dbUser.Login, Password = dbUser.Password };
                     reply.Success = true;
                 }
             }

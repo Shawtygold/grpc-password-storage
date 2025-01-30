@@ -1,10 +1,9 @@
-﻿using AuthorisationService.Interfaces.Repositories;
-using AuthorisationService.Model.AppContext;
+﻿using AuthorisationService.Model.AppContext;
 using AuthorisationService.Model.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace AuthorisationService.Model.Repositories
+namespace AuthorisationService.Model.Repositories.Implementation
 {
     internal sealed class UserRepository : IUserRepository
     {

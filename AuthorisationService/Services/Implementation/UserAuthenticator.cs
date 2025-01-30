@@ -1,10 +1,9 @@
-﻿using AuthorisationService.Interfaces.Cryptographers;
-using AuthorisationService.Interfaces.Repositories;
-using AuthorisationService.Interfaces.Services;
+﻿using AuthorisationService.Model.Cryptographers;
 using AuthorisationService.Model.Entities;
+using AuthorisationService.Model.Repositories;
 using Grpc.Core;
 
-namespace AuthorisationService.Services
+namespace AuthorisationService.Services.Implementation
 {
     public class UserAuthenticator : IUserAuthenticator
     {
@@ -30,7 +29,7 @@ namespace AuthorisationService.Services
                 ?? throw new RpcException(new Status(StatusCode.NotFound, "User with this login was not found."));
 
             User? result = null;
-            if(dbUser.Password == user.Password)
+            if (dbUser.Password == user.Password)
             {
                 await _encryptionHelper.DecryptAsync(_encryptor, dbUser);
                 result = dbUser;
