@@ -1,0 +1,119 @@
+﻿<Window x:Class="PasswordsBunker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        xmlns:bi="https://github.com/helluvamatt/BootstrapIcons.Wpf/"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordsBunker"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        RenderOptions.BitmapScalingMode="HighQuality"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        Height="550"
+        Width="450">
+
+    <Window.Resources>
+
+        <SolidColorBrush Color="#FFFFFF" x:Key="Foreground"/>
+        <SolidColorBrush Color="#202020" x:Key="Background"/>
+
+        <!--CloseButton-->
+        <Style TargetType="Button" x:Key="CloseButton">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="BorderBackground" Background="{DynamicResource Background}"
+                            Width="46"
+                            Height="32"
+                            CornerRadius="0,8,0,0">
+
+                            <bi:BootstrapIcon Icon="XLg"
+                                          x:Name="icon"
+                                          Width="15"
+                                          Foreground="{DynamicResource Foreground}"/>
+
+                        </Border>
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" TargetName="BorderBackground" Value="#C42B1C"/>
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--MinimizeButton-->
+        <Style TargetType="Button" x:Key="MinimizeButton">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="BorderBackground" Background="{DynamicResource Background}"
+                                Width="46"
+                                Height="32">
+
+                            <Border Background="{DynamicResource Foreground}"
+                                Width="14"
+                                Height="1"
+                                CornerRadius="0"/>
+
+                        </Border>
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" TargetName="BorderBackground" Value="#2A2A2A"/>
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+
+    <Border Background="{ui:ThemeResource ApplicationBackgroundBrush}"
+            BorderBrush="#3C3C3C"
+            BorderThickness="1"
+            CornerRadius="8">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <!--TitleBar-->
+            <Border MouseLeftButtonDown="Border_MouseLeftButtonDown">
+                <Grid>
+                    <TextBlock Text="{Binding Title}"
+                               FontSize="12"
+                               FontFamily="SegoeFluentIcon"
+                               Foreground="White"
+                               Padding="15,18"/>
+
+                    <StackPanel Orientation="Horizontal"
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Right">
+                        <Button Style="{DynamicResource MinimizeButton}"
+                            Command="{Binding MinimizeCommand}"/>
+
+                        <Button Style="{DynamicResource CloseButton}"
+                            Command="{Binding CloseCommand}"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <ContentControl Grid.Row="1"
+                            Content="{Binding Navigation.CurrentView}"/>
+
+        </Grid>
+    </Border>
+
+</Window>
