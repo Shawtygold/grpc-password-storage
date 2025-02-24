@@ -1,10 +1,12 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Win32;
-using PasswordsBunker.MVVM.View.Forms;
-using PasswordsBunker.MVVM.ViewModel.FormsViewModel;
+using PasswordBoxClient.MVVM.ViewModel.FormsViewModel;
+using PasswordBoxClient.MVVM.View.Forms;
 using System;
+using PasswordService.Model.Entities;
+using PasswordBoxClient.MVVM.Model.Entities.BusMessages;
 
-namespace PasswordsBunker.Services.Implementation
+namespace PasswordBoxClient.Services.Implementation
 {
     internal class UserDialogService : IUserDialog
     {
@@ -13,12 +15,6 @@ namespace PasswordsBunker.Services.Implementation
         public UserDialogService(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
-        }
-
-        public void OpenPasswordActionWindow()
-        {
-            var window = _serviceProvider.GetRequiredService<PasswordActionForm>();
-            window.ShowDialog();
         }
 
         public string OpenFileDialog(string filters)
@@ -39,13 +35,23 @@ namespace PasswordsBunker.Services.Implementation
             window.ShowDialog();
         }
 
+        public void OpenEditPasswordWindow(Password password)
+        {
+            var window = _serviceProvider.GetRequiredService<EditPasswordWindow>();
+            var viewModel = _serviceProvider.GetRequiredService<EditPasswordWindowViewModel>();
+            IMessageBus? messageBus = _serviceProvider.GetService<IMessageBus>() ?? throw new Exception($"{nameof(messageBus)} is null");
+            messageBus.Send(new UpdatePasswordMessage(password));
+            window.DataContext = viewModel;
+            window.ShowDialog();
+        }
+
         public void ShowMessageBox(string message)
         {
             var vm = _serviceProvider.GetRequiredService<MessageboxViewModel>();
             vm.Message = message;
-            var msgBox = _serviceProvider.GetRequiredService<Messagebox>();
-            msgBox.DataContext = vm;
-            msgBox.ShowDialog();
+            var window = _serviceProvider.GetRequiredService<Messagebox>();
+            window.DataContext = vm;
+            window.ShowDialog();
         }
     }
 }

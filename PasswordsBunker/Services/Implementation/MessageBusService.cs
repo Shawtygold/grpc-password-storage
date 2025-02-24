@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 
-namespace PasswordsBunker.Services.Implementation
+namespace PasswordBoxClient.Services.Implementation
 {
     internal class MessageBusService : IMessageBus
     {

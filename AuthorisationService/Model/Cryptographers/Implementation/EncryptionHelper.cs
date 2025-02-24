@@ -1,4 +1,4 @@
-﻿namespace AuthorisationService.Model.Cryptographers.Implementation
+﻿namespace AuthService.Model.Cryptographers.Implementation
 {
     public class EncryptionHelper : IEncryptionHelper
     {

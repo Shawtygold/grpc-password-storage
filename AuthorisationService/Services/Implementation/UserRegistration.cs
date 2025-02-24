@@ -1,9 +1,9 @@
-﻿using AuthorisationService.Model.Cryptographers;
-using AuthorisationService.Model.Entities;
-using AuthorisationService.Model.Repositories;
+﻿using AuthService.Model.Cryptographers;
+using AuthService.Model.Entities;
+using AuthService.Model.Repositories;
 using Grpc.Core;
 
-namespace AuthorisationService.Services.Implementation
+namespace AuthService.Services.Implementation
 {
     public class UserRegistration : IUserRegistration
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PasswordsBunker.Core
+namespace PasswordBoxClient.Core
 {
     public class ViewModel : ObservableObject
     {

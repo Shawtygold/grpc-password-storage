@@ -1,4 +1,6 @@
-﻿namespace PasswordsBunker.MVVM.Model.Entities.BusMessages
+﻿using PasswordService.Model.Entities;
+
+namespace PasswordBoxClient.MVVM.Model.Entities.BusMessages
 {
     internal class PasswordMessage
     {

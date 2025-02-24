@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace AuthorisationService.Model
+namespace AuthService.Model
 {
     public class JSONReader
     {

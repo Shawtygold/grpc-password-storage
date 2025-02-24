@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace AuthorisationService.Model.Configs
+namespace AuthService.Model.Configs
 {
     public class AesConfig : IAesConfig
     {

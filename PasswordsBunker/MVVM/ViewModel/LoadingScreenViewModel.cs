@@ -1,6 +1,6 @@
-﻿using PasswordsBunker.Services;
+﻿using PasswordBoxClient.Services;
 
-namespace PasswordsBunker.MVVM.ViewModel
+namespace PasswordBoxClient.MVVM.ViewModel
 {
     class LoadingScreenViewModel : Core.ViewModel
     {

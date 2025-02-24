@@ -1,14 +1,14 @@
-﻿using Grpc.Core;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
+using PasswordBoxClient.Core;
+using PasswordBoxClient.MVVM.ViewModel;
+using PasswordBoxClient.MVVM.ViewModel.FormsViewModel;
+using PasswordBoxClient.Services;
+using PasswordBoxClient.Services.Implementation;
 using PasswordClient;
-using PasswordsBunker.Core;
-using PasswordsBunker.MVVM.View.Forms;
-using PasswordsBunker.MVVM.ViewModel;
-using PasswordsBunker.MVVM.ViewModel.FormsViewModel;
-using PasswordsBunker.Services;
-using PasswordsBunker.Services.Implementation;
+using PasswordBoxClient.MVVM.View.Forms;
 using System;
 using System.Windows;
+using PasswordBoxClient;
 
 namespace PasswordsBunker
 {
@@ -31,19 +31,20 @@ namespace PasswordsBunker
             // View Models
             services.AddSingleton<MainViewModel>();
             services.AddSingleton<PasswordsViewModel>();
-            services.AddSingleton<LoadingScreenViewModel>(); //!!!!!! DELEETE MB
+            services.AddSingleton<LoadingScreenViewModel>();
             services.AddTransient<CreatePasswordWindowViewModel>();
+            services.AddTransient<EditPasswordWindowViewModel>();
             services.AddTransient<MessageboxViewModel>();
 
             services.AddSingleton<Func<Type, ViewModel>>(serviceProvider => viewModelType => (ViewModel)serviceProvider.GetRequiredService(viewModelType));
 
             // Windows
             services.AddTransient<Messagebox>();
+            services.AddTransient<EditPasswordWindow>();
             services.AddTransient(provider =>
             {
                 var model = provider.GetRequiredService<CreatePasswordWindowViewModel>();
                 var window = new CreatePasswordWindow() { DataContext = model };
-
                 return window;
             });
 

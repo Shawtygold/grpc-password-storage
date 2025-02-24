@@ -1,6 +1,6 @@
-﻿using PasswordsBunker.Core;
+﻿using PasswordBoxClient.Core;
 
-namespace PasswordsBunker.Services
+namespace PasswordBoxClient.Services
 {
     internal interface INavigationService
     {

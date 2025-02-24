@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace PasswordsBunker.Core
+namespace PasswordBoxClient.Core
 {
     class RelayCommand : ICommand
     {

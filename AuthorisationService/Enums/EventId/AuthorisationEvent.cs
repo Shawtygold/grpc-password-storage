@@ -1,4 +1,4 @@
-﻿namespace AuthorisationService.Enums.EventId
+﻿namespace AuthService.Enums.EventId
 {
     public enum AuthorisationEvent
     {

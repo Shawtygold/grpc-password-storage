@@ -1,7 +1,7 @@
-﻿using PasswordsBunker.Core;
+﻿using PasswordBoxClient.Core;
 using System;
 
-namespace PasswordsBunker.Services.Implementation
+namespace PasswordBoxClient.Services.Implementation
 {
     class NavigationService : ObservableObject, INavigationService
     {

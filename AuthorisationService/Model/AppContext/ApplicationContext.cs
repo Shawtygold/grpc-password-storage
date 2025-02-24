@@ -1,7 +1,7 @@
-﻿using AuthorisationService.Model.Entities;
+﻿using AuthService.Model.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace AuthorisationService.Model.AppContext
+namespace AuthService.Model.AppContext
 {
     public class ApplicationContext : DbContext
     {

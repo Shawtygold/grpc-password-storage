@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using PasswordService.Model.Cryptographers;
-using PasswordService.Interfaces.Repositories;
+﻿using FluentValidation;
+using Microsoft.EntityFrameworkCore;
 using PasswordService.Model.AppContext;
+using PasswordService.Model.Encryption;
 using PasswordService.Model.Entities;
 using System.Linq.Expressions;
 
@@ -10,22 +10,22 @@ namespace PasswordService.Model.Repositories.Implementation
     public sealed class PasswordRepository : IPasswordRepository
     {
         private readonly ApplicationContext _dbContext;
-        private readonly IEncryptionHelper _encryptionHelper;
         private readonly IEncryptor _encryptor;
+        private readonly IValidator<Password> _passwordValidator;
 
-        public PasswordRepository(ApplicationContext dbContext, IEncryptionHelper encryptionHelper, IEncryptor encryptor)
+        public PasswordRepository(ApplicationContext dbContext, IEncryptor encryptor, IValidator<Password> passwordValidator)
         {
             _dbContext = dbContext;
-            _encryptionHelper = encryptionHelper;
             _encryptor = encryptor;
+            _passwordValidator = passwordValidator;
         }
 
         public async Task AddAsync(Password entity)
         {
-            await _encryptionHelper.EncryptAsync(_encryptor, entity);
+            _passwordValidator.Validate(entity);
+
             await _dbContext.Passwords.AddAsync(entity);
             await _dbContext.SaveChangesAsync();
-            await _encryptionHelper.DecryptAsync(_encryptor, entity);
         }
 
         public async Task DeleteAsync(int entityId)
@@ -35,10 +35,8 @@ namespace PasswordService.Model.Repositories.Implementation
 
         public async Task UpdateAsync(Password entity)
         {
-            await _encryptionHelper.EncryptAsync(_encryptor, entity);
             _dbContext.Passwords.Update(entity);
             await _dbContext.SaveChangesAsync();
-            await _encryptionHelper.DecryptAsync(_encryptor, entity);
         }
 
         public async Task<IEnumerable<Password>> GetCollectionByAsync(Expression<Func<Password, bool>> expression)
@@ -49,22 +47,20 @@ namespace PasswordService.Model.Repositories.Implementation
         public async Task<Password?> GetByIDAsync(int entityId)
         {
             Password? entity = await _dbContext.Passwords.FindAsync(entityId);
+
             if (entity != null)
-            {
                 _dbContext.Entry(entity).State = EntityState.Detached;
-                await _encryptionHelper.DecryptAsync(_encryptor, entity);
-            }
+
             return entity;
         }
 
         public async Task<Password?> GetByAsync(Expression<Func<Password, bool>> expression)
         {
             Password? entity = await _dbContext.Passwords.AsNoTracking().FirstOrDefaultAsync(expression);
-            if (entity != null)
-                await _encryptionHelper.DecryptAsync(_encryptor, entity);
 
             return entity;
         }
+
         public void Dispose()
         {
             _dbContext?.Dispose();

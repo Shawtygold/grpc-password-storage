@@ -1,14 +1,14 @@
-﻿using PasswordsBunker.Core;
-using PasswordsBunker.MVVM.Model.Entities;
-using PasswordsBunker.MVVM.Model.Entities.BusMessages;
-using PasswordsBunker.Services;
+﻿using PasswordBoxClient.Core;
+using PasswordBoxClient.MVVM.Model.Entities.BusMessages;
+using PasswordBoxClient.Services;
+using PasswordService.Model.Entities;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
 
-namespace PasswordsBunker.MVVM.ViewModel
+namespace PasswordBoxClient.MVVM.ViewModel
 {
     class PasswordsViewModel : Core.ViewModel, IDisposable
     {
@@ -23,7 +23,7 @@ namespace PasswordsBunker.MVVM.ViewModel
 
             AddCommand = new RelayCommand(Add);
             EditCommand = new RelayCommand(Edit);
-            DeleteCommand = new RelayCommand(Delete); 
+            DeleteCommand = new RelayCommand(Delete);
 
             _messageBus = messageBus;
             _userDialog = userDialog;
@@ -37,13 +37,13 @@ namespace PasswordsBunker.MVVM.ViewModel
             {
                 case PasswordCreatedMessage cpMsg: _passwords.Add(cpMsg.Password); break;
                 case PasswordUpdatedMessage upMsg:
-                {
-                    var oldPassword = _passwords.FirstOrDefault(p => p.Id == message.Password.Id) ?? throw new Exception("Password with this ID does not exist");
-                    int oldPasswordIndex = _passwords.IndexOf(oldPassword);
-                    _passwords.Remove(oldPassword);
-                    _passwords.Insert(oldPasswordIndex, message.Password);
-                    break;
-                }
+                    {
+                        var oldPassword = _passwords.FirstOrDefault(p => p.Id == message.Password.Id) ?? throw new Exception("Password with this ID does not exist");
+                        int oldPasswordIndex = _passwords.IndexOf(oldPassword);
+                        _passwords.Remove(oldPassword);
+                        _passwords.Insert(oldPasswordIndex, message.Password);
+                        break;
+                    }
             }
         }
 
@@ -64,7 +64,7 @@ namespace PasswordsBunker.MVVM.ViewModel
 
         #region SelectedItem
 
-        private Password? _selectedItem;
+        private Password? _selectedItem; 
         public Password? SelectedItem
         {
             get { return _selectedItem; }
@@ -89,13 +89,9 @@ namespace PasswordsBunker.MVVM.ViewModel
         private void Edit(object obj)
         {
             if (SelectedItem != null)
-            {
-                
-            }
+                _userDialog.OpenEditPasswordWindow(SelectedItem);
             else
-            {
-               
-            }
+                _userDialog.ShowMessageBox("Password is not selected");
         }
         private async void Delete(object obj)
         {

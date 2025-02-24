@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace PasswordsBunker.MVVM.View.Forms
+namespace PasswordBoxClient.MVVM.View.Forms
 {
     /// <summary>
     /// Логика взаимодействия для Messagebox.xaml

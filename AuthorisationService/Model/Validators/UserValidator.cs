@@ -1,7 +1,7 @@
-﻿using AuthorisationService.Model.Entities;
+﻿using AuthService.Model.Entities;
 using FluentValidation;
 
-namespace AuthorisationService.Model.Validators
+namespace AuthService.Model.Validators
 {
     public class UserValidator : AbstractValidator<User>
     {

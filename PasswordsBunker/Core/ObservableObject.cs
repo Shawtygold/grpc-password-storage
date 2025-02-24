@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace PasswordsBunker.Core
+namespace PasswordBoxClient.Core
 {
     public class ObservableObject : INotifyPropertyChanged
     {

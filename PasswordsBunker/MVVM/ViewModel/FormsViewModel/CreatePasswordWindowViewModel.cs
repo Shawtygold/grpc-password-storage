@@ -1,10 +1,10 @@
 ﻿using Grpc.Core;
+using PasswordBoxClient.MVVM.Model.Entities.BusMessages;
+using PasswordBoxClient.Services;
 using PasswordClient;
-using PasswordsBunker.MVVM.Model.Entities;
-using PasswordsBunker.MVVM.Model.Entities.BusMessages;
-using PasswordsBunker.Services;
+using PasswordService.Model.Entities;
 
-namespace PasswordsBunker.MVVM.ViewModel.FormsViewModel
+namespace PasswordBoxClient.MVVM.ViewModel.FormsViewModel
 {
     internal class CreatePasswordWindowViewModel : PasswordWindowViewModel
     {
@@ -19,15 +19,11 @@ namespace PasswordsBunker.MVVM.ViewModel.FormsViewModel
 
         private protected override async void AcceptAsync(object obj)
         {
-            try
-            {
-                var reply = await _client.CreatePasswordAsync(new CreatePasswordRequest() { UserId = 2, Title = Title, Login = Login, PasswordValue = PasswordValue, Image = Image, Commentary = Commentary });               
-                _messageBus.Send(new PasswordCreatedMessage(new Password(reply.Id, reply.Title, reply.Login, reply.PasswordValue, reply.Commentary, reply.Image)));
-            }
-            catch (RpcException ex) 
-            {
-
-            }
+            //try
+            //{
+                var reply = await _client.CreatePasswordAsync(new CreatePasswordRequest() { UserId = 2, Title = Title, Login = Login, PasswordValue = PasswordValue, Image = Image });               
+                _messageBus.Send(new PasswordCreatedMessage(new Password(reply.Id, reply.UserId, reply.Title, reply.Login, reply.PasswordValue, reply.Commentary, reply.Image)));
+            
 
             Close(obj);
         }

@@ -1,9 +1,9 @@
-﻿using PasswordsBunker.Core;
-using PasswordsBunker.Services;
+﻿using PasswordBoxClient.Core;
+using PasswordBoxClient.Services;
 using System.Windows;
 using System.Windows.Input;
 
-namespace PasswordsBunker.MVVM.ViewModel
+namespace PasswordBoxClient.MVVM.ViewModel
 {
     class MainViewModel : Core.ViewModel
     {

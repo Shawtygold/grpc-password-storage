@@ -1,10 +1,10 @@
-﻿using PasswordsBunker.Core;
-using PasswordsBunker.Services;
+﻿using PasswordBoxClient.Core;
+using PasswordBoxClient.Services;
 using System;
 using System.Windows;
 using System.Windows.Input;
 
-namespace PasswordsBunker.MVVM.ViewModel.FormsViewModel
+namespace PasswordBoxClient.MVVM.ViewModel.FormsViewModel
 {
     internal abstract class PasswordWindowViewModel : ObservableObject
     {
@@ -32,21 +32,21 @@ namespace PasswordsBunker.MVVM.ViewModel.FormsViewModel
         private protected int Id { get; set; }
         private protected int UserId { get; set; }
 
-        private protected string _title;
+        private protected string _title = "";
         public string Title
         {
             get { return _title; }
             set { _title = value; OnPropertyChanged(); }
         }
 
-        private protected string _login;
+        private protected string _login = "";
         public string Login
         {
             get { return _login; }
             set { _login = value; OnPropertyChanged(); }
         }
 
-        private protected string _passwordValue;
+        private protected string _passwordValue = "";
         public string PasswordValue
         {
             get { return _passwordValue; }
@@ -60,7 +60,7 @@ namespace PasswordsBunker.MVVM.ViewModel.FormsViewModel
             set { _image = value; OnPropertyChanged(); }
         }
 
-        private protected string _commentary;
+        private protected string _commentary = "";
         public string Commentary
         {
             get { return _commentary; }

@@ -19,9 +19,9 @@ namespace PasswordService.Model
 
     public class AESConfigStructure
     {
-        public string IV { get; set; }
-        public string Key { get; set; }
-        public string Mode { get; set; }
-        public string Padding { get; set; }
+        public string IV { get; set; } = null!;
+        public string Key { get; set; } = null!;
+        public string Mode { get; set; } = null!;
+        public string Padding { get; set; } = null!;
     }
 }

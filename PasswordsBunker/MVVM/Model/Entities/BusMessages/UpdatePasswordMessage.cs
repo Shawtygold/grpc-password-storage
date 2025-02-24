@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PasswordService.Model.Entities;
 
-namespace PasswordsBunker.MVVM.Model.Entities.BusMessages
+namespace PasswordBoxClient.MVVM.Model.Entities.BusMessages
 {
     internal class UpdatePasswordMessage : PasswordMessage
     {

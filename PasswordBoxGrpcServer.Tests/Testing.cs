@@ -3,8 +3,8 @@ using AuthorisationServiceTest;
 using Grpc.Net.Client;
 using PasswordService.Interfaces.Cryptographers;
 using PasswordService.Model;
-using PasswordService.Model.Cryptographers;
 using PasswordService.Model.Cryptographers.Configs;
+using PasswordService.Model.Encryption;
 using PasswordServiceTest;
 using Xunit;
 

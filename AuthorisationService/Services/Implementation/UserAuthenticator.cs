@@ -1,15 +1,16 @@
-﻿using AuthorisationService.Model.Cryptographers;
-using AuthorisationService.Model.Entities;
-using AuthorisationService.Model.Repositories;
-using Grpc.Core;
+﻿using AuthService.Model.Cryptographers;
+using AuthService.Model.Entities;
+using AuthService.Model.Errors;
+using AuthService.Model.Repositories;
 
-namespace AuthorisationService.Services.Implementation
+namespace AuthService.Services.Implementation
 {
     public class UserAuthenticator : IUserAuthenticator
     {
         private readonly IUserRepository _userRepository;
         private readonly IEncryptor _encryptor;
         private readonly IEncryptionHelper _encryptionHelper;
+        private const string DOMAIN = "";
 
         public UserAuthenticator(IUserRepository userRepository, IEncryptor encryptor, IEncryptionHelper encryptionHelper)
         {
@@ -26,7 +27,7 @@ namespace AuthorisationService.Services.Implementation
             await _encryptionHelper.EncryptAsync(_encryptor, user);
 
             User? dbUser = await _userRepository.GetByAsync(u => u.Login == user.Login)
-                ?? throw new RpcException(new Status(StatusCode.NotFound, "User with this login was not found."));
+                ?? throw AuthRpcExceptions.NotFound("", user);
 
             User? result = null;
             if (dbUser.Password == user.Password)

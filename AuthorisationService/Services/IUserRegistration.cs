@@ -1,6 +1,6 @@
-﻿using AuthorisationService.Model.Entities;
+﻿using AuthService.Model.Entities;
 
-namespace AuthorisationService.Services
+namespace AuthService.Services
 {
     public interface IUserRegistration
     {

@@ -12,16 +12,21 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace PasswordsBunker.MVVM.View.Forms
+namespace PasswordBoxClient.MVVM.View.Forms
 {
     /// <summary>
     /// Логика взаимодействия для EditPasswordWindow.xaml
-    /// </summary>
+    /// </summary>ы
     public partial class EditPasswordWindow : Window
     {
         public EditPasswordWindow()
         {
             InitializeComponent();
+        }
+
+        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
         }
     }
 }

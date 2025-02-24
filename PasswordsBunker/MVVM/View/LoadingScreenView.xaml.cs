@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PasswordsBunker.MVVM.View
+namespace PasswordBoxClient.MVVM.View
 {
     /// <summary>
     /// Логика взаимодействия для LoadingScreenView.xaml

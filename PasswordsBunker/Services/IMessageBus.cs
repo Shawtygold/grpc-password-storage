@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PasswordsBunker.Services
+namespace PasswordBoxClient.Services
 {
     internal interface IMessageBus
     {

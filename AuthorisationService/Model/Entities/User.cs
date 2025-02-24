@@ -1,9 +1,9 @@
 ﻿using FluentValidation;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using AuthorisationService.Model.Validators;
+using AuthService.Model.Validators;
 
-namespace AuthorisationService.Model.Entities
+namespace AuthService.Model.Entities
 {
     public class User
     {
@@ -22,7 +22,7 @@ namespace AuthorisationService.Model.Entities
             Login = login;
             Password = password;
 
-            IValidator<User> userVaidator = new UserValidator();
+            IValidator<User> userVaidator = (IValidator<User>)new UserValidator();
             userVaidator.ValidateAndThrow(this);
         }
     }

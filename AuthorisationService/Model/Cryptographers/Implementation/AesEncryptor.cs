@@ -1,6 +1,6 @@
 ﻿using AESEncryptionLib;
 
-namespace AuthorisationService.Model.Cryptographers.Implementation
+namespace AuthService.Model.Cryptographers.Implementation
 {
     public class AesEncryptor : IEncryptor
     {
