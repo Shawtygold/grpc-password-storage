@@ -6,11 +6,11 @@ namespace AESEncryptionLib
     {
         public async Task<byte[]> EncryptStringToBytesAsync_Aes(string plainText, IAesConfig aesConfig)
         {
-            if (plainText == null || plainText.Length <= 0)
+            if (plainText == null || plainText.Length == 0)
                 throw new ArgumentNullException(nameof(plainText));
-            if (aesConfig.Key == null || aesConfig.Key.Length <= 0)
+            if (aesConfig.Key == null || aesConfig.Key.Length == 0)
                 throw new ArgumentNullException(nameof(aesConfig.Key));
-            if (aesConfig.IV == null || aesConfig.IV.Length <= 0)
+            if (aesConfig.IV == null || aesConfig.IV.Length == 0)
                 throw new ArgumentNullException(nameof(aesConfig.IV));
 
             byte[] encrypted;
@@ -19,8 +19,8 @@ namespace AESEncryptionLib
             {
                 aesAlg.Key = aesConfig.Key;
                 aesAlg.IV = aesConfig.IV;
-                aesAlg.Mode = aesConfig.Mode;
-                aesAlg.Padding = aesConfig.Padding;
+                aesAlg.Mode = aesConfig.CipherMode;
+                aesAlg.Padding = aesConfig.PaddingMode;
 
                 ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
 
@@ -43,11 +43,11 @@ namespace AESEncryptionLib
 
         public async Task<string> DecryptStringFromBytesAsync_Aes(byte[] cipherText, IAesConfig aesConfig)
         {
-            if (cipherText == null || cipherText.Length <= 0)
+            if (cipherText == null || cipherText.Length == 0)
                 throw new ArgumentNullException(nameof(cipherText));
-            if (aesConfig.Key == null || aesConfig.Key.Length <= 0)
+            if (aesConfig.Key == null || aesConfig.Key.Length == 0)
                 throw new ArgumentNullException(nameof(aesConfig.Key));
-            if (aesConfig.IV == null || aesConfig.IV.Length <= 0)
+            if (aesConfig.IV == null || aesConfig.IV.Length == 0)
                 throw new ArgumentNullException(nameof(aesConfig.IV));
 
             string plaintext;
@@ -56,8 +56,8 @@ namespace AESEncryptionLib
             {
                 aesAlg.Key = aesConfig.Key;
                 aesAlg.IV = aesConfig.IV;
-                aesAlg.Mode = aesConfig.Mode;
-                aesAlg.Padding = aesConfig.Padding;
+                aesAlg.Mode = aesConfig.CipherMode;
+                aesAlg.Padding = aesConfig.PaddingMode;
 
                 ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
 

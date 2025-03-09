@@ -9,15 +9,15 @@ namespace AESEncryptionLib
 
         public byte[] Key { get; set; }
         public byte[] IV { get; set; }
-        public PaddingMode Padding { get; set; }
-        public CipherMode Mode { get; set; }
+        public PaddingMode PaddingMode { get; set; }
+        public CipherMode CipherMode { get; set; }
 
         public DefaultAesConfig()
         {
             Key = RandomNumberGenerator.GetBytes(16);
             IV = RandomNumberGenerator.GetBytes(16);
-            Padding = DefafultPadding;
-            Mode = DefaultMode;
+            PaddingMode = DefafultPadding;
+            CipherMode = DefaultMode;
         }
     }
 }

@@ -17,7 +17,6 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\AESEncryptionLib\AESEncryptionLib.csproj" />
 	  <ProjectReference Include="..\RepositoryLib\RepositoryLib.csproj" />
-	  <ProjectReference Include="..\RpcExceptionHandlersLib\RpcExceptionHandlersLib.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
