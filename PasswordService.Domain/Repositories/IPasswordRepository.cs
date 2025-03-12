@@ -1,16 +1,16 @@
 ﻿using PasswordService.Domain.Entities;
-using RepositoryLib.Interfaces.Async;
+using System.Linq.Expressions;
 
 namespace PasswordService.Domain.Repositories
 {
     public interface IPasswordRepository :
-        IRepositoryAddAsync<Password>,
-        IRepositoryUpdateAsync<Password>,
-        IRepositoryDeleteAsync,
-        IRepositoryGetByAsync<Password>,
-        IRepositoryGetByIDAsync<Password>,
-        IRepositoryGetCollectionByAsync<Password>,
         IDisposable
     {
+        Task AddAsync(Password entity);
+        Task UpdateAsync(Password entity);
+        Task DeleteAsync(int entityId);
+        Task<Password?> GetByAsync(Expression<Func<Password, bool>> expression);
+        Task<Password?> GetByIDAsync(int entityId);
+        Task<IEnumerable<Password>> GetCollectionByAsync(Expression<Func<Password, bool>> expression);
     }
 }

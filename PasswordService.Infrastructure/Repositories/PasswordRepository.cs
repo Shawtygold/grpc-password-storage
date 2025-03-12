@@ -10,18 +10,14 @@ namespace PasswordService.Infrastructure.Repositories
     public sealed class PasswordRepository : IPasswordRepository
     {
         private readonly ApplicationContext _dbContext;
-        //private readonly IValidator<Password> _passwordValidator;
 
-        public PasswordRepository(ApplicationContext dbContext/*, IValidator<Password> passwordValidator*/)
+        public PasswordRepository(ApplicationContext dbContext)
         {
             _dbContext = dbContext;
-            //_passwordValidator = passwordValidator;
         }
 
         public async Task AddAsync(Password entity)
         {
-            //_passwordValidator.Validate(entity);
-
             await _dbContext.Passwords.AddAsync(entity);
             await _dbContext.SaveChangesAsync();
         }
