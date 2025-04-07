@@ -1,0 +1,33 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "GrpcAuthService";
+
+package auth;
+
+service AuthProtoService {
+
+    rpc RegisterUser (RegisterUserRequest) returns (RegisterUserResponse);
+    rpc AuthenticateUser (AuthenticateUserRequest) returns (AuthenticateUserResponse);
+}
+
+message AuthenticateUserRequest {
+	string login = 1;
+	string password = 2;
+}
+
+message AuthenticateUserResponse {
+	string token = 1;
+}
+
+message RegisterUserRequest {
+	string login = 1;
+	string email = 2;
+	string password = 3;
+}
+
+message RegisterUserResponse {
+	string userId = 1;
+}
+
