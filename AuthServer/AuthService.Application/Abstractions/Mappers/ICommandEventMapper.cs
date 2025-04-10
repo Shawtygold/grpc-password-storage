@@ -3,8 +3,8 @@ using AuthService.Domain.Events;
 
 namespace AuthService.Application.Abstractions.Mappers
 {
-    public interface ICommandMapper
+    public interface ICommandEventMapper
     {
-        public Task<UserRegistered> ToUserRegisteredEvent(RegisterUserCommand message);
+        public UserRegistered Map(RegisterUserCommand message);
     }
 }
