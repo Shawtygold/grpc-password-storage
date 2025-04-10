@@ -1,13 +1,13 @@
-﻿using AuthService.Application.DTO;
+﻿using AuthService.Application.CQRS.Commands.RegisterUser;
 using GrpcAuthService;
 
-namespace WebApi.Extensions
+namespace AuthService.WebApi.Extensions
 {
     public static class RequestExtension
     {
-        public static RegisterUserDTO ToDTO(this RegisterUserRequest request)
+        public static RegisterUserCommand ToRegisterUserCommand(this RegisterUserRequest request)
         {
-            return new RegisterUserDTO(request.Login, request.Email, request.Password);
+            return new RegisterUserCommand(request.Login, request.Email, request.Password);
         }
     }
 }
