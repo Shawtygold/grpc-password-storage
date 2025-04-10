@@ -4,15 +4,18 @@ using Marten.Events.Aggregation;
 
 namespace AuthService.Infrastructure.Projections
 {
-    public class UserProjection : SingleStreamProjection<User>
+    public class UserProjection : SingleStreamProjection<UserView>
     {
-        public void Apply(UserRegistered @event, User user)
+        public UserView Create(UserRegistered @event)
         {
-            user.Id = @event.Id;
-            user.Login = @event.Login;
-            user.Email = @event.Email;
-            user.EncryptedPassword = @event.EncryptedPassword;
-            user.CreatedAt = @event.CreatedAt;
+            return new()
+            {
+                Id = @event.Id,
+                Login = @event.Login,
+                Email = @event.Email,
+                PasswordHash = @event.PasswordHash,
+                CreatedAt = @event.CreatedAt
+            };
         }
     }
 }
