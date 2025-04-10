@@ -1,28 +1,28 @@
 ﻿using AuthService.Application.Abstractions.Mappers;
+using AuthService.Application.Abstractions.Repositories;
 using AuthService.Application.DTO;
 using AuthService.Application.Exceptions;
 using AuthService.Domain.Entities;
-using Marten;
 
 namespace AuthService.Application.CQRS.Queries.GetUserByLogin
 {
     public class GetUserByLoginQueryHandler 
     {
-        private readonly IQuerySession _querySession;
-        private readonly IUserMapper _userMapper;
+        private readonly IProjectionRepository<UserView> _readRepository;
+        private readonly IUserViewMapper _userViewMapper;
 
-        public GetUserByLoginQueryHandler(IQuerySession querySession, IUserMapper userMapper)
+        public GetUserByLoginQueryHandler(IProjectionRepository<UserView> readRepository, IUserViewMapper userViewMapper)
         {
-            _querySession = querySession;
-            _userMapper = userMapper;
+            _readRepository = readRepository;
+            _userViewMapper = userViewMapper;
         }
 
         public async Task<UserDTO> HandleAsync(GetUserByLoginQuery request)
         {
-            User user = await _querySession.Query<User>().FirstOrDefaultAsync(u => u.Login == request.Login)
+             UserView userView = await _readRepository.GetUserByAsync(u => u.Login == request.Login)
                 ?? throw new UserNotFoundException(request.Login);
 
-            return await _userMapper.ToUserDTO(user);
+            return _userViewMapper.Map(userView);
         }
     }
 }
