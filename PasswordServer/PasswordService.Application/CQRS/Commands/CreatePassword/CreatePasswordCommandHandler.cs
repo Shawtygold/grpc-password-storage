@@ -8,13 +8,11 @@ namespace PasswordService.Application.CQRS.Commands.CreatePassword
 {
     public sealed class CreatePasswordCommandHandler 
     {
-        //private readonly IDocumentStore _documentStore;
-        private readonly IEventSourcingRepository<Password> _writeRepository;
+        private readonly IEventSourcingRepository<PasswordAggregate> _writeRepository;
         private readonly ICommandEventMapper _commandMapper;
 
-        public CreatePasswordCommandHandler(/*IDocumentStore documentStore,*/IEventSourcingRepository<Password> writeRepository, ICommandEventMapper commandMapper)
+        public CreatePasswordCommandHandler(IEventSourcingRepository<PasswordAggregate> writeRepository, ICommandEventMapper commandMapper)
         {
-            //_documentStore = documentStore;
             _writeRepository = writeRepository;
             _commandMapper = commandMapper;
         }
@@ -22,13 +20,10 @@ namespace PasswordService.Application.CQRS.Commands.CreatePassword
         public async Task<Guid> HandleAsync(CreatePasswordCommand command)
         {
             PasswordCreated createdEvent = _commandMapper.Map(Guid.NewGuid(), command);
-            Password password = new();
+            PasswordAggregate password = new();
             password.Apply(createdEvent);
             
             await _writeRepository.SaveAsync(password);
-            //using var session = _documentStore.LightweightSession();
-            //session.Events.StartStream<Password>(createdEvent.Id, createdEvent);
-            //await session.SaveChangesAsync();
 
             return password.Id;
         }
