@@ -1,18 +1,18 @@
-﻿using AuthService.Application.CQRS.Commands.RegisterUser;
+﻿using AuthService.Application.Abstractions.Repositories;
+using AuthService.Application.CQRS.Commands.RegisterUser;
 using AuthService.Domain.Entities;
 using FluentValidation;
-using Marten;
 using System.Net.Mail;
 
 namespace AuthService.Application.Validators.Commands
 {
     public class RegisterUserCommandValidator : AbstractValidator<RegisterUserCommand>
     {
-        private readonly IQuerySession _queerySession;
+        private readonly IProjectionRepository<UserView> _readRepository;
 
-        public RegisterUserCommandValidator(IQuerySession querySession)
+        public RegisterUserCommandValidator(IProjectionRepository<UserView> readRepository)
         {
-            _queerySession = querySession;
+            _readRepository = readRepository;
 
             RuleFor(c => c.Login).NotEmpty().MustAsync(async (login, cancellation) => await IsValidLogin(login, cancellation)).WithMessage("This login already exists");
             RuleFor(c => c.Email).NotEmpty().Must(IsValidEmail).WithMessage("Invalid email");
@@ -31,10 +31,9 @@ namespace AuthService.Application.Validators.Commands
                 return false;
             }
         }
-
         private async Task<bool> IsValidLogin(string login, CancellationToken cancellationToken)
         {
-            return await _queerySession.Query<User>().FirstOrDefaultAsync(u => u.Login == login, cancellationToken) == null;
+            return await _readRepository.GetUserByAsync(u => u.Login == login, cancellationToken) == null;
         }
     }
 }
