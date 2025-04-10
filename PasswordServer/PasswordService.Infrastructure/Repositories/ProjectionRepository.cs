@@ -15,19 +15,19 @@ namespace PasswordService.Infrastructure.Repositories
             _querySession = querySession;
         }
 
-        public async Task<IEnumerable<PasswordView>> GetAllAsync(Guid userId)
+        public async Task<IEnumerable<PasswordView>> GetAllAsync(Guid userId, CancellationToken cancellationToken = default)
         {
-            return await _querySession.Query<PasswordView>().Where(p => p.UserId == userId).ToListAsync();
+            return await _querySession.Query<PasswordView>().Where(p => p.UserId == userId).ToListAsync(cancellationToken);
         }
 
-        public async Task<PasswordView?> GetByAsync(Expression<Func<PasswordView, bool>> expression)
+        public async Task<PasswordView?> GetByAsync(Expression<Func<PasswordView, bool>> expression, CancellationToken cancellationToken = default)
         {
-            return await _querySession.Query<PasswordView>().FirstOrDefaultAsync(expression);
+            return await _querySession.Query<PasswordView>().FirstOrDefaultAsync(expression, cancellationToken);
         }
 
-        public async Task<PasswordView?> GetByIdAsync(Guid id)
+        public async Task<PasswordView?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
         {
-            return await _querySession.LoadAsync<PasswordView>(id);
+            return await _querySession.LoadAsync<PasswordView>(id, cancellationToken);
         }
     }
 }

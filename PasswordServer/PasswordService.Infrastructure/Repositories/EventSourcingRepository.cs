@@ -5,7 +5,7 @@ using PasswordService.Domain.Entities;
 namespace PasswordService.Infrastructure.Repositories
 {
     // Write side
-    public class EventSourcingRepository : IEventSourcingRepository<Password>
+    public class EventSourcingRepository : IEventSourcingRepository<PasswordAggregate>
     {
         private readonly IDocumentStore _documentStore;
 
@@ -14,23 +14,23 @@ namespace PasswordService.Infrastructure.Repositories
             _documentStore = documentStore;
         }
 
-        public async Task SaveAsync(Password aggregate)
+        public async Task SaveAsync(PasswordAggregate aggregate, CancellationToken cancellationToken = default)
         {
             var events = aggregate.GetUncommitedEvents();
             if(events.Any())
             {
                 using var session = _documentStore.LightweightSession();
                 session.Events.Append(aggregate.Id, events);
-                await session.SaveChangesAsync();
+                await session.SaveChangesAsync(cancellationToken);
 
                 aggregate.ClearUncommitedEvents();
             }
         }
 
-        public async Task<Password?> GetByIdAsync(Guid aggregateId)
+        public async Task<PasswordAggregate?> GetByIdAsync(Guid aggregateId, CancellationToken cancellationToken = default)
         {
             using var session = _documentStore.LightweightSession();
-            return await session.Events.AggregateStreamAsync<Password>(aggregateId);
+            return await session.Events.AggregateStreamAsync<PasswordAggregate>(aggregateId, token: cancellationToken);
         }
     }
 }
