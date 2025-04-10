@@ -1,27 +1,15 @@
-using AESEncryptionLib;
-using FluentValidation;
 using Marten;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using PasswordService.Application.Abstractions.Encryption;
 using PasswordService.Application.Abstractions.Mappers;
 using PasswordService.Application.Abstractions.Repositories;
 using PasswordService.Application.CQRS.Commands.CreatePassword;
-using PasswordService.Application.CQRS.Commands.DeletePassword;
-using PasswordService.Application.CQRS.Commands.UpdatePassword;
-using PasswordService.Application.CQRS.Queries.GetPasswordByID;
-using PasswordService.Application.CQRS.Queries.GetPasswordsByUserID;
 using PasswordService.Application.Mappers;
-using PasswordService.Application.Validators.Commands;
-using PasswordService.Application.Validators.Queries;
 using PasswordService.Domain.Entities;
 using PasswordService.Domain.Events;
 using PasswordService.Infrastructure;
-using PasswordService.Infrastructure.Abstractions;
 using PasswordService.Infrastructure.Projections;
 using PasswordService.Infrastructure.Repositories;
-using PasswordService.Infrastructure.Security;
-using PasswordService.Infrastructure.Validators;
 using System.Text;
 using Weasel.Core;
 using Wolverine;
@@ -34,7 +22,7 @@ builder.Services.AddGrpc();
 
 // Connection string
 string connectionString = builder.Configuration.GetConnectionString("PosgreSQLConnection")
-    ?? throw new InvalidOperationException("PostgreSQL connection is required");
+    ?? throw new InvalidOperationException("PostgreSQL connection not found in configuration");
 
 // Marten
 builder.Services.AddMarten(options =>
@@ -78,29 +66,12 @@ builder.Services.AddAuthentication(x =>
 builder.Services.AddAuthorization();
 
 // Repositories
-builder.Services.AddScoped<IEventSourcingRepository<Password>, EventSourcingRepository>();
+builder.Services.AddScoped<IEventSourcingRepository<PasswordAggregate>, EventSourcingRepository>();
 builder.Services.AddScoped<IProjectionRepository<PasswordView>, ProjectionRepository>();
 
 // Mappers
 builder.Services.AddScoped<ICommandEventMapper, CommandEventMapper>();
-
-// Validators
-//builder.Services.AddScoped<IValidator<CreatePasswordCommand>, CreatePasswordCommandValidator>();
-//builder.Services.AddScoped<IValidator<UpdatePasswordCommand>, UpdatePasswordCommandValidator>();
-//builder.Services.AddScoped<IValidator<DeletePasswordCommand>, DeletePasswordCommandValidator>();
-//builder.Services.AddScoped<IValidator<GetPasswordByIDQuery>, GetPasswordByIDQueryValidator>();
-//builder.Services.AddScoped<IValidator<GetPasswordsByUserIDQuery>, GetPasswordByUserIDQueryValidator>();
-builder.Services.AddScoped<IValidator<AesEncryptionConfig>, AesEncryptionConfigValidator>();
-
-// Encryption
-//builder.Services.AddScoped<IAesConfigProvider, AesConfigProvider>();
-//builder.Services.AddScoped<IAesConfig>(provider => provider.GetRequiredService<IAesConfigProvider>().GetAesConfig());
-//builder.Services.AddScoped<IAes, AES>();
-//builder.Services.AddScoped<IEncryptor, AesEncryptor>();
-
-// Settings
-//builder.Services.Configure<AesSettings>(builder.Configuration.GetRequiredSection(AesSettings.SectionName));
-//builder.Services.Configure<AppContextSettings>(builder.Configuration.GetRequiredSection(AppContextSettings.SectionName));
+builder.Services.AddScoped<IPasswordViewMapper, PasswordViewMapper>();
 
 var app = builder.Build();
 

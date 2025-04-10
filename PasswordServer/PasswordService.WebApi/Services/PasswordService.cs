@@ -57,7 +57,7 @@ namespace PasswordService.WebApi.Services
         }
 
         [Authorize]
-        public override async Task<UpdatePasswordResponse> UpdatePassword(UpdatePasswordRequest request, ServerCallContext context)
+        public override async Task<UpdatePasswordResponse> UpdatePassword(UpdatePasswordRequest request, ServerCallContext context)     
         {
             var user = context.GetHttpContext().User;
             Guid userId = Guid.Parse(user.Claims.First().Value);
