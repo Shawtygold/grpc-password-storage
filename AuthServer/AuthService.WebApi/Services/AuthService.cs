@@ -1,29 +1,31 @@
 ﻿using AuthService.Application.Abstractions.Services;
+using AuthService.Application.CQRS.Commands.RegisterUser;
 using AuthService.Application.Exceptions;
+using AuthService.WebApi.Exceptions;
+using AuthService.WebApi.Extensions;
 using FluentValidation;
 using Grpc.Core;
 using GrpcAuthService;
-using WebApi.Exceptions;
-using WebApi.Extensions;
+using Wolverine;
 
-namespace WebApi.Services
+namespace AuthService.WebApi.Services
 {
     public class AuthService : AuthProtoService.AuthProtoServiceBase
     {
         private readonly ILogger<AuthService> _logger;
+        private readonly IMessageBus _messageBus;
         private readonly IUserAuthenticator _userAuthenticator;
-        private readonly IUserRegistration _userRegistration;
         private readonly IValidator<AuthenticateUserRequest> _authUserRequestValidator;
         private static readonly string _domain = AppDomain.CurrentDomain.FriendlyName;
 
         public AuthService(ILogger<AuthService> logger,
+            IMessageBus messageBus,
             IUserAuthenticator userAuthenticator,
-            IUserRegistration userRegistration,
             IValidator<AuthenticateUserRequest> authUserRequestValidator)
         {
             _logger = logger;
+            _messageBus = messageBus;
             _userAuthenticator = userAuthenticator;
-            _userRegistration = userRegistration;
             _authUserRequestValidator = authUserRequestValidator;
         }
 
@@ -65,7 +67,9 @@ namespace WebApi.Services
 
             try
             {
-                Guid userId = await _userRegistration.RegisterAsync(request.ToDTO());
+                RegisterUserCommand command = request.ToRegisterUserCommand();
+                Guid userId = await _messageBus.InvokeAsync<Guid>(command);
+
                 response = new() { UserId = userId.ToString() };
             }
             catch (ValidationException ex)
