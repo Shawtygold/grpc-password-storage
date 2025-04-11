@@ -75,8 +75,9 @@ namespace PasswordService.WebApi.Services
                 _logger.LogWarning("{Date} Validation failed for {Command}", DateTime.Now, typeof(CreatePasswordCommand).Name);
                 throw PasswordRpcExceptions.InvalidArgumets(ex.Errors);    
             }
-            catch (PasswordNotFoundException)
+            catch (PasswordNotFoundException ex)
             {
+                _logger.LogError("{Date} {Operation} Failure \"{Message}\"", DateTime.Now, nameof(UpdatePassword), ex.Message);
                 throw PasswordRpcExceptions.NotFound(_domain, request.Password.Id);
             }
             catch (Exception ex)
@@ -106,8 +107,9 @@ namespace PasswordService.WebApi.Services
                 _logger.LogWarning("{Date} Validation failed for {Command}", DateTime.Now, typeof(CreatePasswordCommand).Name);
                 throw PasswordRpcExceptions.InvalidArgumets(ex.Errors);
             }
-            catch (PasswordNotFoundException)
+            catch (PasswordNotFoundException ex)
             {
+                _logger.LogError("{Date} {Operation} Failure \"{Message}\"", DateTime.Now, nameof(UpdatePassword), ex.Message);
                 throw PasswordRpcExceptions.NotFound(_domain, request.Id);
             }
             catch (Exception ex)
@@ -141,11 +143,10 @@ namespace PasswordService.WebApi.Services
             }
             catch (Exception ex)
             {
-                _logger.LogError("{Date} {Operation} Failure \"{Message}\"", DateTime.Now, nameof(CreatePassword), ex.Message);
+                _logger.LogError("{Date} {Operation} Failure \"{Message}\"", DateTime.Now, nameof(GetPasswords), ex.Message);
                 throw PasswordRpcExceptions.InternalError(_domain, ex);
             }
-
-            _logger.LogInformation("{Date} {Operation} Passwords has been retrieved", DateTime.Now, nameof(GetPasswords));           
+         
             return response;
         }
     }
