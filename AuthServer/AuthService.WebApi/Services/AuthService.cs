@@ -1,5 +1,6 @@
 ﻿using AuthService.Application.Abstractions.Services;
 using AuthService.Application.CQRS.Commands.RegisterUser;
+using AuthService.Application.CQRS.Queries.CheckUserExists;
 using AuthService.Application.Exceptions;
 using AuthService.WebApi.Exceptions;
 using AuthService.WebApi.Extensions;
@@ -84,6 +85,29 @@ namespace AuthService.WebApi.Services
             }
 
             _logger.LogInformation("{Date} {Operation} User {UserLogin} has been registered", DateTime.Now, nameof(RegisterUser), request.Login);
+
+            return response;
+        }
+
+        public override async Task<CheckUserExistsResponse> CheckUserExists(CheckUserExistsRequest request, ServerCallContext context)
+        {
+            CheckUserExistsResponse response;
+
+            try
+            {
+                CheckUserExistsQuery query = new(request.Login);
+                response = new() { Exists = await _messageBus.InvokeAsync<bool>(query) };
+            }
+            catch (ValidationException ex)
+            {
+                _logger.LogWarning("{Date} {Operation} Validation failed \"{Message}\"", DateTime.Now, nameof(RegisterUser), ex.Message);
+                throw AuthRpcExceptions.InvalidArgumets(ex.Errors);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("{Date} {Operation} Failed \"{Message}\"", DateTime.Now, nameof(RegisterUser), ex.Message);
+                throw AuthRpcExceptions.InternalError(_domain, ex);
+            }
 
             return response;
         }
