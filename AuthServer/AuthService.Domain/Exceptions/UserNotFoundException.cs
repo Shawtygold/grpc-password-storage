@@ -1,4 +1,4 @@
-﻿namespace AuthService.Application.Exceptions
+﻿namespace AuthService.Domain.Exceptions
 {
     public class UserNotFoundException : Exception
     {
