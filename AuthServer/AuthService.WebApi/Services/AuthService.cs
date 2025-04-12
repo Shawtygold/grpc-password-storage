@@ -1,8 +1,7 @@
 ﻿using AuthService.Application.Abstractions.Services;
 using AuthService.Application.CQRS.Commands.RegisterUser;
 using AuthService.Application.CQRS.Queries.CheckUserExists;
-using AuthService.Application.Exceptions;
-using AuthService.WebApi.Exceptions;
+using AuthService.WebApi.Abstractions;
 using AuthService.WebApi.Extensions;
 using FluentValidation;
 using Grpc.Core;
@@ -17,17 +16,19 @@ namespace AuthService.WebApi.Services
         private readonly IMessageBus _messageBus;
         private readonly IUserAuthenticator _userAuthenticator;
         private readonly IValidator<AuthenticateUserRequest> _authUserRequestValidator;
-        private static readonly string _domain = AppDomain.CurrentDomain.FriendlyName;
+        private readonly IGrpcExceptionMapper _grpcExceptionMapper;
 
         public AuthService(ILogger<AuthService> logger,
             IMessageBus messageBus,
             IUserAuthenticator userAuthenticator,
-            IValidator<AuthenticateUserRequest> authUserRequestValidator)
+            IValidator<AuthenticateUserRequest> authUserRequestValidator,
+            IGrpcExceptionMapper grpcExceptionMapper)
         {
             _logger = logger;
             _messageBus = messageBus;
             _userAuthenticator = userAuthenticator;
             _authUserRequestValidator = authUserRequestValidator;
+            _grpcExceptionMapper = grpcExceptionMapper;
         }
 
         public override async Task<AuthenticateUserResponse> AuthenticateUser(AuthenticateUserRequest request, ServerCallContext context)
@@ -41,20 +42,9 @@ namespace AuthService.WebApi.Services
 
                 response = new() { Token = jwtToken };
             }
-            catch (UserNotFoundException ex)
-            {
-                _logger.LogError("{Date} {Operation} Failure \"{Message}\"", DateTime.Now, nameof(AuthenticateUser), ex.Message);
-                throw AuthRpcExceptions.NotFound(_domain, request.Login);
-            }
-            catch (ValidationException ex)
-            {
-                _logger.LogError("{Date} {Operation} Failure \"{Message}\"", DateTime.Now, nameof(AuthenticateUser), ex.Message);
-                throw AuthRpcExceptions.InvalidArgumets(ex.Errors);
-            }
             catch (Exception ex)
-            {
-                _logger.LogError("{Date} {Operation} Failure \"{Message}\"", DateTime.Now, nameof(AuthenticateUser), ex.Message);
-                throw AuthRpcExceptions.InternalError(_domain, ex);
+            {              
+                throw _grpcExceptionMapper.MapException(ex);
             }
 
             _logger.LogInformation("{Date} {Operation} User {UserLogin} has been authenticated", DateTime.Now, nameof(AuthenticateUser), request.Login);
@@ -72,16 +62,10 @@ namespace AuthService.WebApi.Services
                 Guid userId = await _messageBus.InvokeAsync<Guid>(command);
 
                 response = new() { UserId = userId.ToString() };
-            }
-            catch (ValidationException ex)
-            {
-                _logger.LogWarning("{Date} {Operation} Validation failed \"{Message}\"", DateTime.Now, nameof(RegisterUser), ex.Message);
-                throw AuthRpcExceptions.InvalidArgumets(ex.Errors);
-            }
+            }          
             catch (Exception ex)
             {
-                _logger.LogError("{Date} {Operation} Failed \"{Message}\"", DateTime.Now, nameof(RegisterUser), ex.Message);
-                throw AuthRpcExceptions.InternalError(_domain, ex);
+                throw _grpcExceptionMapper.MapException(ex);
             }
 
             _logger.LogInformation("{Date} {Operation} User {UserLogin} has been registered", DateTime.Now, nameof(RegisterUser), request.Login);
@@ -98,15 +82,9 @@ namespace AuthService.WebApi.Services
                 CheckUserExistsQuery query = new(request.Login);
                 response = new() { Exists = await _messageBus.InvokeAsync<bool>(query) };
             }
-            catch (ValidationException ex)
-            {
-                _logger.LogWarning("{Date} {Operation} Validation failed \"{Message}\"", DateTime.Now, nameof(RegisterUser), ex.Message);
-                throw AuthRpcExceptions.InvalidArgumets(ex.Errors);
-            }
             catch (Exception ex)
             {
-                _logger.LogError("{Date} {Operation} Failed \"{Message}\"", DateTime.Now, nameof(RegisterUser), ex.Message);
-                throw AuthRpcExceptions.InternalError(_domain, ex);
+                throw _grpcExceptionMapper.MapException(ex);
             }
 
             return response;
