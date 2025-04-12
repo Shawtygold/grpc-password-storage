@@ -17,10 +17,10 @@ namespace AuthService.Application.CQRS.Queries.GetUserByLogin
             _userViewMapper = userViewMapper;
         }
 
-        public async Task<UserDTO> HandleAsync(GetUserByLoginQuery request)
+        public async Task<UserDTO> HandleAsync(GetUserByLoginQuery query)
         {
-             UserView userView = await _readRepository.GetUserByAsync(u => u.Login == request.Login)
-                ?? throw new UserNotFoundException(request.Login);
+             UserView userView = await _readRepository.GetUserByAsync(u => u.Login == query.Login)
+                ?? throw new UserNotFoundException(query.Login);
 
             return _userViewMapper.Map(userView);
         }
