@@ -1,4 +1,4 @@
-﻿namespace PasswordService.Application.Exceptions
+﻿namespace PasswordService.Domain.Exceptions
 {
     public class PasswordNotFoundException : Exception
     {
