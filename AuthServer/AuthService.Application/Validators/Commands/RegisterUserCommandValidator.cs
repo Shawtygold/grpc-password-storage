@@ -1,20 +1,20 @@
-﻿using AuthService.Application.Abstractions.Repositories;
-using AuthService.Application.CQRS.Commands.RegisterUser;
-using AuthService.Domain.Entities;
+﻿using AuthService.Application.CQRS.Commands.RegisterUser;
+using AuthService.Application.CQRS.Queries.CheckUserExists;
 using FluentValidation;
 using System.Net.Mail;
+using Wolverine;
 
 namespace AuthService.Application.Validators.Commands
 {
     public class RegisterUserCommandValidator : AbstractValidator<RegisterUserCommand>
     {
-        private readonly IProjectionRepository<UserView> _readRepository;
+        private readonly IMessageBus _messageBus;
 
-        public RegisterUserCommandValidator(IProjectionRepository<UserView> readRepository)
+        public RegisterUserCommandValidator(IMessageBus messageBus)
         {
-            _readRepository = readRepository;
+            _messageBus = messageBus;
 
-            RuleFor(c => c.Login).NotEmpty().MustAsync(async (login, cancellation) => await IsValidLogin(login, cancellation)).WithMessage("This login already exists");
+            RuleFor(c => c.Login).NotEmpty().MustAsync(async (login, cancellation) => await IsLoginUnique(login, cancellation)).WithMessage("This login already exists");
             RuleFor(c => c.Email).NotEmpty().Must(IsValidEmail).WithMessage("Invalid email");
             RuleFor(c => c.Password).NotEmpty();
         }
@@ -31,9 +31,10 @@ namespace AuthService.Application.Validators.Commands
                 return false;
             }
         }
-        private async Task<bool> IsValidLogin(string login, CancellationToken cancellationToken)
+        private async Task<bool> IsLoginUnique(string login, CancellationToken cancellationToken)
         {
-            return await _readRepository.GetUserByAsync(u => u.Login == login, cancellationToken) == null;
+            CheckUserExistsQuery query = new(login);
+            return !await _messageBus.InvokeAsync<bool>(query);
         }
     }
 }
