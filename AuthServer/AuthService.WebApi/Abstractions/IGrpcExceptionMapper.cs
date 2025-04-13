@@ -4,6 +4,6 @@ namespace AuthService.WebApi.Abstractions
 {
     public interface IGrpcExceptionMapper
     {
-        RpcException MapException(Exception ex);
+        RpcException MapException(string serviceName, string operation, Exception ex);
     }
 }

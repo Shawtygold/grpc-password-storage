@@ -15,23 +15,24 @@ namespace AuthService.WebApi.Mapper
             _logger = logger;
         }
 
-        public RpcException MapException(Exception ex)
+        public RpcException MapException(string serviceName, string operation, Exception ex)
         {
             switch (ex)
             {
                 case UserNotFoundException notFoundEx: 
                     {
-                        _logger.LogWarning("{Date} User not found. UserId: {Id}", DateTime.Now, notFoundEx.UserLogin);
+
+                        _logger.LogWarning("{Date} {ServiceName} {Operation} {Status} {Message}", DateTime.Now, serviceName, operation, "Failed", notFoundEx.UserLogin);
                         return AuthRpcExceptions.NotFound(notFoundEx.UserLogin);                   
                     }
                 case ValidationException validationEx:
                     {
-                        _logger.LogWarning("{Date} Validation failed \"{Message}\"", DateTime.Now, ex.Message);
+                        _logger.LogWarning("{Date} {ServiceName} {Operation} {Status} {Message}", DateTime.Now, serviceName, operation, "Validation Failed", ex.Message);
                         return AuthRpcExceptions.InvalidArgumets(validationEx.Errors);
                     }
                 default:
                     {
-                        _logger.LogError("{Date} Failed \"{Message}\"", DateTime.Now, ex.Message);
+                        _logger.LogError("{Date} {ServiceName} {Operation} {Status} {ExMessage}", DateTime.Now, serviceName, operation, "Failed", ex.Message);
                         return AuthRpcExceptions.InternalError(ex);
                     }
             }

@@ -17,6 +17,7 @@ namespace AuthService.WebApi.Services
         private readonly IUserAuthenticator _userAuthenticator;
         private readonly IValidator<AuthenticateUserRequest> _authUserRequestValidator;
         private readonly IGrpcExceptionMapper _grpcExceptionMapper;
+        private const string ServiceName = "AuthService";
 
         public AuthService(ILogger<AuthService> logger,
             IMessageBus messageBus,
@@ -44,10 +45,10 @@ namespace AuthService.WebApi.Services
             }
             catch (Exception ex)
             {              
-                throw _grpcExceptionMapper.MapException(ex);
+                throw _grpcExceptionMapper.MapException(ServiceName, nameof(AuthenticateUser), ex);
             }
 
-            _logger.LogInformation("{Date} {Operation} User {UserLogin} has been authenticated", DateTime.Now, nameof(AuthenticateUser), request.Login);
+            _logger.LogInformation("{Date} {ServiceName} {Operation} {Status} {Message}", DateTime.Now, ServiceName, nameof(AuthenticateUser), "Success", $"User has been authenticated. UserLogin: {request.Login}");
 
             return response;
         }
@@ -65,10 +66,10 @@ namespace AuthService.WebApi.Services
             }          
             catch (Exception ex)
             {
-                throw _grpcExceptionMapper.MapException(ex);
+                throw _grpcExceptionMapper.MapException(ServiceName, nameof(RegisterUser), ex);
             }
 
-            _logger.LogInformation("{Date} {Operation} User {UserLogin} has been registered", DateTime.Now, nameof(RegisterUser), request.Login);
+            _logger.LogInformation("{Date} {ServiceName} {Operation} {Status} {Message}", DateTime.Now, ServiceName, nameof(RegisterUser), "Success", $"User has been registered. UserLogin: {request.Login}");
 
             return response;
         }
@@ -84,8 +85,10 @@ namespace AuthService.WebApi.Services
             }
             catch (Exception ex)
             {
-                throw _grpcExceptionMapper.MapException(ex);
+                throw _grpcExceptionMapper.MapException(ServiceName, nameof(CheckUserExists), ex);
             }
+
+            _logger.LogInformation("{Date} {ServiceName} {Operation} {Status}", DateTime.Now, ServiceName, nameof(CheckUserExists), "Success");
 
             return response;
         }
