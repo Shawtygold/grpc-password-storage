@@ -10,7 +10,6 @@ service AuthProtoService {
 
     rpc RegisterUser (RegisterUserRequest) returns (RegisterUserResponse);
     rpc AuthenticateUser (AuthenticateUserRequest) returns (AuthenticateUserResponse);
-	rpc CheckUserExists (CheckUserExistsRequest) returns (CheckUserExistsResponse);
 }
 
 message AuthenticateUserRequest {
@@ -30,13 +29,5 @@ message RegisterUserRequest {
 
 message RegisterUserResponse {
 	string userId = 1;
-}
-
-message CheckUserExistsRequest {
-	string login = 1;
-}
-
-message CheckUserExistsResponse {
-	bool exists = 1;
 }
 

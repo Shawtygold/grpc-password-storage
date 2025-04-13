@@ -73,24 +73,5 @@ namespace AuthService.WebApi.Services
 
             return response;
         }
-
-        public override async Task<CheckUserExistsResponse> CheckUserExists(CheckUserExistsRequest request, ServerCallContext context)
-        {
-            CheckUserExistsResponse response;
-
-            try
-            {
-                CheckUserExistsQuery query = new(request.Login);
-                response = new() { Exists = await _messageBus.InvokeAsync<bool>(query) };
-            }
-            catch (Exception ex)
-            {
-                throw _grpcExceptionMapper.MapException(_domain, nameof(CheckUserExists), ex);
-            }
-
-            _logger.LogInformation("{Date} {ServiceName} {Operation} {Status}", DateTime.Now, _domain, nameof(CheckUserExists), "Success");
-
-            return response;
-        }
     }
 }
