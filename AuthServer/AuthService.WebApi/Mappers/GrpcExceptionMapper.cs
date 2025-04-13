@@ -4,7 +4,7 @@ using AuthService.WebApi.Exceptions;
 using FluentValidation;
 using Grpc.Core;
 
-namespace AuthService.WebApi.Mapper
+namespace AuthService.WebApi.Mappers
 {
     public class GrpcExceptionMapper : IGrpcExceptionMapper
     {
@@ -15,25 +15,24 @@ namespace AuthService.WebApi.Mapper
             _logger = logger;
         }
 
-        public RpcException MapException(string serviceName, string operation, Exception ex)
+        public RpcException MapException(string domain, string operation, Exception ex)
         {
             switch (ex)
             {
                 case UserNotFoundException notFoundEx: 
                     {
-
-                        _logger.LogWarning("{Date} {ServiceName} {Operation} {Status} {Message}", DateTime.Now, serviceName, operation, "Failed", notFoundEx.UserLogin);
-                        return AuthRpcExceptions.NotFound(notFoundEx.UserLogin);                   
+                        _logger.LogWarning("{Date} {Domain} {Operation} {Status} {Message}", DateTime.Now, domain, operation, "Failed", notFoundEx.Message);
+                        return AuthRpcExceptions.NotFound(domain, notFoundEx.UserLogin);                   
                     }
                 case ValidationException validationEx:
                     {
-                        _logger.LogWarning("{Date} {ServiceName} {Operation} {Status} {Message}", DateTime.Now, serviceName, operation, "Validation Failed", ex.Message);
+                        _logger.LogWarning("{Date} {Domain} {Operation} {Status} {Message}", DateTime.Now, domain, operation, "Validation Failed", ex.Message);
                         return AuthRpcExceptions.InvalidArgumets(validationEx.Errors);
                     }
                 default:
                     {
-                        _logger.LogError("{Date} {ServiceName} {Operation} {Status} {ExMessage}", DateTime.Now, serviceName, operation, "Failed", ex.Message);
-                        return AuthRpcExceptions.InternalError(ex);
+                        _logger.LogError("{Date} {Domain} {Operation} {Status} {ExMessage}", DateTime.Now, domain, operation, "Failed", ex.Message);
+                        return AuthRpcExceptions.InternalError(domain, ex);
                     }
             }
         }

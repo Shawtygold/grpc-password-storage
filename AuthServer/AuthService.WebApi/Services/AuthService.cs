@@ -17,7 +17,7 @@ namespace AuthService.WebApi.Services
         private readonly IUserAuthenticator _userAuthenticator;
         private readonly IValidator<AuthenticateUserRequest> _authUserRequestValidator;
         private readonly IGrpcExceptionMapper _grpcExceptionMapper;
-        private const string ServiceName = "AuthService";
+        private readonly string _domain = "auth";
 
         public AuthService(ILogger<AuthService> logger,
             IMessageBus messageBus,
@@ -45,10 +45,10 @@ namespace AuthService.WebApi.Services
             }
             catch (Exception ex)
             {              
-                throw _grpcExceptionMapper.MapException(ServiceName, nameof(AuthenticateUser), ex);
+                throw _grpcExceptionMapper.MapException(_domain, nameof(AuthenticateUser), ex);
             }
 
-            _logger.LogInformation("{Date} {ServiceName} {Operation} {Status} {Message}", DateTime.Now, ServiceName, nameof(AuthenticateUser), "Success", $"User has been authenticated. UserLogin: {request.Login}");
+            _logger.LogInformation("{Date} {ServiceName} {Operation} {Status} {Message}", DateTime.Now, _domain, nameof(AuthenticateUser), "Success", $"User has been authenticated. UserLogin: {request.Login}");
 
             return response;
         }
@@ -66,10 +66,10 @@ namespace AuthService.WebApi.Services
             }          
             catch (Exception ex)
             {
-                throw _grpcExceptionMapper.MapException(ServiceName, nameof(RegisterUser), ex);
+                throw _grpcExceptionMapper.MapException(_domain, nameof(RegisterUser), ex);
             }
 
-            _logger.LogInformation("{Date} {ServiceName} {Operation} {Status} {Message}", DateTime.Now, ServiceName, nameof(RegisterUser), "Success", $"User has been registered. UserLogin: {request.Login}");
+            _logger.LogInformation("{Date} {ServiceName} {Operation} {Status} {Message}", DateTime.Now, _domain, nameof(RegisterUser), "Success", $"User has been registered. UserLogin: {request.Login}");
 
             return response;
         }
@@ -85,10 +85,10 @@ namespace AuthService.WebApi.Services
             }
             catch (Exception ex)
             {
-                throw _grpcExceptionMapper.MapException(ServiceName, nameof(CheckUserExists), ex);
+                throw _grpcExceptionMapper.MapException(_domain, nameof(CheckUserExists), ex);
             }
 
-            _logger.LogInformation("{Date} {ServiceName} {Operation} {Status}", DateTime.Now, ServiceName, nameof(CheckUserExists), "Success");
+            _logger.LogInformation("{Date} {ServiceName} {Operation} {Status}", DateTime.Now, _domain, nameof(CheckUserExists), "Success");
 
             return response;
         }
