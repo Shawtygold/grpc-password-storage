@@ -1,5 +1,4 @@
-﻿using FluentValidation;
-using Grpc.Core;
+﻿using Grpc.Core;
 using GrpcPasswordService;
 using Marten;
 using Microsoft.AspNetCore.Authorization;
@@ -8,8 +7,7 @@ using PasswordService.Application.CQRS.Commands.DeletePassword;
 using PasswordService.Application.CQRS.Commands.UpdatePassword;
 using PasswordService.Application.CQRS.Queries.GetPasswordsByUserID;
 using PasswordService.Application.DTO;
-using PasswordService.Application.Exceptions;
-using PasswordService.WebApi.Exceptions;
+using PasswordService.WebApi.Abstractions;
 using PasswordService.WebApi.Extensions;
 using Wolverine;
 
@@ -19,12 +17,14 @@ namespace PasswordService.WebApi.Services
     {
         private readonly ILogger<PasswordService> _logger;
         private readonly IMessageBus _messageBus;
-        private static readonly string _domain = AppDomain.CurrentDomain.FriendlyName;
+        private readonly IGrpcExceptionMapper _grpcExceptionMapper;
+        private static readonly string _domain = "passwords";
 
-        public PasswordService(ILogger<PasswordService> logger, IMessageBus messageBus)
+        public PasswordService(ILogger<PasswordService> logger, IMessageBus messageBus, IGrpcExceptionMapper grpcExceptionMapper)
         {
             _logger = logger;
             _messageBus = messageBus;
+            _grpcExceptionMapper = grpcExceptionMapper;
         }
 
         [Authorize]
@@ -41,18 +41,12 @@ namespace PasswordService.WebApi.Services
 
                 response = new() { PasswordId = passwordId.ToString() };        
             }
-            catch (ValidationException ex)
-            {
-                _logger.LogWarning("{Date} Validation failed for {Command}", DateTime.Now, typeof(CreatePasswordCommand).Name);
-                throw PasswordRpcExceptions.InvalidArgumets(ex.Errors);
-            }
             catch (Exception ex)
             {
-                _logger.LogError("{Date} {Operation} Failure \"{Message}\"", DateTime.Now, nameof(CreatePassword), ex.Message);
-                throw PasswordRpcExceptions.InternalError(_domain, ex);
+                throw _grpcExceptionMapper.MapException(_domain, nameof(CreatePassword), ex);
             }
 
-            _logger.LogInformation("{Date} {Operation} Password with Id '{PasswordId}' has been created", DateTime.Now, nameof(CreatePassword), response.PasswordId);
+            _logger.LogInformation("{Date} {Domain} {Operation} {Status} {Message}", DateTime.Now, _domain, nameof(CreatePassword), "Success", $"Password has been created. PasswordId: {response.PasswordId}");
             return response;
         }
 
@@ -70,23 +64,12 @@ namespace PasswordService.WebApi.Services
 
                 response = new() { PasswordId = passwordId.ToString() };
             }
-            catch (ValidationException ex)
-            {
-                _logger.LogWarning("{Date} Validation failed for {Command}", DateTime.Now, typeof(CreatePasswordCommand).Name);
-                throw PasswordRpcExceptions.InvalidArgumets(ex.Errors);    
-            }
-            catch (PasswordNotFoundException ex)
-            {
-                _logger.LogError("{Date} {Operation} Failure \"{Message}\"", DateTime.Now, nameof(UpdatePassword), ex.Message);
-                throw PasswordRpcExceptions.NotFound(_domain, request.Password.Id);
-            }
             catch (Exception ex)
             {
-                 _logger.LogError("{Date} {Operation} Failure \"{Message}\"", DateTime.Now, nameof(UpdatePassword), ex.Message);
-                throw PasswordRpcExceptions.InternalError(_domain, ex);
+                throw _grpcExceptionMapper.MapException(_domain, nameof(UpdatePassword), ex);
             }
 
-            _logger.LogInformation("{Date} {Operation} Password with Id '{PasswordId} has been updated", DateTime.Now, nameof(UpdatePassword), response.PasswordId);
+            _logger.LogInformation("{Date} {Domain} {Operation} {Status} {Message}", DateTime.Now, _domain, nameof(UpdatePassword), "Success", $"Password has been updated. PasswordId: {response.PasswordId}");
             return response;
         }
 
@@ -102,23 +85,12 @@ namespace PasswordService.WebApi.Services
 
                 response = new() { PasswordId = passwordId.ToString() };
             }
-            catch (ValidationException ex)
-            {
-                _logger.LogWarning("{Date} Validation failed for {Command}", DateTime.Now, typeof(CreatePasswordCommand).Name);
-                throw PasswordRpcExceptions.InvalidArgumets(ex.Errors);
-            }
-            catch (PasswordNotFoundException ex)
-            {
-                _logger.LogError("{Date} {Operation} Failure \"{Message}\"", DateTime.Now, nameof(UpdatePassword), ex.Message);
-                throw PasswordRpcExceptions.NotFound(_domain, request.Id);
-            }
             catch (Exception ex)
             {
-                _logger.LogError("{Date} {Operation} Failure \"{Message}\"", DateTime.Now, nameof(DeletePassword), ex.Message);
-                throw PasswordRpcExceptions.InternalError(_domain, ex);
+                throw _grpcExceptionMapper.MapException(_domain, nameof(DeletePassword), ex);
             }
 
-            _logger.LogInformation("{Date} {Operation} Password with Id '{PasswordId}' has been deleted", DateTime.Now, nameof(DeletePassword), request.Id);
+            _logger.LogInformation("{Date} {Domain} {Operation} {Status} {Message}", DateTime.Now, _domain, nameof(DeletePassword), "Success", $"Password has been deleted. PasswordId: {request.Id}");
             return response;
         }
 
@@ -137,16 +109,13 @@ namespace PasswordService.WebApi.Services
 
                 response.Passwords.AddRange(passwords.Select(p => p.ToPasswordResponse()));
             }
-            catch (ValidationException ex)
-            {
-                throw PasswordRpcExceptions.InvalidArgumets(ex.Errors);
-            }
             catch (Exception ex)
             {
-                _logger.LogError("{Date} {Operation} Failure \"{Message}\"", DateTime.Now, nameof(GetPasswords), ex.Message);
-                throw PasswordRpcExceptions.InternalError(_domain, ex);
+                throw _grpcExceptionMapper.MapException(_domain, nameof(GetPasswords), ex);
             }
-         
+
+            _logger.LogInformation("{Date} {Domain} {Operation} {Status}", DateTime.Now, _domain, nameof(GetPasswords), "Success");
+
             return response;
         }
     }

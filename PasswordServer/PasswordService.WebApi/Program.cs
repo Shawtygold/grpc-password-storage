@@ -10,6 +10,8 @@ using PasswordService.Domain.Events;
 using PasswordService.Infrastructure;
 using PasswordService.Infrastructure.Projections;
 using PasswordService.Infrastructure.Repositories;
+using PasswordService.WebApi.Abstractions;
+using PasswordService.WebApi.Mappers;
 using System.Text;
 using Weasel.Core;
 using Wolverine;
@@ -72,6 +74,7 @@ builder.Services.AddScoped<IProjectionRepository<PasswordView>, ProjectionReposi
 // Mappers
 builder.Services.AddScoped<ICommandEventMapper, CommandEventMapper>();
 builder.Services.AddScoped<IPasswordViewMapper, PasswordViewMapper>();
+builder.Services.AddScoped<IGrpcExceptionMapper, GrpcExceptionMapper>();
 
 var app = builder.Build();
 
