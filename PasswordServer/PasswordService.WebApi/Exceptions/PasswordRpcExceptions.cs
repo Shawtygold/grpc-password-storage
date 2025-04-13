@@ -42,23 +42,6 @@ namespace PasswordService.WebApi.Exceptions
             }.ToRpcException();
         }
 
-        internal static RpcException InternalError(string domain, Exception ex)
-        {
-            ErrorInfo errorInfo = new()
-            {
-                Domain = domain,
-                Reason = ex.GetType().Name,
-                Metadata = { {"message", $"{ex.Message}" } }
-            };
-
-            return new Google.Rpc.Status()
-            {
-                Code = (int)StatusCode.Internal,
-                Message = "Internal Server Error",
-                Details = { Any.Pack(errorInfo) }
-            }.ToRpcException();
-        }
-
         internal static RpcException InvalidArgumets(IEnumerable<ValidationFailure> errors)
         {
             BadRequest badRequest = new()
@@ -69,8 +52,25 @@ namespace PasswordService.WebApi.Exceptions
             return new Google.Rpc.Status()
             {
                 Code = (int)StatusCode.InvalidArgument,
-                Message = "Invalid Arguments",
+                Message = "Invalid arguments",
                 Details = { Any.Pack(badRequest) }
+            }.ToRpcException();
+        }
+
+        internal static RpcException InternalError(string domain, Exception ex)
+        {
+            ErrorInfo errorInfo = new()
+            {
+                Domain = domain,
+                Reason = "INTERNAL_ERROR",
+                Metadata = { { "exception_type", $"{ex.GetType().Name}" }, { "message", $"{ex.Message}" } }
+            };
+
+            return new Google.Rpc.Status()
+            {
+                Code = (int)StatusCode.Internal,
+                Message = "Internal server error",
+                Details = { Any.Pack(errorInfo) }
             }.ToRpcException();
         }
     }
