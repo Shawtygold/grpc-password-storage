@@ -13,6 +13,8 @@ using AuthService.Infrastructure.Providers;
 using AuthService.Infrastructure.Repositories;
 using AuthService.Infrastructure.Security;
 using AuthService.Infrastructure.Services;
+using AuthService.WebApi.Abstractions;
+using AuthService.WebApi.Mapper;
 using AuthService.WebApi.Validators;
 using FluentValidation;
 using GrpcAuthService;
@@ -57,6 +59,7 @@ builder.Services.AddScoped<IJWTProvider, JWTProvider>();
 // Mappers
 builder.Services.AddScoped<ICommandEventMapper, CommandEventMapper>();
 builder.Services.AddScoped<IUserViewMapper, UserViewMapper>();
+builder.Services.AddScoped<IGrpcExceptionMapper, GrpcExceptionMapper>();
 
 // Services
 builder.Services.AddScoped<IUserAuthenticator, UserAuthenticator>();
