@@ -1,9 +1,6 @@
 ﻿using AuthService.Application.Abstractions.Services;
 using AuthService.Application.CQRS.Commands.RegisterUser;
-using AuthService.Application.CQRS.Queries.CheckUserExists;
-using AuthService.WebApi.Abstractions;
 using AuthService.WebApi.Extensions;
-using FluentValidation;
 using Grpc.Core;
 using GrpcAuthService;
 using Wolverine;
@@ -12,43 +9,22 @@ namespace AuthService.WebApi.Services
 {
     public class AuthService : AuthProtoService.AuthProtoServiceBase
     {
-        private readonly ILogger<AuthService> _logger;
         private readonly IMessageBus _messageBus;
         private readonly IUserAuthenticator _userAuthenticator;
-        private readonly IValidator<AuthenticateUserRequest> _authUserRequestValidator;
-        private readonly IGrpcExceptionMapper _grpcExceptionMapper;
-        private readonly string _domain = "auth";
 
-        public AuthService(ILogger<AuthService> logger,
-            IMessageBus messageBus,
-            IUserAuthenticator userAuthenticator,
-            IValidator<AuthenticateUserRequest> authUserRequestValidator,
-            IGrpcExceptionMapper grpcExceptionMapper)
+        public AuthService(IMessageBus messageBus, IUserAuthenticator userAuthenticator)
         {
-            _logger = logger;
             _messageBus = messageBus;
             _userAuthenticator = userAuthenticator;
-            _authUserRequestValidator = authUserRequestValidator;
-            _grpcExceptionMapper = grpcExceptionMapper;
         }
 
         public override async Task<AuthenticateUserResponse> AuthenticateUser(AuthenticateUserRequest request, ServerCallContext context)
         {
             AuthenticateUserResponse response;
+            CancellationToken cancellation = context.CancellationToken;
 
-            try
-            {
-                await _authUserRequestValidator.ValidateAndThrowAsync(request);
-                string jwtToken = await _userAuthenticator.AuthenticateAsync(request.Login, request.Password);
-
-                response = new() { Token = jwtToken };
-            }
-            catch (Exception ex)
-            {              
-                throw _grpcExceptionMapper.MapException(_domain, nameof(AuthenticateUser), ex);
-            }
-
-            _logger.LogInformation("{Date} {ServiceName} {Operation} {Status} {Message}", DateTime.Now, _domain, nameof(AuthenticateUser), "Success", $"User has been authenticated. UserLogin: {request.Login}");
+            string jwtToken = await _userAuthenticator.AuthenticateAsync(request.Login, request.Password, cancellation);
+            response = new() { Token = jwtToken };           
 
             return response;
         }
@@ -56,20 +32,12 @@ namespace AuthService.WebApi.Services
         public override async Task<RegisterUserResponse> RegisterUser(RegisterUserRequest request, ServerCallContext context)
         {
             RegisterUserResponse response;
+            CancellationToken cancellation = context.CancellationToken;
 
-            try
-            {
-                RegisterUserCommand command = request.ToRegisterUserCommand();
-                Guid userId = await _messageBus.InvokeAsync<Guid>(command);
+            RegisterUserCommand command = request.ToRegisterUserCommand();
+            Guid userId = await _messageBus.InvokeAsync<Guid>(command, cancellation);
 
-                response = new() { UserId = userId.ToString() };
-            }          
-            catch (Exception ex)
-            {
-                throw _grpcExceptionMapper.MapException(_domain, nameof(RegisterUser), ex);
-            }
-
-            _logger.LogInformation("{Date} {ServiceName} {Operation} {Status} {Message}", DateTime.Now, _domain, nameof(RegisterUser), "Success", $"User has been registered. UserLogin: {request.Login}");
+            response = new() { UserId = userId.ToString() };
 
             return response;
         }
