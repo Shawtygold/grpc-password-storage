@@ -1,8 +1,8 @@
 ﻿using AuthService.Application.Abstractions.Mappers;
 using AuthService.Application.Abstractions.Repositories;
 using AuthService.Application.DTO;
-using AuthService.Application.Exceptions;
 using AuthService.Domain.Entities;
+using AuthService.Domain.Exceptions;
 
 namespace AuthService.Application.CQRS.Queries.GetUserByLogin
 {
@@ -17,9 +17,9 @@ namespace AuthService.Application.CQRS.Queries.GetUserByLogin
             _userViewMapper = userViewMapper;
         }
 
-        public async Task<UserDTO> HandleAsync(GetUserByLoginQuery query)
+        public async Task<UserDTO> HandleAsync(GetUserByLoginQuery query, CancellationToken cancellationToken = default)
         {
-             UserView userView = await _readRepository.GetUserByAsync(u => u.Login == query.Login)
+             UserView userView = await _readRepository.GetUserByAsync(u => u.Login == query.Login, cancellationToken)
                 ?? throw new UserNotFoundException(query.Login);
 
             return _userViewMapper.Map(userView);

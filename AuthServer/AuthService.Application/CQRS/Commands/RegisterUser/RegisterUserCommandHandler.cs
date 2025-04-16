@@ -16,13 +16,15 @@ namespace AuthService.Application.CQRS.Commands.RegisterUser
             _commandEventMapper = commandEventMapper;
         }
 
-        public async Task<Guid> HandleAsync(RegisterUserCommand command)
+        public async Task<Guid> HandleAsync(RegisterUserCommand command, CancellationToken cancellationToken = default)
         {
+            cancellationToken.ThrowIfCancellationRequested();
+
             UserRegistered registeredEvent = _commandEventMapper.Map(command);
             UserAggregate user = new();
             user.Apply(registeredEvent);
 
-            await _writeRepository.SaveAsync(user);
+            await _writeRepository.SaveAsync(user, cancellationToken);
             return user.Id;
         }
     }

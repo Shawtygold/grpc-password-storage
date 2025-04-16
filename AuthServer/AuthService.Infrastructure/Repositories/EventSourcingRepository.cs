@@ -15,6 +15,8 @@ namespace AuthService.Infrastructure.Repositories
 
         public async Task SaveAsync(UserAggregate aggregate, CancellationToken cancellationToken = default)
         {
+            cancellationToken.ThrowIfCancellationRequested();
+
             IReadOnlyList<object> events = aggregate.GetUncommitedEvents();
             if (events.Any())
             {
@@ -28,6 +30,8 @@ namespace AuthService.Infrastructure.Repositories
 
         public async Task<UserAggregate?> GetByIdAsync(Guid aggregateId, CancellationToken cancellationToken = default)
         {
+            cancellationToken.ThrowIfCancellationRequested();
+
             using var session = _documentStore.LightweightSession();
             return await session.Events.AggregateStreamAsync<UserAggregate>(aggregateId, token: cancellationToken);
         }

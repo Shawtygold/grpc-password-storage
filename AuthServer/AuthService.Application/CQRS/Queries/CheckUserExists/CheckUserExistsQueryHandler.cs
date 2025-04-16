@@ -12,9 +12,9 @@ namespace AuthService.Application.CQRS.Queries.CheckUserExists
             _readRepository = readRepository;
         }
 
-        public async Task<bool> HandleAsync(CheckUserExistsQuery query)
+        public async Task<bool> HandleAsync(CheckUserExistsQuery query, CancellationToken cancellationToken = default)
         {
-            return await _readRepository.GetUserByAsync(u => u.Login == query.Login) != null;   
+            return await _readRepository.GetUserByAsync(u => u.Login == query.Login, cancellationToken) != null;   
         }
    }
 }
