@@ -14,8 +14,9 @@ using AuthService.Infrastructure.Repositories;
 using AuthService.Infrastructure.Security;
 using AuthService.Infrastructure.Services;
 using AuthService.WebApi.Abstractions;
-using AuthService.WebApi.Mapper;
-using AuthService.WebApi.Validators;
+using AuthService.WebApi.Interceptors;
+using AuthService.WebApi.Mappers;
+using AuthService.WebApi.Validators.Requests;
 using FluentValidation;
 using GrpcAuthService;
 using Marten;
@@ -25,7 +26,12 @@ using Wolverine.FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddGrpc();
+builder.Services.AddGrpc(opt =>
+{
+    opt.Interceptors.Add<LoggingInterceptor>();
+    opt.Interceptors.Add<ValidationInterceptor>();
+    opt.Interceptors.Add<ExceptionHandlingInterceptor>();
+});
 
 string connectionString = builder.Configuration.GetConnectionString("PostgreSQLConnection")
     ?? throw new InvalidOperationException("PostgreSQL connection not found in configuration");
@@ -61,11 +67,12 @@ builder.Services.AddScoped<ICommandEventMapper, CommandEventMapper>();
 builder.Services.AddScoped<IUserViewMapper, UserViewMapper>();
 builder.Services.AddScoped<IGrpcExceptionMapper, GrpcExceptionMapper>();
 
-// Services
-builder.Services.AddScoped<IUserAuthenticator, UserAuthenticator>();
-
 // Validators
 builder.Services.AddScoped<IValidator<AuthenticateUserRequest>, AuthenticateUserRequestValidator>();
+builder.Services.AddScoped<IValidator<RegisterUserRequest>, RegisterUserRequestValidator>();
+
+// Services
+builder.Services.AddScoped<IUserAuthenticator, UserAuthenticator>();
 
 // Hash
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
@@ -74,6 +81,11 @@ builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 builder.Services.Configure<JWTSettings>(builder.Configuration.GetRequiredSection(JWTSettings.SectionName));
 
 var app = builder.Build();
+
+app.UseRequestLocalization(opt =>
+{
+    opt.DefaultRequestCulture = new("en");
+});
 
 // Configure the HTTP request pipeline.
 app.MapGrpcService<AuthService.WebApi.Services.AuthService>();
