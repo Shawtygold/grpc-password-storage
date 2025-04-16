@@ -1,9 +1,7 @@
-﻿using AuthService.Domain.Entities;
-
-namespace AuthService.Application.Abstractions.Services
+﻿namespace AuthService.Application.Abstractions.Services
 {
     public interface IUserAuthenticator
     {
-        Task<string> AuthenticateAsync(string login, string password);
+        Task<string> AuthenticateAsync(string login, string password, CancellationToken cancellation = default);
     }
 }

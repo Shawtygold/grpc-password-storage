@@ -2,6 +2,7 @@
 using AuthService.Application.Abstractions.Services;
 using AuthService.Application.CQRS.Queries.GetUserByLogin;
 using AuthService.Application.DTO;
+using AuthService.Domain.Exceptions;
 using AuthService.Infrastructure.Abstractions.Providers;
 using Wolverine;
 
@@ -20,14 +21,14 @@ namespace AuthService.Infrastructure.Services
             _passwordHasher = passwordHasher;
         }
 
-        public async Task<string> AuthenticateAsync(string login, string password)
+        public async Task<string> AuthenticateAsync(string login, string password, CancellationToken cancellation = default)
         {
             GetUserByLoginQuery query = new(login);
 
-            UserDTO user = await _messageBus.InvokeAsync<UserDTO>(query);
+            UserDTO user = await _messageBus.InvokeAsync<UserDTO>(query, cancellation);
 
             if(!_passwordHasher.Verify(password, user.PasswordHash))
-                return string.Empty;
+                throw new AuthenticationException();
 
             return _jwtTokenProvider.GetJWTToken(user.Id);
         }
