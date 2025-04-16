@@ -8,11 +8,12 @@ namespace AuthService.WebApi.Exceptions
 {
     internal class AuthRpcExceptions
     {
-        internal static RpcException AlreadyExists(string domain, int userId)
+        private const string _domain = "auth.service";
+        internal static RpcException AlreadyExists(int userId)
         {
             ErrorInfo errorInfo = new()
             {
-                Domain = domain,
+                Domain = _domain,
                 Reason = "USER_ALREADY_EXISTS",
                 Metadata = { { "user_id", $"{userId}" } }
             };
@@ -25,11 +26,11 @@ namespace AuthService.WebApi.Exceptions
             }.ToRpcException();
         }
 
-        internal static RpcException NotFound(string domain, string userLogin)
+        internal static RpcException NotFound(string userLogin)
         {
             ErrorInfo errorInfo = new()
             {
-                Domain = domain,
+                Domain = _domain,
                 Reason = "USER_NOT_FOUND",
                 Metadata = { { "user_login", $"{userLogin}" } }
             };
@@ -57,11 +58,11 @@ namespace AuthService.WebApi.Exceptions
             }.ToRpcException();
         }
 
-        internal static RpcException InternalError(string domain, Exception ex)
+        internal static RpcException InternalError(Exception ex)
         {
             ErrorInfo errorInfo = new()
             {
-                Domain = domain,
+                Domain = _domain,
                 Reason = "INTERNAL_ERROR",
                 Metadata = {{ "exception_type", $"{ex.GetType().Name}" }, { "message", $"{ex.Message}" } }
             };
