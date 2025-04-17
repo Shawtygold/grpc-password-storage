@@ -8,11 +8,13 @@ namespace PasswordService.WebApi.Exceptions
 {
     public class PasswordRpcExceptions
     {
-        internal static RpcException AlreadyExists(string domain, int passwordId)
+        private const string _domain = "password.service";
+
+        internal static RpcException AlreadyExists(int passwordId)
         {
             ErrorInfo errorInfo = new()
             {
-                Domain = domain,
+                Domain = _domain,
                 Reason = "PASSWORD_ALREADY_EXISTS",
                 Metadata = { { "password_id", $"{passwordId}" } }
             };
@@ -25,11 +27,11 @@ namespace PasswordService.WebApi.Exceptions
             }.ToRpcException();
         }
 
-        internal static RpcException NotFound(string domain, string passwordId)
+        internal static RpcException NotFound(string passwordId)
         {
             ErrorInfo errorInfo = new()
             {
-                Domain = domain,
+                Domain = _domain,
                 Reason = "PASSWORD_NOT_FOUND",
                 Metadata = { { "password_id", $"{passwordId}" } }
             };
@@ -57,11 +59,11 @@ namespace PasswordService.WebApi.Exceptions
             }.ToRpcException();
         }
 
-        internal static RpcException InternalError(string domain, Exception ex)
+        internal static RpcException InternalError(Exception ex)
         {
             ErrorInfo errorInfo = new()
             {
-                Domain = domain,
+                Domain = _domain,
                 Reason = "INTERNAL_ERROR",
                 Metadata = { { "exception_type", $"{ex.GetType().Name}" }, { "message", $"{ex.Message}" } }
             };
