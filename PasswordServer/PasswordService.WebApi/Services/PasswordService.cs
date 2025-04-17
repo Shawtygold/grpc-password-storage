@@ -15,107 +15,74 @@ namespace PasswordService.WebApi.Services
 {
     public class PasswordService : PasswordProtoService.PasswordProtoServiceBase
     {
-        private readonly ILogger<PasswordService> _logger;
         private readonly IMessageBus _messageBus;
-        private readonly IGrpcExceptionMapper _grpcExceptionMapper;
-        private static readonly string _domain = "passwords";
+        private readonly IPasswordDTOMapper _passwordDTOMapper;
 
-        public PasswordService(ILogger<PasswordService> logger, IMessageBus messageBus, IGrpcExceptionMapper grpcExceptionMapper)
+        public PasswordService(IMessageBus messageBus, IPasswordDTOMapper passwordDTOMapper)
         {
-            _logger = logger;
             _messageBus = messageBus;
-            _grpcExceptionMapper = grpcExceptionMapper;
+            _passwordDTOMapper = passwordDTOMapper;
         }
 
         [Authorize]
         public override async Task<CreatePasswordResponse> CreatePassword(CreatePasswordRequest request, ServerCallContext context)
         {
+            CancellationToken cancellation = context.CancellationToken;
+            cancellation.ThrowIfCancellationRequested();
+
             var user = context.GetHttpContext().User;
             Guid userId = Guid.Parse(user.Claims.First().Value);
 
-            CreatePasswordResponse response;
-            try
-            {
-                CreatePasswordCommand command = request.ToCommand(userId);
-                Guid passwordId = await _messageBus.InvokeAsync<Guid>(command);
+            CreatePasswordCommand command = request.ToCommand(userId);
+            Guid passwordId = await _messageBus.InvokeAsync<Guid>(command, cancellation);
 
-                response = new() { PasswordId = passwordId.ToString() };        
-            }
-            catch (Exception ex)
-            {
-                throw _grpcExceptionMapper.MapException(_domain, nameof(CreatePassword), ex);
-            }
-
-            _logger.LogInformation("{Date} {Domain} {Operation} {Status} {Message}", DateTime.Now, _domain, nameof(CreatePassword), "Success", $"Password has been created. PasswordId: {response.PasswordId}");
+            CreatePasswordResponse response = new() { PasswordId = passwordId.ToString() };    
             return response;
         }
 
         [Authorize]
-        public override async Task<UpdatePasswordResponse> UpdatePassword(UpdatePasswordRequest request, ServerCallContext context)     
+        public override async Task<UpdatePasswordResponse> UpdatePassword(UpdatePasswordRequest request, ServerCallContext context)
         {
+            CancellationToken cancellation = context.CancellationToken;
+            cancellation.ThrowIfCancellationRequested();
+
             var user = context.GetHttpContext().User;
             Guid userId = Guid.Parse(user.Claims.First().Value);
 
-            UpdatePasswordResponse response;
-            try
-            {
-                UpdatePasswordCommand command = request.ToCommand(userId);
-                Guid passwordId = await _messageBus.InvokeAsync<Guid>(command);
+            UpdatePasswordCommand command = request.ToCommand(userId);
+            Guid passwordId = await _messageBus.InvokeAsync<Guid>(command, cancellation);
 
-                response = new() { PasswordId = passwordId.ToString() };
-            }
-            catch (Exception ex)
-            {
-                throw _grpcExceptionMapper.MapException(_domain, nameof(UpdatePassword), ex);
-            }
-
-            _logger.LogInformation("{Date} {Domain} {Operation} {Status} {Message}", DateTime.Now, _domain, nameof(UpdatePassword), "Success", $"Password has been updated. PasswordId: {response.PasswordId}");
+            UpdatePasswordResponse response = new() { PasswordId = passwordId.ToString() };
             return response;
         }
 
         [Authorize]
         public override async Task<DeletePasswordResponse> DeletePassword(DeletePasswordRequest request, ServerCallContext context)
         {
-            DeletePasswordResponse response;
+            CancellationToken cancellation = context.CancellationToken;
+            cancellation.ThrowIfCancellationRequested();
 
-            try
-            {
-                DeletePasswordCommand command = request.ToCommand();
-                Guid passwordId = await _messageBus.InvokeAsync<Guid>(command);
+            DeletePasswordCommand command = request.ToCommand();
+            Guid passwordId = await _messageBus.InvokeAsync<Guid>(command, cancellation);
 
-                response = new() { PasswordId = passwordId.ToString() };
-            }
-            catch (Exception ex)
-            {
-                throw _grpcExceptionMapper.MapException(_domain, nameof(DeletePassword), ex);
-            }
-
-            _logger.LogInformation("{Date} {Domain} {Operation} {Status} {Message}", DateTime.Now, _domain, nameof(DeletePassword), "Success", $"Password has been deleted. PasswordId: {request.Id}");
+            DeletePasswordResponse response = new() { PasswordId = passwordId.ToString() };
             return response;
         }
 
         [Authorize]
         public override async Task<GetPasswordsResponse> GetPasswords(GetPasswordsRequest request, ServerCallContext context)
         {
+            CancellationToken cancellation = context.CancellationToken;
+            cancellation.ThrowIfCancellationRequested();
+
             var user = context.GetHttpContext().User;
             Guid userId = Guid.Parse(user.Claims.First().Value);
 
+            GetPasswordsByUserIDQuery query = new(userId);
+            IEnumerable<PasswordDTO> passwords = await _messageBus.InvokeAsync<IEnumerable<PasswordDTO>>(query, cancellation);
+
             GetPasswordsResponse response = new();
-
-            try
-            {
-                GetPasswordsByUserIDQuery query = new(userId);
-                IEnumerable<PasswordDTO> passwords = await _messageBus.InvokeAsync<IEnumerable<PasswordDTO>>(query);
-
-                response.Passwords.AddRange(passwords.Select(p => p.ToPasswordResponse()));
-            }
-            catch (Exception ex)
-            {
-                throw _grpcExceptionMapper.MapException(_domain, nameof(GetPasswords), ex);
-            }
-
-            _logger.LogInformation("{Date} {Domain} {Operation} {Status}", DateTime.Now, _domain, nameof(GetPasswords), "Success");
-
+            response.Passwords.AddRange(passwords.Select(_passwordDTOMapper.ToPasswordResponse));
             return response;
         }
     }
