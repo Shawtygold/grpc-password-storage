@@ -11,6 +11,7 @@ using PasswordService.Infrastructure;
 using PasswordService.Infrastructure.Projections;
 using PasswordService.Infrastructure.Repositories;
 using PasswordService.WebApi.Abstractions;
+using PasswordService.WebApi.Interceptors;
 using PasswordService.WebApi.Mappers;
 using System.Text;
 using Weasel.Core;
@@ -20,7 +21,12 @@ using Wolverine.FluentValidation;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddGrpc();
+builder.Services.AddGrpc(opt =>
+{
+    opt.Interceptors.Add<LoggingInterceptor>();
+    opt.Interceptors.Add<ValidationInterceptor>();
+    opt.Interceptors.Add<ExceptionHandlingInterceptor>();
+});
 
 // Connection string
 string connectionString = builder.Configuration.GetConnectionString("PosgreSQLConnection")
@@ -75,8 +81,14 @@ builder.Services.AddScoped<IProjectionRepository<PasswordView>, ProjectionReposi
 builder.Services.AddScoped<ICommandEventMapper, CommandEventMapper>();
 builder.Services.AddScoped<IPasswordViewMapper, PasswordViewMapper>();
 builder.Services.AddScoped<IGrpcExceptionMapper, GrpcExceptionMapper>();
+builder.Services.AddScoped<IPasswordDTOMapper, PasswordDTOMapper>();
 
 var app = builder.Build();
+
+app.UseRequestLocalization(opt =>
+{
+    opt.DefaultRequestCulture = new("en");
+});
 
 // Configure the HTTP request pipeline.
 app.MapGrpcService<PasswordService.WebApi.Services.PasswordService>();
