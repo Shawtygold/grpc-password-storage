@@ -16,6 +16,8 @@ namespace PasswordService.Infrastructure.Repositories
 
         public async Task SaveAsync(PasswordAggregate aggregate, CancellationToken cancellationToken = default)
         {
+            cancellationToken.ThrowIfCancellationRequested();
+
             var events = aggregate.GetUncommitedEvents();
             if(events.Any())
             {
@@ -29,6 +31,8 @@ namespace PasswordService.Infrastructure.Repositories
 
         public async Task<PasswordAggregate?> GetByIdAsync(Guid aggregateId, CancellationToken cancellationToken = default)
         {
+            cancellationToken.ThrowIfCancellationRequested();
+
             using var session = _documentStore.LightweightSession();
             return await session.Events.AggregateStreamAsync<PasswordAggregate>(aggregateId, token: cancellationToken);
         }

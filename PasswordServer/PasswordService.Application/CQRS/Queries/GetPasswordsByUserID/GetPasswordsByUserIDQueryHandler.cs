@@ -16,9 +16,9 @@ namespace PasswordService.Application.CQRS.Queries.GetPasswordsByUserID
             _passwordViewMapper = passwordViewMapper;
         }
 
-        public async Task<IEnumerable<PasswordDTO>> Handle(GetPasswordsByUserIDQuery command)
+        public async Task<IEnumerable<PasswordDTO>> Handle(GetPasswordsByUserIDQuery command, CancellationToken cancellation = default)
         {
-            var passwords = await _readRepository.GetAllAsync(command.UserId);
+            var passwords = await _readRepository.GetAllAsync(command.UserId, cancellation);
             return passwords.Select(_passwordViewMapper.Map);
         }
     }

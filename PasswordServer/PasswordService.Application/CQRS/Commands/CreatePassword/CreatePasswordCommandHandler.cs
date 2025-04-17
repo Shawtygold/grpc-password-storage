@@ -17,13 +17,15 @@ namespace PasswordService.Application.CQRS.Commands.CreatePassword
             _commandMapper = commandMapper;
         }
 
-        public async Task<Guid> HandleAsync(CreatePasswordCommand command)
+        public async Task<Guid> HandleAsync(CreatePasswordCommand command, CancellationToken cancellation = default)
         {
+            cancellation.ThrowIfCancellationRequested();
+
             PasswordCreated createdEvent = _commandMapper.Map(Guid.NewGuid(), command);
             PasswordAggregate password = new();
             password.Apply(createdEvent);
             
-            await _writeRepository.SaveAsync(password);
+            await _writeRepository.SaveAsync(password, cancellation);
 
             return password.Id;
         }

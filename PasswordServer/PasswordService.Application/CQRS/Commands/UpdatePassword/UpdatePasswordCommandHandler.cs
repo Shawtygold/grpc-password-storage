@@ -1,8 +1,8 @@
 ﻿using PasswordService.Application.Abstractions.Mappers;
 using PasswordService.Application.Abstractions.Repositories;
-using PasswordService.Application.Exceptions;
 using PasswordService.Domain.Entities;
 using PasswordService.Domain.Events;
+using PasswordService.Domain.Exceptions;
 
 namespace PasswordService.Application.CQRS.Commands.UpdatePassword
 {
@@ -17,15 +17,17 @@ namespace PasswordService.Application.CQRS.Commands.UpdatePassword
             _commandMapper = commandMapper;
         }
 
-        public async Task<Guid> Handle(UpdatePasswordCommand command)
+        public async Task<Guid> Handle(UpdatePasswordCommand command, CancellationToken cancellation = default)
         {
-            PasswordAggregate password = await _writeRepository.GetByIdAsync(command.Id)
+            cancellation.ThrowIfCancellationRequested();
+
+            PasswordAggregate password = await _writeRepository.GetByIdAsync(command.Id, cancellation)
                 ?? throw new PasswordNotFoundException(command.Id);
 
             PasswordUpdated updatedEvent = _commandMapper.Map(command);
             password.Apply(updatedEvent);
 
-            await _writeRepository.SaveAsync(password);
+            await _writeRepository.SaveAsync(password, cancellation);
 
             return password.Id;
         }
