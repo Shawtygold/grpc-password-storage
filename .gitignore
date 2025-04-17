@@ -398,3 +398,5 @@ FodyWeavers.xsd
 *.sln.iml
 /AuthServer/AuthService.WebApi/appsettings.json
 /PasswordServer/PasswordService.WebApi/appsettings.json
+/AuthServer/AuthService.WebApi/AuthService.WebApi.csproj
+/AuthServer/AuthService.Infrastructure/AuthService.Infrastructure.csproj
