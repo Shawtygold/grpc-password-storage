@@ -16,6 +16,8 @@ namespace AuthService.Infrastructure.Repositories
 
         public async Task<UserView?> GetUserByAsync(Expression<Func<UserView, bool>> expression, CancellationToken cancellation = default)
         {
+            cancellation.ThrowIfCancellationRequested();
+
             return await _querySession.Query<UserView>().FirstOrDefaultAsync(expression, cancellation);
         }
     }

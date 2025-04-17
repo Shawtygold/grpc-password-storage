@@ -20,25 +20,24 @@ namespace AuthService.WebApi.Services
 
         public override async Task<AuthenticateUserResponse> AuthenticateUser(AuthenticateUserRequest request, ServerCallContext context)
         {
-            AuthenticateUserResponse response;
             CancellationToken cancellation = context.CancellationToken;
+            cancellation.ThrowIfCancellationRequested();
 
             string jwtToken = await _userAuthenticator.AuthenticateAsync(request.Login, request.Password, cancellation);
-            response = new() { Token = jwtToken };           
 
+            AuthenticateUserResponse response = new() { Token = jwtToken };           
             return response;
         }
 
         public override async Task<RegisterUserResponse> RegisterUser(RegisterUserRequest request, ServerCallContext context)
         {
-            RegisterUserResponse response;
             CancellationToken cancellation = context.CancellationToken;
+            cancellation.ThrowIfCancellationRequested();
 
             RegisterUserCommand command = request.ToRegisterUserCommand();
             Guid userId = await _messageBus.InvokeAsync<Guid>(command, cancellation);
 
-            response = new() { UserId = userId.ToString() };
-
+            RegisterUserResponse response = new() { UserId = userId.ToString() };
             return response;
         }
     }
