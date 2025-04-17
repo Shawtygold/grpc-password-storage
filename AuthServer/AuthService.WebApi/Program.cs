@@ -67,10 +67,6 @@ builder.Services.AddScoped<ICommandEventMapper, CommandEventMapper>();
 builder.Services.AddScoped<IUserViewMapper, UserViewMapper>();
 builder.Services.AddScoped<IGrpcExceptionMapper, GrpcExceptionMapper>();
 
-// Validators
-builder.Services.AddScoped<IValidator<AuthenticateUserRequest>, AuthenticateUserRequestValidator>();
-builder.Services.AddScoped<IValidator<RegisterUserRequest>, RegisterUserRequestValidator>();
-
 // Services
 builder.Services.AddScoped<IUserAuthenticator, UserAuthenticator>();
 
