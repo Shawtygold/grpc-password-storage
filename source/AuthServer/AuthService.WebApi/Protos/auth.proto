@@ -9,15 +9,15 @@ package auth;
 service AuthProtoService {
 
     rpc RegisterUser (RegisterUserRequest) returns (RegisterUserResponse);
-    rpc AuthenticateUser (AuthenticateUserRequest) returns (AuthenticateUserResponse);
+    rpc Login (LoginUserRequest) returns (LoginUserResponse);
 }
 
-message AuthenticateUserRequest {
+message LoginUserRequest {
 	string login = 1;
 	string password = 2;
 }
 
-message AuthenticateUserResponse {
+message LoginUserResponse {
 	string token = 1;
 }
 
