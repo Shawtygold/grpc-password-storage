@@ -1,18 +1,18 @@
 using AuthService.Application.Abstractions.Mappers;
+using AuthService.Application.Abstractions.Providers;
 using AuthService.Application.Abstractions.Repositories;
 using AuthService.Application.Abstractions.Security;
 using AuthService.Application.Abstractions.Services;
 using AuthService.Application.CQRS.Commands.RegisterUser;
 using AuthService.Application.Mappers;
+using AuthService.Application.Services;
 using AuthService.Domain.Entities;
 using AuthService.Domain.Events;
 using AuthService.Infrastructure;
-using AuthService.Infrastructure.Abstractions.Providers;
 using AuthService.Infrastructure.Projections;
 using AuthService.Infrastructure.Providers;
 using AuthService.Infrastructure.Repositories;
 using AuthService.Infrastructure.Security;
-using AuthService.Infrastructure.Services;
 using AuthService.WebApi.Abstractions;
 using AuthService.WebApi.Interceptors;
 using AuthService.WebApi.Mappers;
@@ -65,7 +65,8 @@ builder.Services.AddScoped<IUserViewMapper, UserViewMapper>();
 builder.Services.AddScoped<IGrpcExceptionMapper, GrpcExceptionMapper>();
 
 // Services
-builder.Services.AddScoped<IUserAuthenticator, UserAuthenticator>();
+builder.Services.AddScoped<ILoginService, LoginService>();
+builder.Services.AddScoped<IRegistrationService, RegistrationService>();
 
 // Hash
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
