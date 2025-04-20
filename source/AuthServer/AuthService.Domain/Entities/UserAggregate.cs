@@ -11,7 +11,7 @@ namespace AuthService.Domain.Entities
         public string PasswordHash { get; set; } = null!;
         public DateTime CreatedAt { get; set; }
 
-        private List<object> _uncommitedEvents = new();
+        private readonly List<object> _uncommitedEvents = [];
 
         public UserAggregate()
         {
