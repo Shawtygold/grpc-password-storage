@@ -1,4 +1,4 @@
-﻿namespace AuthService.Infrastructure.Abstractions.Providers
+﻿namespace AuthService.Application.Abstractions.Providers
 {
     public interface IJWTProvider
     {
