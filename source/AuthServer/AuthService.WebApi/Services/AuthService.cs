@@ -1,31 +1,28 @@
 ﻿using AuthService.Application.Abstractions.Services;
-using AuthService.Application.CQRS.Commands.RegisterUser;
-using AuthService.WebApi.Extensions;
 using Grpc.Core;
 using GrpcAuthService;
-using Wolverine;
 
 namespace AuthService.WebApi.Services
 {
     public class AuthService : AuthProtoService.AuthProtoServiceBase
     {
-        private readonly IMessageBus _messageBus;
-        private readonly IUserAuthenticator _userAuthenticator;
+        private readonly ILoginService _loginService;
+        private readonly IRegistrationService _registrationService;
 
-        public AuthService(IMessageBus messageBus, IUserAuthenticator userAuthenticator)
+        public AuthService(ILoginService loginService, IRegistrationService registrationService)
         {
-            _messageBus = messageBus;
-            _userAuthenticator = userAuthenticator;
+            _loginService = loginService;
+            _registrationService = registrationService;
         }
 
-        public override async Task<AuthenticateUserResponse> AuthenticateUser(AuthenticateUserRequest request, ServerCallContext context)
+        public override async Task<LoginUserResponse> Login(LoginUserRequest request, ServerCallContext context)
         {
             CancellationToken cancellation = context.CancellationToken;
             cancellation.ThrowIfCancellationRequested();
 
-            string jwtToken = await _userAuthenticator.AuthenticateAsync(request.Login, request.Password, cancellation);
+            string jwtToken = await _loginService.LoginAsync(request.Login, request.Password, cancellation);
 
-            AuthenticateUserResponse response = new() { Token = jwtToken };           
+            LoginUserResponse response = new() { Token = jwtToken };           
             return response;
         }
 
@@ -34,8 +31,7 @@ namespace AuthService.WebApi.Services
             CancellationToken cancellation = context.CancellationToken;
             cancellation.ThrowIfCancellationRequested();
 
-            RegisterUserCommand command = request.ToRegisterUserCommand();
-            Guid userId = await _messageBus.InvokeAsync<Guid>(command, cancellation);
+            Guid userId = await _registrationService.RegisterAsync(request.Login, request.Email, request.Password, cancellation);
 
             RegisterUserResponse response = new() { UserId = userId.ToString() };
             return response;
