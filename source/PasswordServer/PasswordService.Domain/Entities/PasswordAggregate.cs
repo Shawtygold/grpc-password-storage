@@ -16,7 +16,7 @@ namespace PasswordService.Domain.Entities
         public string Note { get; set; } = null!;
         public bool IsDeleted {  get; set; }
 
-        private List<object> _uncommitedEvents = new();
+        private readonly List<object> _uncommitedEvents = [];
 
         public PasswordAggregate()
         {
