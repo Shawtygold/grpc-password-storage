@@ -16,6 +16,10 @@ namespace AuthService.WebApi.Mappers
                     {
                         return AuthRpcExceptions.NotFound(notFoundEx.UserLogin);
                     }
+                case RefreshTokenExpiredException:
+                    {
+                        return AuthRpcExceptions.RefreshTokenExpired();
+                    }
                 case AuthenticationException authEx:
                     {
                         return new RpcException(new Status(StatusCode.Unauthenticated, $"{authEx.Message}"));

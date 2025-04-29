@@ -10,6 +10,8 @@ service AuthProtoService {
 
     rpc RegisterUser (RegisterUserRequest) returns (RegisterUserResponse);
     rpc Login (LoginUserRequest) returns (LoginUserResponse);
+	rpc LoginWithRefreshToken (LoginWithRefreshTokenRequest) returns (LoginWithRefreshTokenResponse);
+	rpc RevokeRefreshTokens (RevokeRefreshTokensRequest) returns (RevokeRefreshTokensResponse);
 }
 
 message LoginUserRequest {
@@ -17,8 +19,18 @@ message LoginUserRequest {
 	string password = 2;
 }
 
+message LoginWithRefreshTokenRequest {
+	string refresh_token = 1;
+}
+
+message LoginWithRefreshTokenResponse {
+	string access_token = 1;
+	string refresh_token = 2;
+}
+
 message LoginUserResponse {
-	string token = 1;
+	string access_token = 1;
+	string refresh_token = 2;
 }
 
 message RegisterUserRequest {
@@ -29,5 +41,13 @@ message RegisterUserRequest {
 
 message RegisterUserResponse {
 	string userId = 1;
+}
+
+message RevokeRefreshTokensRequest {
+	string user_id = 1;
+}
+
+message RevokeRefreshTokensResponse {
+	bool success = 1;
 }
 

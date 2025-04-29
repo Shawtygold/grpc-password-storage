@@ -1,3 +1,4 @@
+using AuthService.Application;
 using AuthService.Application.Abstractions.Mappers;
 using AuthService.Application.Abstractions.Providers;
 using AuthService.Application.Abstractions.Repositories;
@@ -8,11 +9,12 @@ using AuthService.Application.Mappers;
 using AuthService.Application.Services;
 using AuthService.Domain.Entities;
 using AuthService.Domain.Events;
-using AuthService.Infrastructure;
+using AuthService.Infrastructure.AppContext;
 using AuthService.Infrastructure.Projections;
 using AuthService.Infrastructure.Providers;
 using AuthService.Infrastructure.Repositories;
 using AuthService.Infrastructure.Security;
+using AuthService.Infrastructure.Settings;
 using AuthService.WebApi.Abstractions;
 using AuthService.WebApi.Interceptors;
 using AuthService.WebApi.Mappers;
@@ -52,12 +54,16 @@ builder.Host.UseWolverine(options =>
     options.Discovery.IncludeAssembly(typeof(RegisterUserCommand).Assembly);
 });
 
+// Db context
+builder.Services.AddDbContext<ApplicationContext>();
+
 // Repositories
 builder.Services.AddScoped<IEventSourcingRepository<UserAggregate>, EventSourcingRepository>();
 builder.Services.AddScoped<IProjectionRepository<UserView>, ProjectionRepository>();
+builder.Services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
 
 // Providers
-builder.Services.AddScoped<IJWTProvider, JWTProvider>();
+builder.Services.AddScoped<IRefreshTokenProvider, RefreshTokenProvider>();
 
 // Mappers
 builder.Services.AddScoped<ICommandEventMapper, CommandEventMapper>();
@@ -73,6 +79,8 @@ builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 
 // Settings
 builder.Services.Configure<JWTSettings>(builder.Configuration.GetRequiredSection(JWTSettings.SectionName));
+builder.Services.Configure<RefreshTokenDbSettings>(builder.Configuration.GetRequiredSection(RefreshTokenDbSettings.SectionName));
+builder.Services.Configure<RefreshTokenSettings>(builder.Configuration.GetRequiredSection(RefreshTokenSettings.SectionName));
 
 var app = builder.Build();
 
@@ -83,6 +91,5 @@ app.UseRequestLocalization(opt =>
 
 // Configure the HTTP request pipeline.
 app.MapGrpcService<AuthService.WebApi.Services.AuthService>();
-app.MapGet("/", () => "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
 
 app.Run();
