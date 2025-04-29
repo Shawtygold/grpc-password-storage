@@ -26,6 +26,22 @@ namespace AuthService.WebApi.Exceptions
             }.ToRpcException();
         }
 
+        internal static RpcException RefreshTokenExpired()
+        {
+            ErrorInfo errorInfo = new()
+            {
+                Domain = _domain,
+                Reason = "REFRESH_TOKEN_EXPIRED"
+            };
+
+            return new Google.Rpc.Status()
+            {
+                Code = (int)StatusCode.Unauthenticated,
+                Message = "Refresh token has expired",
+                Details = { Any.Pack(errorInfo) }
+            }.ToRpcException();
+        }
+
         internal static RpcException NotFound(string userLogin)
         {
             ErrorInfo errorInfo = new()
