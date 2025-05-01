@@ -26,7 +26,7 @@ This repository is a secure password management system. It consists of two main 
 
 ## Features
 
-- **Built with .NET 8**: Utilizes the latest features for efficient development.
+- **Built with .NET 9**: Utilizes the latest features for efficient development.
 - **gRPC**: Efficient communication protocol for service interactions.
 - **Marten**: Document database for flexible data storage.
 - **PostgreSQL**: Powerful relational database for data storage.
