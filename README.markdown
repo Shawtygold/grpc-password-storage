@@ -4,10 +4,10 @@ This repository is a secure password management system. It consists of two main 
 
 ## Table of Contents
 
-- [Api endpoints](#api-endpoints)
+- [Api Endpoints](#api-endpoints)
+- [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Architecture](#architecture-overview)
-- [Features](#features)
 
 ## API Endpoints
 - **Authorization Server**:
