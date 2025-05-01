@@ -1,124 +1,63 @@
-# PasswordBox
+# Password Storage API with .NET 9, gRPC, PostgreSQL, Marten, Wolverine
 
-PasswordBox is a secure password management system built with C# and ASP.NET Core. It consists of two main components: an **Authorization Server** for user authentication and a **Password Storage Server** for managing passwords (adding, deleting, editing, and retrieving). The project is designed to provide a robust and secure solution for storing and managing user credentials.
+This repository is a secure password management system. It consists of two main components: an **Authorization Server** for user authorization/authentication and a **Password Storage Server** for managing passwords (adding, deleting, editing, and retrieving). The project is designed to provide a robust and secure solution for storing and managing user credentials.
 
-## Features
+<!--## Features
 
 - **Authorization Server**:
-  - User registration and login.
-  - JWT-based authentication for secure access.
-  - Role-based access control (optional, can be extended).
+  - Registration
+  - Login
+  - Login with refresh token
+  - Revoke refresh tokens
 
 - **Password Storage Server**:
-  - Add new passwords with associated metadata (e.g., website, username).
-  - Retrieve stored passwords securely.
-  - Edit existing password entries.
-  - Delete passwords.
-  - Encrypted storage to ensure data security.
+  - Add new passwords
+  - Retrieve stored passwords securely
+  - Edit existing password entries
+  - Delete passwords
+  - Encrypted storage to ensure data security
+ 
+- **Client**:
+  - Soon-->
 
-- **Security**:
-  - Passwords are encrypted using industry-standard encryption algorithms.
-  - Secure API endpoints with authentication and authorization checks.
-  - HTTPS enforced for all communications.
+## Table of Contents
+
+- [Nigger](#Tech-Stack)
+- [Текст ссылки](#sss)
+- [отображаемое название](#architecture-overview)
+
+## API Endpoints
+- **Authorization Server**:
+  - `[AuthProtoService.RegisterUser]`: register
+  - `[AuthProtoService.Login]`: login
+  - `[AuthProtoService.LoginWithRefreshToken]`: login with refresh token
+  - `[AuthProtoService.RevokeRefreshTokens]`: revoke all user refresh tokens
+    
+- **Password Server**:
+  - `[PasswordProtoService.CreatePassword]`: add a new password
+  - `[PasswordProtoService.UpdatePassword]`: update an existing password
+  - `[PasswordProtoService.DeletePassword]`: delete a password
+  - `[PasswordProtoService.GetPasswords]`: get all user passwords by UserID 
+
+**Note**: All Password Server endpoints require a valid JWT token in the `Authorization` header.
 
 ## Tech Stack
 
-- **Backend**: C# with ASP.NET Core
-- **Database**: (Specify your database, e.g., SQL Server, SQLite, or PostgreSQL)
-- **Authentication**: JWT (JSON Web Tokens)
-- **Encryption**: AES or similar for password storage
-- **Hosting**: Compatible with any platform supporting ASP.NET Core (e.g., Azure, AWS, or on-premises)
+- **.NET 9**
+- **gRPC**
+- **PostgreSQL**
+- **Marten**
+- **Wolverine**
+- **EF Core**
 
-## Prerequisites
-
-To run the project locally, ensure you have the following installed:
-
-- [.NET SDK](https://dotnet.microsoft.com/download) (version 6.0 or later)
-- A database server (e.g., SQL Server, PostgreSQL, or SQLite)
-- [Visual Studio](https://visualstudio.microsoft.com/) or [VS Code](https://code.visualstudio.com/) (optional, for development)
-
-## Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/PasswordBox.git
-   cd PasswordBox
-   ```
-
-2. **Configure the environment**:
-   - Update the `appsettings.json` file in both the Authorization Server and Password Storage Server projects with your database connection string and JWT settings.
-   - Example `appsettings.json`:
-     ```json
-     {
-       "ConnectionStrings": {
-         "DefaultConnection": "Your-Database-Connection-String"
-       },
-       "Jwt": {
-         "Key": "Your-Secret-Key",
-         "Issuer": "Your-Issuer",
-         "Audience": "Your-Audience"
-       }
-     }
-     ```
-
-3. **Restore dependencies**:
-   ```bash
-   dotnet restore
-   ```
-
-4. **Apply database migrations** (if using Entity Framework):
-   ```bash
-   dotnet ef database update --project AuthorizationServer
-   dotnet ef database update --project PasswordStorageServer
-   ```
-
-5. **Run the servers**:
-   - Start the Authorization Server:
-     ```bash
-     dotnet run --project AuthorizationServer
-     ```
-   - Start the Password Storage Server:
-     ```bash
-     dotnet run --project PasswordStorageServer
-     ```
-
-6. **Access the APIs**:
-   - Authorization Server: `https://localhost:5001` (or your configured port)
-   - Password Storage Server: `https://localhost:5002` (or your configured port)
-
-## API Endpoints
-
-### Authorization Server
-- `POST /api/auth/register`: Register a new user.
-- `POST /api/auth/login`: Authenticate a user and return a JWT token.
-
-### Password Storage Server
-- `GET /api/passwords`: Retrieve all passwords for the authenticated user.
-- `GET /api/passwords/{id}`: Retrieve a specific password by ID.
-- `POST /api/passwords`: Add a new password.
-- `PUT /api/passwords/{id}`: Update an existing password.
-- `DELETE /api/passwords/{id}`: Delete a password.
-
-**Note**: All Password Storage Server endpoints require a valid JWT token in the `Authorization` header.
-
-## Project Structure
-
-```plaintext
-PasswordBox/
-├── AuthorizationServer/
-│   ├── Controllers/
-│   ├── Models/
-│   ├── Services/
-│   └── appsettings.json
-├── PasswordStorageServer/
-│   ├── Controllers/
-│   ├── Models/
-│   ├── Services/
-│   └── appsettings.json
-├── README.md
-└── PasswordBox.sln
-```
-
+## Architecture Overview
+- **Clean Architecture**:
+  - A design approach organizing code into layers (Domain, Application, Infrastructure, Presentation (Web API)) to keep business logic independent of frameworks and external systems. Goal: modularity, testability, maintainability.
+- **CQRS (Command Query Responsibility Segregation)**:
+  - A pattern separating read (Queries) and write (Commands) operations into distinct models. Reads are optimized for speed, writes for consistency.
+- **Event Sourcing**:
+  - A pattern where state is derived by storing and replaying a sequence of events representing changes, rather than storing the current state. Ensures auditability and enables rebuilding state from events
+<a name="sss"></a> 
 ## Security Considerations
 
 - Use strong, unique keys for JWT and encryption.
