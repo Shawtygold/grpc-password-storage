@@ -32,7 +32,7 @@ builder.Services.AddGrpc(opt =>
     opt.Interceptors.Add<ExceptionHandlingInterceptor>();
 });
 
-string connectionString = builder.Configuration.GetConnectionString("PostgreSQLConnection")
+string connectionString = builder.Configuration.GetConnectionString("UsersPostgreSQLConnection")
     ?? throw new InvalidOperationException("PostgreSQL connection not found in configuration");
 
 // Marten
