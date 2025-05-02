@@ -3,6 +3,54 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|solutionrelative:source\\authserver\\authservice.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.webapi\\appsettings_example.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|solutionrelative:source\\authserver\\authservice.webapi\\appsettings_example.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.infrastructure\\settings\\refreshtokendbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|solutionrelative:source\\authserver\\authservice.infrastructure\\settings\\refreshtokendbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.infrastructure\\appcontext\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|solutionrelative:source\\authserver\\authservice.infrastructure\\appcontext\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72820F6F-6383-4AEA-8654-960E935F967E}|source\\PasswordServer\\PasswordService.WebApi\\PasswordService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\passwordserver\\passwordservice.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72820F6F-6383-4AEA-8654-960E935F967E}|source\\PasswordServer\\PasswordService.WebApi\\PasswordService.WebApi.csproj|solutionrelative:source\\passwordserver\\passwordservice.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72820F6F-6383-4AEA-8654-960E935F967E}|source\\PasswordServer\\PasswordService.WebApi\\PasswordService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\passwordserver\\passwordservice.webapi\\appsettings_example.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{72820F6F-6383-4AEA-8654-960E935F967E}|source\\PasswordServer\\PasswordService.WebApi\\PasswordService.WebApi.csproj|solutionrelative:source\\passwordserver\\passwordservice.webapi\\appsettings_example.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72820F6F-6383-4AEA-8654-960E935F967E}|source\\PasswordServer\\PasswordService.WebApi\\PasswordService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\passwordserver\\passwordservice.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{72820F6F-6383-4AEA-8654-960E935F967E}|source\\PasswordServer\\PasswordService.WebApi\\PasswordService.WebApi.csproj|solutionrelative:source\\passwordserver\\passwordservice.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|solutionrelative:source\\authserver\\authservice.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.infrastructure\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|solutionrelative:source\\authserver\\authservice.infrastructure\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.webapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|solutionrelative:source\\authserver\\authservice.webapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\refreshtokensettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\refreshtokensettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|solutionrelative:source\\authserver\\authservice.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.webapi\\protos\\auth.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|solutionrelative:source\\authserver\\authservice.webapi\\protos\\auth.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -19,84 +67,12 @@
       "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\authservice.application.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.webapi\\validators\\requests\\revokerefreshtokensrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|solutionrelative:source\\authserver\\authservice.webapi\\validators\\requests\\revokerefreshtokensrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.webapi\\validators\\requests\\loginwithrefreshtokenrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|solutionrelative:source\\authserver\\authservice.webapi\\validators\\requests\\loginwithrefreshtokenrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\validators\\queries\\getrefreshtokenbytokenqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\validators\\queries\\getrefreshtokenbytokenqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\validators\\commands\\deleterefreshtokenscommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\validators\\commands\\deleterefreshtokenscommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\validators\\commands\\createrefreshtokencommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\validators\\commands\\createrefreshtokencommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{038C12E5-1913-4547-8A8F-A542586FC0FB}|source\\AuthServer\\AuthService.Domain\\AuthService.Domain.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.domain\\exceptions\\refreshtokenexpiredexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{038C12E5-1913-4547-8A8F-A542586FC0FB}|source\\AuthServer\\AuthService.Domain\\AuthService.Domain.csproj|solutionrelative:source\\authserver\\authservice.domain\\exceptions\\refreshtokenexpiredexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\dto\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\dto\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.infrastructure\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|solutionrelative:source\\authserver\\authservice.infrastructure\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.infrastructure\\providers\\refreshtokenprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|solutionrelative:source\\authserver\\authservice.infrastructure\\providers\\refreshtokenprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\refreshtokensettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\refreshtokensettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\abstractions\\providers\\irefreshtokenprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\abstractions\\providers\\irefreshtokenprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\validators\\commands\\registerusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\validators\\commands\\registerusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|solutionrelative:source\\authserver\\authservice.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|solutionrelative:source\\authserver\\authservice.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\cqrs\\commands\\createrefreshtoken\\createrefreshtokencommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\cqrs\\commands\\createrefreshtoken\\createrefreshtokencommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.infrastructure\\settings\\refreshtokendbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|solutionrelative:source\\authserver\\authservice.infrastructure\\settings\\refreshtokendbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.webapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|solutionrelative:source\\authserver\\authservice.webapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\services\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\services\\registrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\cqrs\\commands\\deleterefreshtokens\\deleterefreshtokenscommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\cqrs\\commands\\deleterefreshtokens\\deleterefreshtokenscommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\cqrs\\commands\\deleterefreshtokens\\deleterefreshtokenscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\cqrs\\commands\\deleterefreshtokens\\deleterefreshtokenscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.webapi\\interceptors\\exceptionhandlinginterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -109,18 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.webapi\\exceptions\\authrpcexceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|solutionrelative:source\\authserver\\authservice.webapi\\exceptions\\authrpcexceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.infrastructure\\appcontext\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|solutionrelative:source\\authserver\\authservice.infrastructure\\appcontext\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\cqrs\\commands\\createrefreshtoken\\createrefreshtokencommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\cqrs\\commands\\createrefreshtoken\\createrefreshtokencommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.infrastructure\\repositories\\refreshtokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|solutionrelative:source\\authserver\\authservice.infrastructure\\repositories\\refreshtokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.webapi\\validators\\requests\\registeruserrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -139,28 +103,12 @@
       "RelativeMoniker": "D:0:0:{038C12E5-1913-4547-8A8F-A542586FC0FB}|source\\AuthServer\\AuthService.Domain\\AuthService.Domain.csproj|solutionrelative:source\\authserver\\authservice.domain\\entities\\useraggregate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038C12E5-1913-4547-8A8F-A542586FC0FB}|source\\AuthServer\\AuthService.Domain\\AuthService.Domain.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.domain\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{038C12E5-1913-4547-8A8F-A542586FC0FB}|source\\AuthServer\\AuthService.Domain\\AuthService.Domain.csproj|solutionrelative:source\\authserver\\authservice.domain\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\abstractions\\repositories\\irefreshtokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\abstractions\\repositories\\irefreshtokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.infrastructure\\repositories\\projectionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|solutionrelative:source\\authserver\\authservice.infrastructure\\repositories\\projectionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{834117B1-88F8-4122-866C-53F6989C1B2A}|source\\PasswordServer\\PasswordService.Application\\PasswordService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\passwordserver\\passwordservice.application\\cqrs\\commands\\deletepassword\\deletepasswordcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{834117B1-88F8-4122-866C-53F6989C1B2A}|source\\PasswordServer\\PasswordService.Application\\PasswordService.Application.csproj|solutionrelative:source\\passwordserver\\passwordservice.application\\cqrs\\commands\\deletepassword\\deletepasswordcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\cqrs\\queries\\getrefreshtoken\\getrefreshtokenbytokenqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\cqrs\\queries\\getrefreshtoken\\getrefreshtokenbytokenqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\cqrs\\queries\\getrefreshtoken\\getrefreshtokenbytokenquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|solutionrelative:source\\authserver\\authservice.application\\cqrs\\queries\\getrefreshtoken\\getrefreshtokenbytokenquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE3DD0B7-94DF-4EE1-863F-79B47A50A47B}|source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.application\\abstractions\\services\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -193,10 +141,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.infrastructure\\repositories\\eventsourcingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BD50CE8-6EF8-4940-A470-BC804FEE4543}|source\\AuthServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj|solutionrelative:source\\authserver\\authservice.infrastructure\\repositories\\eventsourcingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72820F6F-6383-4AEA-8654-960E935F967E}|source\\PasswordServer\\PasswordService.WebApi\\PasswordService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\passwordserver\\passwordservice.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72820F6F-6383-4AEA-8654-960E935F967E}|source\\PasswordServer\\PasswordService.WebApi\\PasswordService.WebApi.csproj|solutionrelative:source\\passwordserver\\passwordservice.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67C86FF8-BC36-4E2A-A2CC-A8EFF551F09B}|source\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj|c:\\users\\user\\source\\repos\\passwordboxgrpcserver\\source\\authserver\\authservice.webapi\\validators\\requests\\loginuserrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -976,232 +920,213 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings_example.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.WebApi\\appsettings_example.json",
+              "RelativeDocumentMoniker": "source\\PasswordServer\\PasswordService.WebApi\\appsettings_example.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.WebApi\\appsettings_example.json",
+              "RelativeToolTip": "source\\PasswordServer\\PasswordService.WebApi\\appsettings_example.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-02T05:08:34.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings_example.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\appsettings_example.json",
+              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\appsettings_example.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\appsettings_example.json",
+              "RelativeToolTip": "source\\AuthServer\\AuthService.WebApi\\appsettings_example.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-02T04:53:12.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "source\\PasswordServer\\PasswordService.WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.WebApi\\appsettings.json",
+              "RelativeToolTip": "source\\PasswordServer\\PasswordService.WebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-01T07:01:45.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Program.cs",
+              "RelativeToolTip": "source\\AuthServer\\AuthService.WebApi\\Program.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwCMAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T09:36:10.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "source\\PasswordServer\\PasswordService.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.WebApi\\Program.cs",
+              "RelativeToolTip": "source\\PasswordServer\\PasswordService.WebApi\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB8AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T14:28:38.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\appsettings.json",
+              "RelativeToolTip": "source\\AuthServer\\AuthService.WebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-01T07:23:37.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Services\\AuthService.cs",
+              "RelativeToolTip": "source\\AuthServer\\AuthService.WebApi\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T12:49:26.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RefreshTokenDbSettings.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\Settings\\RefreshTokenDbSettings.cs",
+              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Infrastructure\\Settings\\RefreshTokenDbSettings.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\Settings\\RefreshTokenDbSettings.cs",
+              "RelativeToolTip": "source\\AuthServer\\AuthService.Infrastructure\\Settings\\RefreshTokenDbSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T07:13:19.082Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\AppContext\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Infrastructure\\AppContext\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\AppContext\\ApplicationContext.cs",
+              "RelativeToolTip": "source\\AuthServer\\AuthService.Infrastructure\\AppContext\\ApplicationContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T06:57:11.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "passwords.proto",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.WebApi\\Protos\\passwords.proto",
+              "RelativeDocumentMoniker": "source\\PasswordServer\\PasswordService.WebApi\\Protos\\passwords.proto",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.WebApi\\Protos\\passwords.proto",
+              "RelativeToolTip": "source\\PasswordServer\\PasswordService.WebApi\\Protos\\passwords.proto",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2025-04-27T15:15:17.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "auth.proto",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Protos\\auth.proto",
+              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\Protos\\auth.proto",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Protos\\auth.proto",
+              "RelativeToolTip": "source\\AuthServer\\AuthService.WebApi\\Protos\\auth.proto",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2025-04-20T09:27:03.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Services\\LoginService.cs",
+              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\Services\\LoginService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Services\\LoginService.cs",
+              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\Services\\LoginService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T09:17:22.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JWTSettings.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\Settings\\JWTSettings.cs",
+              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Infrastructure\\Settings\\JWTSettings.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\Settings\\JWTSettings.cs",
+              "RelativeToolTip": "source\\AuthServer\\AuthService.Infrastructure\\Settings\\JWTSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T07:20:14.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RefreshTokenSettings.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\RefreshTokenSettings.cs",
+              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\RefreshTokenSettings.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\RefreshTokenSettings.cs",
+              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\RefreshTokenSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T04:26:57.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\appsettings.Development.json",
+              "RelativeToolTip": "source\\AuthServer\\AuthService.WebApi\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-01T06:56:47.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "AuthService.Application",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj",
               "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj",
               "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\AuthService.Application.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-01T04:04:02.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CreateRefreshTokenCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Validators\\Commands\\CreateRefreshTokenCommandValidator.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\Validators\\Commands\\CreateRefreshTokenCommandValidator.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Validators\\Commands\\CreateRefreshTokenCommandValidator.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\Validators\\Commands\\CreateRefreshTokenCommandValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T07:43:24.094Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DeleteRefreshTokensCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Validators\\Commands\\DeleteRefreshTokensCommandValidator.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\Validators\\Commands\\DeleteRefreshTokensCommandValidator.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Validators\\Commands\\DeleteRefreshTokensCommandValidator.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\Validators\\Commands\\DeleteRefreshTokensCommandValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T07:46:06.655Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginWithRefreshTokenRequestValidator.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Validators\\Requests\\LoginWithRefreshTokenRequestValidator.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\Validators\\Requests\\LoginWithRefreshTokenRequestValidator.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Validators\\Requests\\LoginWithRefreshTokenRequestValidator.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.WebApi\\Validators\\Requests\\LoginWithRefreshTokenRequestValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T15:38:38.162Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RevokeRefreshTokensRequestValidator.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Validators\\Requests\\RevokeRefreshTokensRequestValidator.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\Validators\\Requests\\RevokeRefreshTokensRequestValidator.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Validators\\Requests\\RevokeRefreshTokensRequestValidator.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.WebApi\\Validators\\Requests\\RevokeRefreshTokensRequestValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T07:31:35.724Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Services\\LoginService.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\Services\\LoginService.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Services\\LoginService.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\Services\\LoginService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T09:17:22.721Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "auth.proto",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Protos\\auth.proto",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\Protos\\auth.proto",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Protos\\auth.proto",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.WebApi\\Protos\\auth.proto",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
-              "WhenOpened": "2025-04-20T09:27:03.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "passwords.proto",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.WebApi\\Protos\\passwords.proto",
-              "RelativeDocumentMoniker": "source\\PasswordServer\\PasswordService.WebApi\\Protos\\passwords.proto",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.WebApi\\Protos\\passwords.proto",
-              "RelativeToolTip": "source\\PasswordServer\\PasswordService.WebApi\\Protos\\passwords.proto",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
-              "WhenOpened": "2025-04-27T15:15:17.728Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RefreshTokenExpiredException.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Domain\\Exceptions\\RefreshTokenExpiredException.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Domain\\Exceptions\\RefreshTokenExpiredException.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Domain\\Exceptions\\RefreshTokenExpiredException.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Domain\\Exceptions\\RefreshTokenExpiredException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T13:22:17.328Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GetRefreshTokenByTokenQueryValidator.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Validators\\Queries\\GetRefreshTokenByTokenQueryValidator.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\Validators\\Queries\\GetRefreshTokenByTokenQueryValidator.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Validators\\Queries\\GetRefreshTokenByTokenQueryValidator.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\Validators\\Queries\\GetRefreshTokenByTokenQueryValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T07:42:14.65Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginResponse.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\DTO\\LoginResponse.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\DTO\\LoginResponse.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\DTO\\LoginResponse.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\DTO\\LoginResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T12:35:19.549Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RefreshTokenProvider.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\Providers\\RefreshTokenProvider.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Infrastructure\\Providers\\RefreshTokenProvider.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\Providers\\RefreshTokenProvider.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Infrastructure\\Providers\\RefreshTokenProvider.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAiwCAAAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T15:48:13.184Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RefreshTokenSettings.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\RefreshTokenSettings.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\RefreshTokenSettings.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\RefreshTokenSettings.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\RefreshTokenSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T07:26:47.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IRefreshTokenProvider.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Abstractions\\Providers\\IRefreshTokenProvider.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\Abstractions\\Providers\\IRefreshTokenProvider.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Abstractions\\Providers\\IRefreshTokenProvider.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\Abstractions\\Providers\\IRefreshTokenProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T15:48:43.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "JWTSettings.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\Settings\\JWTSettings.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Infrastructure\\Settings\\JWTSettings.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\Settings\\JWTSettings.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Infrastructure\\Settings\\JWTSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T15:27:11.552Z"
+              "WhenOpened": "2025-05-01T04:04:02.998Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Program.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.WebApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T09:36:10.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\appsettings.json",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\appsettings.json",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.WebApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-20T10:23:49.422Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CreateRefreshTokenCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\CreateRefreshToken\\CreateRefreshTokenCommandHandler.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\CreateRefreshToken\\CreateRefreshTokenCommandHandler.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\CreateRefreshToken\\CreateRefreshTokenCommandHandler.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\CreateRefreshToken\\CreateRefreshTokenCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T13:30:27.342Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "RegisterUserCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Validators\\Commands\\RegisterUserCommandValidator.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\Validators\\Commands\\RegisterUserCommandValidator.cs",
@@ -1213,67 +1138,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RefreshTokenDbSettings.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\Settings\\RefreshTokenDbSettings.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Infrastructure\\Settings\\RefreshTokenDbSettings.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\Settings\\RefreshTokenDbSettings.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Infrastructure\\Settings\\RefreshTokenDbSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T12:49:19.342Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Services\\AuthService.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.WebApi\\Services\\AuthService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowCwAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T12:49:26.213Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 17,
               "Title": "RegistrationService.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Services\\RegistrationService.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\Services\\RegistrationService.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Services\\RegistrationService.cs",
               "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\Services\\RegistrationService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBEAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T09:17:38.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "DeleteRefreshTokensCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\DeleteRefreshTokens\\DeleteRefreshTokensCommandHandler.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\DeleteRefreshTokens\\DeleteRefreshTokensCommandHandler.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\DeleteRefreshTokens\\DeleteRefreshTokensCommandHandler.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\DeleteRefreshTokens\\DeleteRefreshTokensCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T03:54:41.72Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "DeleteRefreshTokensCommand.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\DeleteRefreshTokens\\DeleteRefreshTokensCommand.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\DeleteRefreshTokens\\DeleteRefreshTokensCommand.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\DeleteRefreshTokens\\DeleteRefreshTokensCommand.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\DeleteRefreshTokens\\DeleteRefreshTokensCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T03:54:05.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 19,
               "Title": "GrpcExceptionMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Mappers\\GrpcExceptionMapper.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\Mappers\\GrpcExceptionMapper.cs",
@@ -1285,19 +1162,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 20,
               "Title": "AuthRpcExceptions.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Exceptions\\AuthRpcExceptions.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\Exceptions\\AuthRpcExceptions.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Exceptions\\AuthRpcExceptions.cs",
               "RelativeToolTip": "source\\AuthServer\\AuthService.WebApi\\Exceptions\\AuthRpcExceptions.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAACoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAIBJwCoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T09:56:08.431Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 18,
               "Title": "ExceptionHandlingInterceptor.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Interceptors\\ExceptionHandlingInterceptor.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\Interceptors\\ExceptionHandlingInterceptor.cs",
@@ -1309,43 +1186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ApplicationContext.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\AppContext\\ApplicationContext.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Infrastructure\\AppContext\\ApplicationContext.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\AppContext\\ApplicationContext.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Infrastructure\\AppContext\\ApplicationContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T12:53:00.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CreateRefreshTokenCommand.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\CreateRefreshToken\\CreateRefreshTokenCommand.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\CreateRefreshToken\\CreateRefreshTokenCommand.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\CreateRefreshToken\\CreateRefreshTokenCommand.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\CreateRefreshToken\\CreateRefreshTokenCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T13:28:01.626Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "RefreshTokenRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\Repositories\\RefreshTokenRepository.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Infrastructure\\Repositories\\RefreshTokenRepository.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\Repositories\\RefreshTokenRepository.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Infrastructure\\Repositories\\RefreshTokenRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T12:59:58.429Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 21,
               "Title": "RegisterUserRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Validators\\Requests\\RegisterUserRequestValidator.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\Validators\\Requests\\RegisterUserRequestValidator.cs",
@@ -1357,31 +1198,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 23,
               "Title": "RegisterUserCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
               "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T09:59:24.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 22,
               "Title": "ValidationInterceptor.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Interceptors\\ValidationInterceptor.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\Interceptors\\ValidationInterceptor.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Interceptors\\ValidationInterceptor.cs",
               "RelativeToolTip": "source\\AuthServer\\AuthService.WebApi\\Interceptors\\ValidationInterceptor.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAABQwBMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T10:18:13.398Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 24,
               "Title": "UserAggregate.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Domain\\Entities\\UserAggregate.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Domain\\Entities\\UserAggregate.cs",
@@ -1393,31 +1234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "RefreshToken.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Domain\\Entities\\RefreshToken.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Domain\\Entities\\RefreshToken.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Domain\\Entities\\RefreshToken.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Domain\\Entities\\RefreshToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T12:29:26.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "IRefreshTokenRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Abstractions\\Repositories\\IRefreshTokenRepository.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\Abstractions\\Repositories\\IRefreshTokenRepository.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Abstractions\\Repositories\\IRefreshTokenRepository.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\Abstractions\\Repositories\\IRefreshTokenRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T13:03:45.813Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 25,
               "Title": "ProjectionRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\Repositories\\ProjectionRepository.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Infrastructure\\Repositories\\ProjectionRepository.cs",
@@ -1429,7 +1246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 26,
               "Title": "DeletePasswordCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.Application\\CQRS\\Commands\\DeletePassword\\DeletePasswordCommandHandler.cs",
               "RelativeDocumentMoniker": "source\\PasswordServer\\PasswordService.Application\\CQRS\\Commands\\DeletePassword\\DeletePasswordCommandHandler.cs",
@@ -1441,31 +1258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "GetRefreshTokenByTokenQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Queries\\GetRefreshToken\\GetRefreshTokenByTokenQueryHandler.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\CQRS\\Queries\\GetRefreshToken\\GetRefreshTokenByTokenQueryHandler.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Queries\\GetRefreshToken\\GetRefreshTokenByTokenQueryHandler.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\CQRS\\Queries\\GetRefreshToken\\GetRefreshTokenByTokenQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T13:09:51.119Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "GetRefreshTokenByTokenQuery.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Queries\\GetRefreshToken\\GetRefreshTokenByTokenQuery.cs",
-              "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\CQRS\\Queries\\GetRefreshToken\\GetRefreshTokenByTokenQuery.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Queries\\GetRefreshToken\\GetRefreshTokenByTokenQuery.cs",
-              "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\CQRS\\Queries\\GetRefreshToken\\GetRefreshTokenByTokenQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T13:08:25.592Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 27,
               "Title": "ILoginService.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Abstractions\\Services\\ILoginService.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\Abstractions\\Services\\ILoginService.cs",
@@ -1477,19 +1270,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 28,
               "Title": "CreatePasswordCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.Application\\CQRS\\Commands\\CreatePassword\\CreatePasswordCommandHandler.cs",
               "RelativeDocumentMoniker": "source\\PasswordServer\\PasswordService.Application\\CQRS\\Commands\\CreatePassword\\CreatePasswordCommandHandler.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.Application\\CQRS\\Commands\\CreatePassword\\CreatePasswordCommandHandler.cs",
               "RelativeToolTip": "source\\PasswordServer\\PasswordService.Application\\CQRS\\Commands\\CreatePassword\\CreatePasswordCommandHandler.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-28T13:32:16.219Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 29,
               "Title": "CreatePasswordCommand.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.Application\\CQRS\\Commands\\CreatePassword\\CreatePasswordCommand.cs",
               "RelativeDocumentMoniker": "source\\PasswordServer\\PasswordService.Application\\CQRS\\Commands\\CreatePassword\\CreatePasswordCommand.cs",
@@ -1501,7 +1294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 30,
               "Title": "UserNotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Domain\\Exceptions\\UserNotFoundException.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Domain\\Exceptions\\UserNotFoundException.cs",
@@ -1513,19 +1306,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 31,
               "Title": "GetUserByLoginQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Queries\\GetUserByLogin\\GetUserByLoginQueryHandler.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\CQRS\\Queries\\GetUserByLogin\\GetUserByLoginQueryHandler.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Queries\\GetUserByLogin\\GetUserByLoginQueryHandler.cs",
               "RelativeToolTip": "source\\AuthServer\\AuthService.Application\\CQRS\\Queries\\GetUserByLogin\\GetUserByLoginQueryHandler.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-28T13:13:30.312Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 32,
               "Title": "CheckUserExistsQuery.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Queries\\CheckUserExists\\CheckUserExistsQuery.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\CQRS\\Queries\\CheckUserExists\\CheckUserExistsQuery.cs",
@@ -1537,7 +1330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 33,
               "Title": "IProjectionRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Abstractions\\Repositories\\IProjectionRepository.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\Abstractions\\Repositories\\IProjectionRepository.cs",
@@ -1549,7 +1342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 34,
               "Title": "EventSourcingRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\Repositories\\EventSourcingRepository.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Infrastructure\\Repositories\\EventSourcingRepository.cs",
@@ -1561,19 +1354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "source\\PasswordServer\\PasswordService.WebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.WebApi\\Program.cs",
-              "RelativeToolTip": "source\\PasswordServer\\PasswordService.WebApi\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T14:28:38.15Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 35,
               "Title": "LoginUserRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Validators\\Requests\\LoginUserRequestValidator.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\Validators\\Requests\\LoginUserRequestValidator.cs",
@@ -1585,19 +1366,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 38,
               "Title": "PasswordAggregate.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.Domain\\Entities\\PasswordAggregate.cs",
               "RelativeDocumentMoniker": "source\\PasswordServer\\PasswordService.Domain\\Entities\\PasswordAggregate.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.Domain\\Entities\\PasswordAggregate.cs",
               "RelativeToolTip": "source\\PasswordServer\\PasswordService.Domain\\Entities\\PasswordAggregate.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T10:24:52.855Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 37,
               "Title": "BaseEvent.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.Domain\\Events\\BaseEvent.cs",
               "RelativeDocumentMoniker": "source\\PasswordServer\\PasswordService.Domain\\Events\\BaseEvent.cs",
@@ -1609,7 +1390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 36,
               "Title": "Events.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\PasswordServer\\PasswordService.Domain\\Events\\Events.cs",
               "RelativeDocumentMoniker": "source\\PasswordServer\\PasswordService.Domain\\Events\\Events.cs",
@@ -1621,7 +1402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 39,
               "Title": "UserView.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Domain\\Entities\\UserView.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Domain\\Entities\\UserView.cs",
@@ -1633,7 +1414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 40,
               "Title": "Events.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Domain\\Events\\Events.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Domain\\Events\\Events.cs",
@@ -1645,7 +1426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 41,
               "Title": "BaseEvent.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Domain\\Events\\BaseEvent.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Domain\\Events\\BaseEvent.cs",
@@ -1657,7 +1438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 42,
               "Title": "RegisterUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\RegisterUser\\RegisterUserCommand.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\CQRS\\Commands\\RegisterUser\\RegisterUserCommand.cs",
@@ -1669,7 +1450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 43,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.WebApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.WebApi\\Properties\\launchSettings.json",
@@ -1681,7 +1462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 44,
               "Title": "PasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Infrastructure\\Security\\PasswordHasher.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Infrastructure\\Security\\PasswordHasher.cs",
@@ -1693,7 +1474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 45,
               "Title": "IRegistrationService.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\source\\AuthServer\\AuthService.Application\\Abstractions\\Services\\IRegistrationService.cs",
               "RelativeDocumentMoniker": "source\\AuthServer\\AuthService.Application\\Abstractions\\Services\\IRegistrationService.cs",
@@ -1705,7 +1486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 152,
+              "DocumentIndex": 138,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\Program.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\Program.cs",
@@ -1716,7 +1497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 153,
+              "DocumentIndex": 139,
               "Title": "ExceptionHandlingInterceptor.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Interceptors\\ExceptionHandlingInterceptor.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Interceptors\\ExceptionHandlingInterceptor.cs",
@@ -1727,7 +1508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 140,
               "Title": "LoggingInterceptor.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Interceptors\\LoggingInterceptor.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Interceptors\\LoggingInterceptor.cs",
@@ -1738,7 +1519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 141,
               "Title": "ValidationInterceptor.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Interceptors\\ValidationInterceptor.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Interceptors\\ValidationInterceptor.cs",
@@ -1749,7 +1530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 156,
+              "DocumentIndex": 142,
               "Title": "JWTProvider.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Infrastructure\\Providers\\JWTProvider.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Infrastructure\\Providers\\JWTProvider.cs",
@@ -1760,7 +1541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 157,
+              "DocumentIndex": 143,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\appsettings.json",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\appsettings.json",
@@ -1771,7 +1552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 158,
+              "DocumentIndex": 144,
               "Title": "GrpcExceptionMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\Mappers\\GrpcExceptionMapper.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\Mappers\\GrpcExceptionMapper.cs",
@@ -1782,7 +1563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 159,
+              "DocumentIndex": 145,
               "Title": "ExceptionHandlingInterceptor.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\Interceptors\\ExceptionHandlingInterceptor.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\Interceptors\\ExceptionHandlingInterceptor.cs",
@@ -1793,7 +1574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 46,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\Services\\AuthService.cs",
@@ -1804,7 +1585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 160,
+              "DocumentIndex": 146,
               "Title": "PasswordRpcExceptions.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Exceptions\\PasswordRpcExceptions.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Exceptions\\PasswordRpcExceptions.cs",
@@ -1815,7 +1596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 161,
+              "DocumentIndex": 147,
               "Title": "PasswordService.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Services\\PasswordService.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Services\\PasswordService.cs",
@@ -1826,7 +1607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 162,
+              "DocumentIndex": 148,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Program.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Program.cs",
@@ -1837,7 +1618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 163,
+              "DocumentIndex": 149,
               "Title": "GetPasswordsRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Validators\\GetPasswordsRequestValidator.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Validators\\GetPasswordsRequestValidator.cs",
@@ -1848,7 +1629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 164,
+              "DocumentIndex": 150,
               "Title": "GetPasswordByUserIDQueryValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\Validators\\Queries\\GetPasswordByUserIDQueryValidator.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\Validators\\Queries\\GetPasswordByUserIDQueryValidator.cs",
@@ -1859,7 +1640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 165,
+              "DocumentIndex": 151,
               "Title": "GetPasswordsByUserIDQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\CQRS\\Queries\\GetPasswordsByUserID\\GetPasswordsByUserIDQueryHandler.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\CQRS\\Queries\\GetPasswordsByUserID\\GetPasswordsByUserIDQueryHandler.cs",
@@ -1870,7 +1651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 166,
+              "DocumentIndex": 152,
               "Title": "IGrpcExceptionMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Abstractions\\IGrpcExceptionMapper.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Abstractions\\IGrpcExceptionMapper.cs",
@@ -1881,7 +1662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 167,
+              "DocumentIndex": 153,
               "Title": "DeletePasswordCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\CQRS\\Commands\\DeletePassword\\DeletePasswordCommandHandler.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\CQRS\\Commands\\DeletePassword\\DeletePasswordCommandHandler.cs",
@@ -1892,7 +1673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 168,
+              "DocumentIndex": 154,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Properties\\launchSettings.json",
@@ -1903,7 +1684,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 169,
+              "DocumentIndex": 155,
               "Title": "PasswordService.WebApi.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\PasswordService.WebApi.csproj",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\PasswordService.WebApi.csproj",
@@ -1914,7 +1695,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 170,
+              "DocumentIndex": 156,
               "Title": "PasswordDTO.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\DTO\\PasswordDTO.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\DTO\\PasswordDTO.cs",
@@ -1925,7 +1706,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 171,
+              "DocumentIndex": 157,
               "Title": "PasswordViewMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\Mappers\\PasswordViewMapper.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\Mappers\\PasswordViewMapper.cs",
@@ -1936,7 +1717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 172,
+              "DocumentIndex": 158,
               "Title": "CommandEventMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\Mappers\\CommandEventMapper.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\Mappers\\CommandEventMapper.cs",
@@ -1947,7 +1728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 173,
+              "DocumentIndex": 159,
               "Title": "UpdatePasswordCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\Validators\\Commands\\UpdatePasswordCommandValidator.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\Validators\\Commands\\UpdatePasswordCommandValidator.cs",
@@ -1958,7 +1739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 174,
+              "DocumentIndex": 160,
               "Title": "DeletePasswordCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\Validators\\Commands\\DeletePasswordCommandValidator.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\Validators\\Commands\\DeletePasswordCommandValidator.cs",
@@ -1969,7 +1750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 175,
+              "DocumentIndex": 161,
               "Title": "CreatePasswordCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\Validators\\Commands\\CreatePasswordCommandValidator.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\Validators\\Commands\\CreatePasswordCommandValidator.cs",
@@ -1980,7 +1761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 176,
+              "DocumentIndex": 162,
               "Title": "PasswordProjection.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Infrastructure\\Projections\\PasswordProjection.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Infrastructure\\Projections\\PasswordProjection.cs",
@@ -1991,7 +1772,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 177,
+              "DocumentIndex": 163,
               "Title": "EventSourcingRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Infrastructure\\Repositories\\EventSourcingRepository.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Infrastructure\\Repositories\\EventSourcingRepository.cs",
@@ -2002,7 +1783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 178,
+              "DocumentIndex": 164,
               "Title": "ProjectionRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Infrastructure\\Repositories\\ProjectionRepository.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Infrastructure\\Repositories\\ProjectionRepository.cs",
@@ -2013,7 +1794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 179,
+              "DocumentIndex": 165,
               "Title": "RequestExtension.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Extensions\\RequestExtension.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Extensions\\RequestExtension.cs",
@@ -2024,7 +1805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 180,
+              "DocumentIndex": 166,
               "Title": "PasswordDTOMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Mappers\\PasswordDTOMapper.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Mappers\\PasswordDTOMapper.cs",
@@ -2035,7 +1816,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 181,
+              "DocumentIndex": 167,
               "Title": "GrpcExceptionMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Mappers\\GrpcExceptionMapper.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Mappers\\GrpcExceptionMapper.cs",
@@ -2046,7 +1827,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 182,
+              "DocumentIndex": 168,
               "Title": "CreatePasswordCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\CQRS\\Commands\\CreatePassword\\CreatePasswordCommandHandler.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\CQRS\\Commands\\CreatePassword\\CreatePasswordCommandHandler.cs",
@@ -2057,7 +1838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 183,
+              "DocumentIndex": 169,
               "Title": "IPasswordDTOMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Abstractions\\IPasswordDTOMapper.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Abstractions\\IPasswordDTOMapper.cs",
@@ -2068,7 +1849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 184,
+              "DocumentIndex": 170,
               "Title": "CreatePasswordRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Validators\\CreatePasswordRequestValidator.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Validators\\CreatePasswordRequestValidator.cs",
@@ -2079,7 +1860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 185,
+              "DocumentIndex": 171,
               "Title": "UpdatePasswordRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Validators\\UpdatePasswordRequestValidator.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Validators\\UpdatePasswordRequestValidator.cs",
@@ -2090,7 +1871,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 186,
+              "DocumentIndex": 172,
               "Title": "DeletePasswordRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Validators\\DeletePasswordRequestValidator.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Validators\\DeletePasswordRequestValidator.cs",
@@ -2101,7 +1882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 187,
+              "DocumentIndex": 173,
               "Title": "passwords.proto",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\Protos\\passwords.proto",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\Protos\\passwords.proto",
@@ -2112,7 +1893,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 188,
+              "DocumentIndex": 174,
               "Title": "GetPasswordsByUserIDQuery.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\CQRS\\Queries\\GetPasswordsByUserID\\GetPasswordsByUserIDQuery.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\CQRS\\Queries\\GetPasswordsByUserID\\GetPasswordsByUserIDQuery.cs",
@@ -2123,7 +1904,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 189,
+              "DocumentIndex": 175,
               "Title": "UpdatePasswordCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\CQRS\\Commands\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\CQRS\\Commands\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
@@ -2134,7 +1915,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 190,
+              "DocumentIndex": 176,
               "Title": "ProjectionRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Infrastructure\\Repositories\\ProjectionRepository.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Infrastructure\\Repositories\\ProjectionRepository.cs",
@@ -2145,7 +1926,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 191,
+              "DocumentIndex": 177,
               "Title": "EventSourcingRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Infrastructure\\Repositories\\EventSourcingRepository.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Infrastructure\\Repositories\\EventSourcingRepository.cs",
@@ -2156,7 +1937,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 192,
+              "DocumentIndex": 178,
               "Title": "GetUserByLoginQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\CQRS\\Queries\\GetUserByLogin\\GetUserByLoginQueryHandler.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\CQRS\\Queries\\GetUserByLogin\\GetUserByLoginQueryHandler.cs",
@@ -2167,7 +1948,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 193,
+              "DocumentIndex": 179,
               "Title": "CheckUserExistsQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\CQRS\\Queries\\CheckUserExists\\CheckUserExistsQueryHandler.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\CQRS\\Queries\\CheckUserExists\\CheckUserExistsQueryHandler.cs",
@@ -2178,7 +1959,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 194,
+              "DocumentIndex": 180,
               "Title": "RegisterUserCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\CQRS\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\CQRS\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
@@ -2189,7 +1970,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 195,
+              "DocumentIndex": 181,
               "Title": "IGrpcExceptionMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\Abstractions\\IGrpcExceptionMapper.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\Abstractions\\IGrpcExceptionMapper.cs",
@@ -2200,7 +1981,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 196,
+              "DocumentIndex": 182,
               "Title": "ValidationInterceptor.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\Interceptors\\ValidationInterceptor.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\Interceptors\\ValidationInterceptor.cs",
@@ -2211,7 +1992,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 197,
+              "DocumentIndex": 183,
               "Title": "LoggingInterceptor.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\Interceptors\\LoggingInterceptor.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\Interceptors\\LoggingInterceptor.cs",
@@ -2222,7 +2003,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 198,
+              "DocumentIndex": 184,
               "Title": "RegisterUserRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\Validators\\Requests\\RegisterUserRequestValidator.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\Validators\\Requests\\RegisterUserRequestValidator.cs",
@@ -2233,7 +2014,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 199,
+              "DocumentIndex": 185,
               "Title": "AuthenticationException.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Domain\\Exceptions\\AuthenticationException.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Domain\\Exceptions\\AuthenticationException.cs",
@@ -2244,7 +2025,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 200,
+              "DocumentIndex": 186,
               "Title": "UserAuthenticator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Infrastructure\\Services\\UserAuthenticator.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Infrastructure\\Services\\UserAuthenticator.cs",
@@ -2255,7 +2036,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 201,
+              "DocumentIndex": 187,
               "Title": "GetUserByLoginQuery.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\CQRS\\Queries\\GetUserByLogin\\GetUserByLoginQuery.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\CQRS\\Queries\\GetUserByLogin\\GetUserByLoginQuery.cs",
@@ -2266,7 +2047,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 202,
+              "DocumentIndex": 188,
               "Title": "RequestExtension.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\Extensions\\RequestExtension.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\Extensions\\RequestExtension.cs",
@@ -2277,7 +2058,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 203,
+              "DocumentIndex": 189,
               "Title": "AuthenticateUserRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\Validators\\Requests\\AuthenticateUserRequestValidator.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\Validators\\Requests\\AuthenticateUserRequestValidator.cs",
@@ -2288,7 +2069,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 204,
+              "DocumentIndex": 190,
               "Title": "AuthRpcExceptions.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\Exceptions\\AuthRpcExceptions.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\Exceptions\\AuthRpcExceptions.cs",
@@ -2299,7 +2080,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 205,
+              "DocumentIndex": 191,
               "Title": "GetUserByLoginQueryValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\Validators\\Queries\\GetUserByLoginQueryValidator.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\Validators\\Queries\\GetUserByLoginQueryValidator.cs",
@@ -2310,7 +2091,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 206,
+              "DocumentIndex": 192,
               "Title": "PasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Infrastructure\\Security\\PasswordHasher.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Infrastructure\\Security\\PasswordHasher.cs",
@@ -2321,7 +2102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 207,
+              "DocumentIndex": 193,
               "Title": "CheckUserExistsQueryValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\Validators\\Queries\\CheckUserExistsQueryValidator.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\Validators\\Queries\\CheckUserExistsQueryValidator.cs",
@@ -2332,7 +2113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 208,
+              "DocumentIndex": 194,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\Properties\\launchSettings.json",
@@ -2343,7 +2124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 209,
+              "DocumentIndex": 195,
               "Title": "IUserAuthenticator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\Abstractions\\Services\\IUserAuthenticator.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\Abstractions\\Services\\IUserAuthenticator.cs",
@@ -2354,7 +2135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 210,
+              "DocumentIndex": 196,
               "Title": "IEventSourcingRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\Abstractions\\Repositories\\IEventSourcingRepository.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\Abstractions\\Repositories\\IEventSourcingRepository.cs",
@@ -2365,7 +2146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 211,
+              "DocumentIndex": 197,
               "Title": "auth.proto",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\Protos\\auth.proto",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\Protos\\auth.proto",
@@ -2376,7 +2157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 212,
+              "DocumentIndex": 198,
               "Title": "CheckUserExistsQuery.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\CQRS\\Queries\\CheckUserExists\\CheckUserExistsQuery.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\CQRS\\Queries\\CheckUserExists\\CheckUserExistsQuery.cs",
@@ -2387,7 +2168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 213,
+              "DocumentIndex": 199,
               "Title": "PasswordNotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Domain\\Exceptions\\PasswordNotFoundException.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Domain\\Exceptions\\PasswordNotFoundException.cs",
@@ -2398,7 +2179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 214,
+              "DocumentIndex": 200,
               "Title": "UserNotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Domain\\Exceptions\\UserNotFoundException.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Domain\\Exceptions\\UserNotFoundException.cs",
@@ -2409,7 +2190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 215,
+              "DocumentIndex": 201,
               "Title": "UserAggregate.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Domain\\Entities\\UserAggregate.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Domain\\Entities\\UserAggregate.cs",
@@ -2420,7 +2201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 216,
+              "DocumentIndex": 202,
               "Title": "AuthService.WebApi.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\AuthService.WebApi.csproj",
@@ -2431,7 +2212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 47,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\PasswordService\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\PasswordService\\Program.cs",
@@ -2439,12 +2220,11 @@
               "RelativeToolTip": "..\\..\\..\\Desktop\\PasswordService\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAACBjwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T09:50:27.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T09:50:27.249Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 217,
+              "DocumentIndex": 203,
               "Title": "Events.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Domain\\Events\\Events.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Domain\\Events\\Events.cs",
@@ -2455,7 +2235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 218,
+              "DocumentIndex": 204,
               "Title": "Events.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Domain\\Events\\Events.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Domain\\Events\\Events.cs",
@@ -2466,7 +2246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 219,
+              "DocumentIndex": 205,
               "Title": "PasswordView.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Domain\\Entities\\PasswordView.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Domain\\Entities\\PasswordView.cs",
@@ -2477,7 +2257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 220,
+              "DocumentIndex": 206,
               "Title": "PasswordAggregate.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Domain\\Entities\\PasswordAggregate.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Domain\\Entities\\PasswordAggregate.cs",
@@ -2488,7 +2268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 221,
+              "DocumentIndex": 207,
               "Title": "UserViewMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\Mappers\\UserViewMapper.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\Mappers\\UserViewMapper.cs",
@@ -2499,7 +2279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 222,
+              "DocumentIndex": 208,
               "Title": "IUserViewMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\Abstractions\\Mappers\\IUserViewMapper.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\Abstractions\\Mappers\\IUserViewMapper.cs",
@@ -2510,7 +2290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 223,
+              "DocumentIndex": 209,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.WebApi\\appsettings.json",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.WebApi\\appsettings.json",
@@ -2521,7 +2301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 224,
+              "DocumentIndex": 210,
               "Title": "CommandEventMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\Mappers\\CommandEventMapper.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\Mappers\\CommandEventMapper.cs",
@@ -2532,7 +2312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 225,
+              "DocumentIndex": 211,
               "Title": "ICommandEventMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\Abstractions\\Mappers\\ICommandEventMapper.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\Abstractions\\Mappers\\ICommandEventMapper.cs",
@@ -2543,7 +2323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 226,
+              "DocumentIndex": 212,
               "Title": "UpdatePasswordCommand.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\CQRS\\Commands\\UpdatePassword\\UpdatePasswordCommand.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\CQRS\\Commands\\UpdatePassword\\UpdatePasswordCommand.cs",
@@ -2554,7 +2334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 227,
+              "DocumentIndex": 213,
               "Title": "JWTSettings.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Infrastructure\\JWTSettings.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Infrastructure\\JWTSettings.cs",
@@ -2565,7 +2345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 228,
+              "DocumentIndex": 214,
               "Title": "CreatePasswordCommand.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\CQRS\\Commands\\CreatePassword\\CreatePasswordCommand.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\CQRS\\Commands\\CreatePassword\\CreatePasswordCommand.cs",
@@ -2576,7 +2356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 229,
+              "DocumentIndex": 215,
               "Title": "DeletePasswordCommand.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\CQRS\\Commands\\DeletePassword\\DeletePasswordCommand.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\CQRS\\Commands\\DeletePassword\\DeletePasswordCommand.cs",
@@ -2587,7 +2367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 230,
+              "DocumentIndex": 216,
               "Title": "IProjectionRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\Abstractions\\Repositories\\IProjectionRepository.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\Abstractions\\Repositories\\IProjectionRepository.cs",
@@ -2598,7 +2378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 231,
+              "DocumentIndex": 217,
               "Title": "IEventSourcingRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\Abstractions\\Repositories\\IEventSourcingRepository.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\Abstractions\\Repositories\\IEventSourcingRepository.cs",
@@ -2609,7 +2389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 232,
+              "DocumentIndex": 218,
               "Title": "UserDTO.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\DTO\\UserDTO.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\DTO\\UserDTO.cs",
@@ -2620,7 +2400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 233,
+              "DocumentIndex": 219,
               "Title": "IPasswordViewMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Application\\Abstractions\\Mappers\\IPasswordViewMapper.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Application\\Abstractions\\Mappers\\IPasswordViewMapper.cs",
@@ -2631,7 +2411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 234,
+              "DocumentIndex": 220,
               "Title": "IProjectionRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\Abstractions\\Repositories\\IProjectionRepository.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\Abstractions\\Repositories\\IProjectionRepository.cs",
@@ -2642,7 +2422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 235,
+              "DocumentIndex": 221,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.WebApi\\appsettings.Development.json",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.WebApi\\appsettings.Development.json",
@@ -2653,7 +2433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 236,
+              "DocumentIndex": 222,
               "Title": "UserView.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Domain\\Entities\\UserView.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Domain\\Entities\\UserView.cs",
@@ -2664,7 +2444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 237,
+              "DocumentIndex": 223,
               "Title": "UserProjection.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Infrastructure\\Projections\\UserProjection.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Infrastructure\\Projections\\UserProjection.cs",
@@ -2675,7 +2455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 238,
+              "DocumentIndex": 224,
               "Title": "RegisterUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\CQRS\\Commands\\RegisterUser\\RegisterUserCommand.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\CQRS\\Commands\\RegisterUser\\RegisterUserCommand.cs",
@@ -2686,7 +2466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 239,
+              "DocumentIndex": 225,
               "Title": "IAggregate.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Domain\\Abstractions\\IAggregate.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Domain\\Abstractions\\IAggregate.cs",
@@ -2697,7 +2477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 240,
+              "DocumentIndex": 226,
               "Title": "IAggregate.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordServer\\PasswordService.Domain\\Abstractions\\IAggregate.cs",
               "RelativeDocumentMoniker": "PasswordServer\\PasswordService.Domain\\Abstractions\\IAggregate.cs",
@@ -2708,7 +2488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 241,
+              "DocumentIndex": 227,
               "Title": "IPasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthServer\\AuthService.Application\\Abstractions\\Security\\IPasswordHasher.cs",
               "RelativeDocumentMoniker": "AuthServer\\AuthService.Application\\Abstractions\\Security\\IPasswordHasher.cs",
@@ -2719,7 +2499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 55,
               "Title": "PasswordView.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Domain\\Entities\\PasswordView.cs",
               "RelativeDocumentMoniker": "PasswordService.Domain\\Entities\\PasswordView.cs",
@@ -2730,7 +2510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 56,
               "Title": "IAggregate.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Domain\\Abstractions\\IAggregate.cs",
               "RelativeDocumentMoniker": "PasswordService.Domain\\Abstractions\\IAggregate.cs",
@@ -2741,7 +2521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 57,
               "Title": "ICommandEventMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\Abstractions\\Mappers\\ICommandEventMapper.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\Abstractions\\Mappers\\ICommandEventMapper.cs",
@@ -2752,7 +2532,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 98,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\WebApi\\Program.cs",
               "RelativeDocumentMoniker": "WebApi\\Program.cs",
@@ -2763,7 +2543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 58,
               "Title": "Password.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Domain\\Entities\\Password.cs",
               "RelativeDocumentMoniker": "PasswordService.Domain\\Entities\\Password.cs",
@@ -2774,7 +2554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 59,
               "Title": "IEventSourcingRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\Abstractions\\Repositories\\IEventSourcingRepository.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\Abstractions\\Repositories\\IEventSourcingRepository.cs",
@@ -2785,7 +2565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 60,
               "Title": "IProjectionRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\Abstractions\\Repositories\\IProjectionRepository.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\Abstractions\\Repositories\\IProjectionRepository.cs",
@@ -2796,7 +2576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 99,
               "Title": "AuthService.WebApi.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\WebApi\\AuthService.WebApi.csproj",
               "RelativeDocumentMoniker": "WebApi\\AuthService.WebApi.csproj",
@@ -2807,7 +2587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 48,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\WebApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "WebApi\\Properties\\launchSettings.json",
@@ -2818,7 +2598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 54,
               "Title": "PasswordDTOExtension.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.WebApi\\Extensions\\PasswordDTOExtension.cs",
               "RelativeDocumentMoniker": "PasswordService.WebApi\\Extensions\\PasswordDTOExtension.cs",
@@ -2829,7 +2609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 53,
               "Title": "IEncryptor.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\Abstractions\\Encryption\\IEncryptor.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\Abstractions\\Encryption\\IEncryptor.cs",
@@ -2840,7 +2620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 49,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthorisationService\\Program.cs",
               "RelativeDocumentMoniker": "AuthorisationService\\Program.cs",
@@ -2851,7 +2631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 61,
               "Title": "RequestExtension.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.WebApi\\Extensions\\RequestExtension.cs",
               "RelativeDocumentMoniker": "PasswordService.WebApi\\Extensions\\RequestExtension.cs",
@@ -2862,7 +2642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 62,
               "Title": "GetPasswordsByUserIDQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\CQRS\\Queries\\GetPasswordsByUserID\\GetPasswordsByUserIDQueryHandler.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\CQRS\\Queries\\GetPasswordsByUserID\\GetPasswordsByUserIDQueryHandler.cs",
@@ -2873,7 +2653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 63,
               "Title": "UpdatePasswordCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\CQRS\\Commands\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\CQRS\\Commands\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
@@ -2884,7 +2664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 64,
               "Title": "GetPasswordsByUserIDQuery.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\CQRS\\Queries\\GetPasswordsByUserID\\GetPasswordsByUserIDQuery.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\CQRS\\Queries\\GetPasswordsByUserID\\GetPasswordsByUserIDQuery.cs",
@@ -2895,7 +2675,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 65,
               "Title": "GetPasswordByIDQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\CQRS\\Queries\\GetPasswordByID\\GetPasswordByIDQueryHandler.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\CQRS\\Queries\\GetPasswordByID\\GetPasswordByIDQueryHandler.cs",
@@ -2906,7 +2686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 66,
               "Title": "GetPasswordByIDQuery.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\CQRS\\Queries\\GetPasswordByID\\GetPasswordByIDQuery.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\CQRS\\Queries\\GetPasswordByID\\GetPasswordByIDQuery.cs",
@@ -2917,7 +2697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 67,
               "Title": "ProjectionRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Infrastructure\\Repositories\\ProjectionRepository.cs",
               "RelativeDocumentMoniker": "PasswordService.Infrastructure\\Repositories\\ProjectionRepository.cs",
@@ -2928,7 +2708,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 68,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.WebApi\\Program.cs",
               "RelativeDocumentMoniker": "PasswordService.WebApi\\Program.cs",
@@ -2939,7 +2719,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 69,
               "Title": "GetPasswordByUserIDQueryValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\Validators\\Queries\\GetPasswordByUserIDQueryValidator.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\Validators\\Queries\\GetPasswordByUserIDQueryValidator.cs",
@@ -2950,7 +2730,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 70,
               "Title": "PasswordViewExtension.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\Extensions\\PasswordViewExtension.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\Extensions\\PasswordViewExtension.cs",
@@ -2961,7 +2741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 71,
               "Title": "PasswordDTO.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\DTO\\PasswordDTO.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\DTO\\PasswordDTO.cs",
@@ -2972,7 +2752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 72,
               "Title": "DeletePasswordCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\CQRS\\Commands\\DeletePassword\\DeletePasswordCommandHandler.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\CQRS\\Commands\\DeletePassword\\DeletePasswordCommandHandler.cs",
@@ -2983,7 +2763,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 73,
               "Title": "CreatePasswordCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\CQRS\\Commands\\CreatePassword\\CreatePasswordCommandHandler.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\CQRS\\Commands\\CreatePassword\\CreatePasswordCommandHandler.cs",
@@ -2994,7 +2774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 74,
               "Title": "EventSourcingRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Infrastructure\\Repositories\\EventSourcingRepository.cs",
               "RelativeDocumentMoniker": "PasswordService.Infrastructure\\Repositories\\EventSourcingRepository.cs",
@@ -3005,7 +2785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 75,
               "Title": "CommandEventMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\Mappers\\CommandEventMapper.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\Mappers\\CommandEventMapper.cs",
@@ -3016,7 +2796,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 76,
               "Title": "PasswordProjection.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Infrastructure\\Projections\\PasswordProjection.cs",
               "RelativeDocumentMoniker": "PasswordService.Infrastructure\\Projections\\PasswordProjection.cs",
@@ -3027,7 +2807,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 77,
               "Title": "UpdatePasswordCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\Validators\\Commands\\UpdatePasswordCommandValidator.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\Validators\\Commands\\UpdatePasswordCommandValidator.cs",
@@ -3038,7 +2818,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 78,
               "Title": "Events.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Domain\\Events\\Events.cs",
               "RelativeDocumentMoniker": "PasswordService.Domain\\Events\\Events.cs",
@@ -3049,7 +2829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 79,
               "Title": "PasswordService.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.WebApi\\Services\\PasswordService.cs",
               "RelativeDocumentMoniker": "PasswordService.WebApi\\Services\\PasswordService.cs",
@@ -3060,7 +2840,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 80,
               "Title": "passwords.proto",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.WebApi\\Protos\\passwords.proto",
               "RelativeDocumentMoniker": "PasswordService.WebApi\\Protos\\passwords.proto",
@@ -3071,7 +2851,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 81,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.WebApi\\appsettings.json",
               "RelativeDocumentMoniker": "PasswordService.WebApi\\appsettings.json",
@@ -3082,7 +2862,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 100,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\WebApi\\appsettings.json",
               "RelativeDocumentMoniker": "WebApi\\appsettings.json",
@@ -3093,7 +2873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 82,
               "Title": "UpdatePasswordCommand.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\CQRS\\Commands\\UpdatePassword\\UpdatePasswordCommand.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\CQRS\\Commands\\UpdatePassword\\UpdatePasswordCommand.cs",
@@ -3104,7 +2884,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 101,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "AuthService.Domain\\Entities\\User.cs",
@@ -3115,7 +2895,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 102,
               "Title": "UserAuthenticator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Infrastructure\\Services\\UserAuthenticator.cs",
               "RelativeDocumentMoniker": "AuthService.Infrastructure\\Services\\UserAuthenticator.cs",
@@ -3126,7 +2906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 103,
               "Title": "UserRegistration.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Infrastructure\\Services\\UserRegistration.cs",
               "RelativeDocumentMoniker": "AuthService.Infrastructure\\Services\\UserRegistration.cs",
@@ -3137,7 +2917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 104,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\WebApi\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "WebApi\\Services\\AuthService.cs",
@@ -3148,7 +2928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 105,
               "Title": "RegisterUserCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\CQRS\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
               "RelativeDocumentMoniker": "AuthService.Application\\CQRS\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
@@ -3159,7 +2939,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 106,
               "Title": "RegisterUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\CQRS\\Commands\\RegisterUser\\RegisterUserCommand.cs",
               "RelativeDocumentMoniker": "AuthService.Application\\CQRS\\Commands\\RegisterUser\\RegisterUserCommand.cs",
@@ -3170,7 +2950,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 107,
               "Title": "IUserRegistration.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\Abstractions\\Services\\IUserRegistration.cs",
               "RelativeDocumentMoniker": "AuthService.Application\\Abstractions\\Services\\IUserRegistration.cs",
@@ -3181,7 +2961,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 83,
               "Title": "JWTSettings.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Infrastructure\\JWTSettings.cs",
               "RelativeDocumentMoniker": "PasswordService.Infrastructure\\JWTSettings.cs",
@@ -3192,7 +2972,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 84,
               "Title": "PasswordRpcExceptions.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.WebApi\\Exceptions\\PasswordRpcExceptions.cs",
               "RelativeDocumentMoniker": "PasswordService.WebApi\\Exceptions\\PasswordRpcExceptions.cs",
@@ -3203,7 +2983,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 85,
               "Title": "CreatePasswordCommand.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\CQRS\\Commands\\CreatePassword\\CreatePasswordCommand.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\CQRS\\Commands\\CreatePassword\\CreatePasswordCommand.cs",
@@ -3214,7 +2994,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 86,
               "Title": "DeletePasswordCommand.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\CQRS\\Commands\\DeletePassword\\DeletePasswordCommand.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\CQRS\\Commands\\DeletePassword\\DeletePasswordCommand.cs",
@@ -3225,7 +3005,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 87,
               "Title": "GetPasswordByIDQueryValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\Validators\\Queries\\GetPasswordByIDQueryValidator.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\Validators\\Queries\\GetPasswordByIDQueryValidator.cs",
@@ -3236,7 +3016,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 88,
               "Title": "DeletePasswordCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\Validators\\Commands\\DeletePasswordCommandValidator.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\Validators\\Commands\\DeletePasswordCommandValidator.cs",
@@ -3247,7 +3027,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 89,
               "Title": "CreatePasswordCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\Validators\\Commands\\CreatePasswordCommandValidator.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\Validators\\Commands\\CreatePasswordCommandValidator.cs",
@@ -3258,7 +3038,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 90,
               "Title": "PasswordNotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\Exceptions\\PasswordNotFoundException.cs",
               "RelativeDocumentMoniker": "PasswordService.Application\\Exceptions\\PasswordNotFoundException.cs",
@@ -3269,7 +3049,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 108,
               "Title": "CommandMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\Mappers\\CommandMapper.cs",
               "RelativeDocumentMoniker": "AuthService.Application\\Mappers\\CommandMapper.cs",
@@ -3280,7 +3060,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 109,
               "Title": "JWTProvider.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Infrastructure\\Providers\\JWTProvider.cs",
               "RelativeDocumentMoniker": "AuthService.Infrastructure\\Providers\\JWTProvider.cs",
@@ -3291,7 +3071,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 91,
               "Title": "PasswordService.Application.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Application\\PasswordService.Application.csproj",
               "RelativeDocumentMoniker": "PasswordService.Application\\PasswordService.Application.csproj",
@@ -3302,7 +3082,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 92,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.WebApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "PasswordService.WebApi\\Properties\\launchSettings.json",
@@ -3313,7 +3093,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 110,
               "Title": "RegisterUserCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\Validators\\Commands\\RegisterUserCommandValidator.cs",
               "RelativeDocumentMoniker": "AuthService.Application\\Validators\\Commands\\RegisterUserCommandValidator.cs",
@@ -3324,7 +3104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 93,
               "Title": "BaseEvent.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Domain\\Events\\BaseEvent.cs",
               "RelativeDocumentMoniker": "PasswordService.Domain\\Events\\BaseEvent.cs",
@@ -3335,7 +3115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 111,
               "Title": "GetUserByLoginQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\CQRS\\Queries\\GetUserByLogin\\GetUserByLoginQueryHandler.cs",
               "RelativeDocumentMoniker": "AuthService.Application\\CQRS\\Queries\\GetUserByLogin\\GetUserByLoginQueryHandler.cs",
@@ -3346,7 +3126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 112,
               "Title": "UserProjection.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Infrastructure\\Projections\\UserProjection.cs",
               "RelativeDocumentMoniker": "AuthService.Infrastructure\\Projections\\UserProjection.cs",
@@ -3357,7 +3137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 94,
               "Title": "PasswordService.WebApi.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.WebApi\\PasswordService.WebApi.csproj",
               "RelativeDocumentMoniker": "PasswordService.WebApi\\PasswordService.WebApi.csproj",
@@ -3368,7 +3148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 113,
               "Title": "Events.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Domain\\Events\\Events.cs",
               "RelativeDocumentMoniker": "AuthService.Domain\\Events\\Events.cs",
@@ -3379,7 +3159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 95,
               "Title": "PasswordService.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Infrastructure\\PasswordService.Infrastructure.csproj",
               "RelativeDocumentMoniker": "PasswordService.Infrastructure\\PasswordService.Infrastructure.csproj",
@@ -3390,7 +3170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 96,
               "Title": "PasswordService.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.Domain\\PasswordService.Domain.csproj",
               "RelativeDocumentMoniker": "PasswordService.Domain\\PasswordService.Domain.csproj",
@@ -3401,7 +3181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 114,
               "Title": "BaseEvent.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Domain\\Events\\BaseEvent.cs",
               "RelativeDocumentMoniker": "AuthService.Domain\\Events\\BaseEvent.cs",
@@ -3412,7 +3192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 97,
               "Title": "PasswordService.WebApi.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordService.WebApi\\PasswordService.WebApi.csproj",
               "RelativeDocumentMoniker": "PasswordService.WebApi\\PasswordService.WebApi.csproj",
@@ -3423,7 +3203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 115,
               "Title": "AesEncryptionConfigValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Infrastructure\\Validators\\AesEncryptionConfigValidator.cs",
               "RelativeDocumentMoniker": "AuthService.Infrastructure\\Validators\\AesEncryptionConfigValidator.cs",
@@ -3434,7 +3214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 116,
               "Title": "AesConfigProvider.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Infrastructure\\Providers\\AesConfigProvider.cs",
               "RelativeDocumentMoniker": "AuthService.Infrastructure\\Providers\\AesConfigProvider.cs",
@@ -3445,7 +3225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 117,
               "Title": "JWTSettings.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Infrastructure\\JWTSettings.cs",
               "RelativeDocumentMoniker": "AuthService.Infrastructure\\JWTSettings.cs",
@@ -3456,7 +3236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 118,
               "Title": "AesEncryptionConfig.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Infrastructure\\Security\\AesEncryptionConfig.cs",
               "RelativeDocumentMoniker": "AuthService.Infrastructure\\Security\\AesEncryptionConfig.cs",
@@ -3467,7 +3247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 119,
               "Title": "AesEncryptor.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Infrastructure\\Security\\AesEncryptor.cs",
               "RelativeDocumentMoniker": "AuthService.Infrastructure\\Security\\AesEncryptor.cs",
@@ -3478,7 +3258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 120,
               "Title": "GetUserByLoginQueryValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\Validators\\Queries\\GetUserByLoginQueryValidator.cs",
               "RelativeDocumentMoniker": "AuthService.Application\\Validators\\Queries\\GetUserByLoginQueryValidator.cs",
@@ -3489,7 +3269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 121,
               "Title": "UserMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\Mappers\\UserMapper.cs",
               "RelativeDocumentMoniker": "AuthService.Application\\Mappers\\UserMapper.cs",
@@ -3500,7 +3280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 122,
               "Title": "IUserMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\Abstractions\\Mappers\\IUserMapper.cs",
               "RelativeDocumentMoniker": "AuthService.Application\\Abstractions\\Mappers\\IUserMapper.cs",
@@ -3511,7 +3291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 123,
               "Title": "UserDTO.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\DTO\\UserDTO.cs",
               "RelativeDocumentMoniker": "AuthService.Application\\DTO\\UserDTO.cs",
@@ -3522,7 +3302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
+              "DocumentIndex": 124,
               "Title": "AuthenticateUserRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\WebApi\\Validators\\AuthenticateUserRequestValidator.cs",
               "RelativeDocumentMoniker": "WebApi\\Validators\\AuthenticateUserRequestValidator.cs",
@@ -3533,7 +3313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 125,
               "Title": "AuthRpcExceptions.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\WebApi\\Exceptions\\AuthRpcExceptions.cs",
               "RelativeDocumentMoniker": "WebApi\\Exceptions\\AuthRpcExceptions.cs",
@@ -3544,7 +3324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 126,
               "Title": "GetUserByLoginQuery.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\CQRS\\Queries\\GetUserByLogin\\GetUserByLoginQuery.cs",
               "RelativeDocumentMoniker": "AuthService.Application\\CQRS\\Queries\\GetUserByLogin\\GetUserByLoginQuery.cs",
@@ -3555,7 +3335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 127,
               "Title": "RequestExtension.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\WebApi\\Extensions\\RequestExtension.cs",
               "RelativeDocumentMoniker": "WebApi\\Extensions\\RequestExtension.cs",
@@ -3566,7 +3346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 128,
               "Title": "RegisterUserDTO.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\DTO\\RegisterUserDTO.cs",
               "RelativeDocumentMoniker": "AuthService.Application\\DTO\\RegisterUserDTO.cs",
@@ -3577,7 +3357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 129,
               "Title": "IJWTProvider.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Infrastructure\\Abstractions\\Providers\\IJWTProvider.cs",
               "RelativeDocumentMoniker": "AuthService.Infrastructure\\Abstractions\\Providers\\IJWTProvider.cs",
@@ -3588,7 +3368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 130,
               "Title": "ICommandMapper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\Abstractions\\Mappers\\ICommandMapper.cs",
               "RelativeDocumentMoniker": "AuthService.Application\\Abstractions\\Mappers\\ICommandMapper.cs",
@@ -3599,7 +3379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 131,
               "Title": "AuthService.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj",
               "RelativeDocumentMoniker": "AuthService.Infrastructure\\AuthService.Infrastructure.csproj",
@@ -3610,7 +3390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 132,
               "Title": "AuthService.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Domain\\AuthService.Domain.csproj",
               "RelativeDocumentMoniker": "AuthService.Domain\\AuthService.Domain.csproj",
@@ -3621,7 +3401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 133,
               "Title": "AuthService.Application.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\AuthService.Application.csproj",
               "RelativeDocumentMoniker": "AuthService.Application\\AuthService.Application.csproj",
@@ -3632,7 +3412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 134,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\Abstractions\\Repositories\\IUserRepository.cs",
               "RelativeDocumentMoniker": "AuthService.Application\\Abstractions\\Repositories\\IUserRepository.cs",
@@ -3643,7 +3423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 135,
               "Title": "ApplicationContext.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Infrastructure\\AppContext\\ApplicationContext.cs",
               "RelativeDocumentMoniker": "AuthService.Infrastructure\\AppContext\\ApplicationContext.cs",
@@ -3654,7 +3434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 50,
               "Title": "AuthService.Domain.GlobalUsings.g.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Domain\\obj\\Debug\\netcoreapp3.1\\AuthService.Domain.GlobalUsings.g.cs",
               "RelativeDocumentMoniker": "AuthService.Domain\\obj\\Debug\\netcoreapp3.1\\AuthService.Domain.GlobalUsings.g.cs",
@@ -3665,7 +3445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 150,
+              "DocumentIndex": 136,
               "Title": "AuthService.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Domain\\AuthService.Domain.csproj",
               "RelativeDocumentMoniker": "AuthService.Domain\\AuthService.Domain.csproj",
@@ -3676,7 +3456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 151,
+              "DocumentIndex": 137,
               "Title": "AuthService.Application.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\AuthService.Application\\AuthService.Application.csproj",
               "RelativeDocumentMoniker": "AuthService.Application\\AuthService.Application.csproj",
@@ -3687,7 +3467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 51,
               "Title": "ValidationPipelineBehavior.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\SERVICES WITH RESULT\\PasswordService.Application\\CQRS\\Behaviors\\ValidationPipelineBehavior.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\SERVICES WITH RESULT\\PasswordService.Application\\CQRS\\Behaviors\\ValidationPipelineBehavior.cs",
@@ -3698,7 +3478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 52,
               "Title": "Passwords.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PasswordBoxGrpcServer\\PasswordsBunker\\obj\\Debug\\net9.0-windows10.0.17763.0\\Protos\\Passwords.cs",
               "RelativeDocumentMoniker": "PasswordsBunker\\obj\\Debug\\net9.0-windows10.0.17763.0\\Protos\\Passwords.cs",
