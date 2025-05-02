@@ -3,6 +3,6 @@
     public sealed class RefreshTokenDbSettings
     {
         public const string SectionName = "RefreshTokenDbSettings";
-        public string ConnectionString { get; set; } = null!;
+        public string PostgreSQLConnection { get; set; } = null!;
     }
 }

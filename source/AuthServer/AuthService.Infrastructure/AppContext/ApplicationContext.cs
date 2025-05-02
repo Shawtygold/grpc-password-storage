@@ -19,7 +19,7 @@ namespace AuthService.Infrastructure.AppContext
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql(_options.Value.ConnectionString);
+            optionsBuilder.UseNpgsql(_options.Value.PostgreSQLConnection);
         }
     }
 }
